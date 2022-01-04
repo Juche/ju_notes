@@ -1,4 +1,4 @@
-# fe-notes
+# ju-notes
 
 - [01.html](./知识点整理/01.html.md)
 - [02.css](./知识点整理/02.css.md)
