@@ -44,3 +44,105 @@ import fetchReleaseTag from './.vitepress/theme/fetchReleaseTag.js'
 
 fetchReleaseTag()
 </script> -->
+
+---
+
+## Navigator
+
+ | [教程](/guide/introduction)
+ | [示例](/examples/markdown)
+ | [主题](/community/themes)
+ |
+
+ | [Home](/)
+ | [Home img](#img)
+ | [Home emoji](#emoji)
+ | [Home infoStatus](#infoStatus)
+ | [Home Tables](#Tables)
+ |
+
+[[toc]]
+
+## img
+
+![Profound](/logo.png)
+
+## emoji
+
+:tada: :100:
+
+## infoStatus
+
+::: info
+This is a info
+:::
+
+::: tip
+This is a tip
+:::
+
+::: warning
+This is a warning
+:::
+
+::: danger
+This is a dangerous
+:::
+
+::: danger 危险
+Danger zone, do not proceed
+:::
+
+## Tables
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+## code
+
+```js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
+`<<< @/public/snippets/test.js`
+
+<<< @/public/snippets/test.js
+
+`<<< @/public/snippets/codepen.vue`
+
+<<< @/public/snippets/codepen.vue
+
+## link
+
+### Vue CLI
+
+<a href="https://www.npmjs.com/package/@vue/cli" target="_blank" noopener noreferrer><img src="https://img.shields.io/npm/v/@vue/cli"></a>
+
+- [文档](https://cli.vuejs.org/zh/)
+- [GitHub](https://github.com/vuejs/vue-cli)
+
+### Vue Router
+
+<a href="https://www.npmjs.com/package/vue-router/v/next" target="_blank" noopener noreferrer><img src="https://img.shields.io/npm/v/vue-router/next.svg"></a>
+
+- [文档](https://next.router.vuejs.org/)
+- [Github](https://github.com/vuejs/vue-router-next)
+- [RFCs](https://github.com/vuejs/rfcs/pulls?q=is%3Apr+is%3Amerged+label%3Arouter)
+
+### Vuex
+
+<a href="https://www.npmjs.com/package/vuex/v/next" target="_blank" noopener noreferrer><img src="https://img.shields.io/npm/v/vuex/next.svg"></a>
+
+- [文档](https://next.vuex.vuejs.org/)
+- [Github](https://github.com/vuejs/vuex/tree/4.0)
+
+<!-- <common-vuemastery-video-modal/> -->

@@ -42,7 +42,7 @@
   border-color: var(--c-brand-light);
 }
 .custom-block.tip::before {
-  content: url(/bulb.svg);
+  content: url('/bulb.svg');
 }
 
 .custom-block.warning {
