@@ -5,7 +5,7 @@ sidebar: false
 # Vite 2.0 发布了 {#announcing-vite-2-0}
 
 <p style="text-align:center">
-  <img src="/logo.svg" style="height:200px">
+  <img src="logo.png" style="height:200px">
 </p>
 
 今天我们很高兴地宣布，Vite 2.0 正式发布了！

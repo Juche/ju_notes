@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.svg
+heroImage: logo.png
 actionText: 开始
 actionLink: /guide/
 
@@ -20,10 +20,10 @@ features:
     details: 在开发和构建之间共享 Rollup-superset 插件接口。
   - title: 🔑 完全类型化的API
     details: 灵活的 API 和完整 TypeScript 类型。
-footer: MIT Licensed | Copyright © 2019-present Evan You & Vite Contributors
+footer: Copyright © 2022 Juching
 ---
 
-<div class="frontpage sponsors">
+<!-- <div class="frontpage sponsors">
   <h2>赞助</h2>
   <div class="platinum-sponsors">
     <a v-for="{ href, src, name, id } of sponsors.filter(s => s.tier === 'platinum')" :href="href" target="_blank" rel="noopener" aria-label="sponsor-img">
@@ -36,11 +36,11 @@ footer: MIT Licensed | Copyright © 2019-present Evan You & Vite Contributors
     </a>
   </div>
   <a href="https://github.com/sponsors/yyx990803" target="_blank" rel="noopener">在 GitHub 上赞助我们</a>
-</div>
+</div> -->
 
-<script setup>
+<!-- <script setup>
 import sponsors from './.vitepress/theme/sponsors.json'
 import fetchReleaseTag from './.vitepress/theme/fetchReleaseTag.js'
 
 fetchReleaseTag()
-</script>
+</script> -->

@@ -17,12 +17,46 @@
 }
 
 :root {
-  --c-brand: #646cff;
-  --c-brand-light: #747bff;
+  /* --c-brand: #646cff;
+  --c-brand-light: #747bff; */
+  --c-brand: #42b983;
+  --c-brand-light: #42b983;
+}
+
+.custom-block {}
+
+.custom-block::before {
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 15px;
+}
+
+.custom-block.info {
+  border-color: #007bff;
+}
+.custom-block.info::before {
+  content: url('/info.svg');
 }
 
 .custom-block.tip {
   border-color: var(--c-brand-light);
+}
+.custom-block.tip::before {
+  content: url(/bulb.svg);
+}
+
+.custom-block.warning {
+  border-color: #f4cd00;
+}
+.custom-block.warning::before {
+  content: url('/danger.svg');
+}
+
+.custom-block.danger {
+  border-color: #f66;
+}
+.custom-block.danger::before {
+  content: url('/stop.svg');
 }
 
 .DocSearch {

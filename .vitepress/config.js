@@ -1,83 +1,100 @@
 // @ts-check
 
-const pkg = require('../package.json')
+// const pkg = require('../package.json')
 
 /**
  * @type {import('vitepress').UserConfig}
  */
 module.exports = {
-  title: 'Vite 官方中文文档',
+  title: 'Juching\'s Note',
   lang: 'zh-CN',
-  description: '下一代前端开发与构建工具',
+  description: '📔',
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
-    ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', async: '' }]
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: 'logo.png' }],
+    // ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', async: '' }]
   ],
   themeConfig: {
-    repo: pkg.repository,
-    logo: '/logo.svg',
+    // repo: pkg.repository,
+    logo: 'logo.png',
     docsBranch: 'main',
     editLinks: true,
     editLinkText: '为此页提供修改建议',
 
-    algolia: {
-      apiKey: 'b573aa848fd57fb47d693b531297403c',
-      indexName: 'vitejs',
-      searchParameters: {
-        facetFilters: ['tags:cn']
-      }
-    },
+    // algolia: {
+    //   apiKey: 'b573aa848fd57fb47d693b531297403c',
+    //   indexName: 'vitejs',
+    //   searchParameters: {
+    //     facetFilters: ['tags:cn']
+    //   }
+    // },
 
     nav: [
       { text: '指引', link: '/guide/' },
       { text: '配置', link: '/config/' },
       { text: '插件', link: '/plugins/' },
       {
-        text: '相关链接',
+        text: '更多',
         items: [
           {
-            text: 'Twitter',
-            link: 'https://twitter.com/vite_js'
+            text: 'AAA',
+            link: ''
           },
           {
-            text: 'Discord Chat',
-            link: 'https://chat.vitejs.dev'
+            text: 'BBB',
+            link: ''
           },
           {
-            text: 'Awesome Vite',
-            link: 'https://github.com/vitejs/awesome-vite'
+            text: 'CCC',
+            link: ''
           },
-          {
-            text: 'Dev.to 社区',
-            link: 'https://dev.to/t/vite'
-          },
-          {
-            text: 'Rollup 插件兼容',
-            link: 'https://vite-rollup-plugins.patak.dev/'
-          },
-          {
-            text: '更新日志',
-            link: 'https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md'
-          }
         ]
       },
-      {
-        text: '多语言',
-        items: [
-          {
-            text: '简体中文',
-            link: 'https://cn.vitejs.dev'
-          },
-          {
-            text: 'English',
-            link: 'https://vitejs.dev'
-          },
-          {
-            text: '日本語',
-            link: 'https://ja.vitejs.dev'
-          }
-        ]
-      }
+      // {
+      //   text: '相关链接',
+      //   items: [
+      //     {
+      //       text: 'Twitter',
+      //       link: 'https://twitter.com/vite_js'
+      //     },
+      //     {
+      //       text: 'Discord Chat',
+      //       link: 'https://chat.vitejs.dev'
+      //     },
+      //     {
+      //       text: 'Awesome Vite',
+      //       link: 'https://github.com/vitejs/awesome-vite'
+      //     },
+      //     {
+      //       text: 'Dev.to 社区',
+      //       link: 'https://dev.to/t/vite'
+      //     },
+      //     {
+      //       text: 'Rollup 插件兼容',
+      //       link: 'https://vite-rollup-plugins.patak.dev/'
+      //     },
+      //     {
+      //       text: '更新日志',
+      //       link: 'https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md'
+      //     }
+      //   ]
+      // },
+      // {
+      //   text: '多语言',
+      //   items: [
+      //     {
+      //       text: '简体中文',
+      //       link: 'https://cn.vitejs.dev'
+      //     },
+      //     {
+      //       text: 'English',
+      //       link: 'https://vitejs.dev'
+      //     },
+      //     {
+      //       text: '日本語',
+      //       link: 'https://ja.vitejs.dev'
+      //     }
+      //   ]
+      // }
     ],
 
     sidebar: {
