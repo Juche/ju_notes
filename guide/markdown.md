@@ -1,8 +1,10 @@
-# 文档 markdown 示例
-
 <a id="top"></a>
 
-> Markdown是一种轻量级的「标记语言」。
+# 文档 markdown 示例
+
+[bot](#bot)
+
+> Markdown 是一种轻量级的「标记语言」。
 
 ## 1. 基本语法
 
@@ -24,13 +26,13 @@
 
 **这个是粗体**
 
-*这个是斜体*
+_这个是斜体_
 
-***这个是粗体加斜体***
+**_这个是粗体加斜体_**
 
 ~~这里想用删除线~~
 
-注：如果想给字体换颜色、字体或者居中显示，需要使用内嵌HTML来实现。
+注：如果想给字体换颜色、字体或者居中显示，需要使用内嵌 HTML 来实现。
 
 ### 1.3 无序列表
 
@@ -68,17 +70,19 @@
 <a href="https://www.npmjs.com/package/vuex/v/next" target="_blank" noopener noreferrer><img src="https://img.shields.io/npm/v/vue/next.svg"></a>
 
 [Vue Github](https://github.com/vuejs/vue-next)
- | [Vue 文档](https://v3.cn.vuejs.org/)
+| [Vue 文档](https://v3.cn.vuejs.org/)
 
 [top](#top)
 
 <a href="#bot">bot</a>
 
+<button id="play-vite-audio" onclick="document.getElementById('vite-audio').play();"><img src="/voice.svg" height="15"></button>
+
 ### 1.7 图片
 
 插入图片(支持 jpg、png、gif 等图片格式)，格式如下：
 
-![Profound](/logo.png)
+![Juching](/logo.png)
 
 ### 1.8 分割线
 
@@ -90,11 +94,11 @@
 
 可以使用冒号来定义表格的对齐方式，如下：
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
+| Tables        |      Are      |  Cool |
+| ------------- | :-----------: | ----: |
 | col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| col 2 is      |   centered    |   $12 |
+| zebra stripes |   are neat    |    $1 |
 
 ## 2. 特殊语法
 
@@ -142,6 +146,10 @@ TOC 全称为 Table of Content，列出全部标题。
 
 ### 3.1 信息状态
 
+::: info
+This is a info
+:::
+
 ::: tip
 This is a tip
 :::
@@ -151,10 +159,10 @@ This is a warning
 :::
 
 ::: danger
-This is a dangerous warning
+This is a dangerous
 :::
 
-::: danger STOP
+::: danger 危险
 Danger zone, do not proceed
 :::
 
@@ -173,5 +181,11 @@ export default {
 `<<< @/public/snippets/test.js`
 
 <<< @/public/snippets/test.js
+
+`<<< @/public/snippets/codepen.vue`
+
+<<< @/public/snippets/codepen.vue
+
+[top](#top)
 
 <a id="bot"></a>

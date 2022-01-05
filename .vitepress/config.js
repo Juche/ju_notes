@@ -32,8 +32,6 @@ module.exports = {
     nav: [
       // { text: '指引', link: '/guide/' },
       // { text: '配置', link: '/config/' },
-      // { text: '插件', link: '/plugins/' },
-      // { text: 'md', link: '/markdown/' },
       {
         text: "指南",
         ariaLabel: "指南",
@@ -71,6 +69,48 @@ module.exports = {
           {
             text: "docker笔记",
             link: "/Note/4.docker笔记",
+          },
+        ],
+      },
+      {
+        text: "知识点整理",
+        ariaLabel: "知识点整理",
+        items: [
+          {
+            text: "01_html",
+            link: "/知识点整理/01_html",
+          },
+          {
+            text: "02_css",
+            link: "/知识点整理/02_css",
+          },
+          {
+            text: "03_js",
+            link: "/知识点整理/03_js",
+          },
+          {
+            text: "04_vue",
+            link: "/知识点整理/04_vue",
+          },
+          {
+            text: "性能",
+            link: "/知识点整理/性能",
+          },
+          {
+            text: "浏览器",
+            link: "/知识点整理/浏览器",
+          },
+          {
+            text: "算法",
+            link: "/知识点整理/算法",
+          },
+          {
+            text: "网络",
+            link: "/知识点整理/网络",
+          },
+          {
+            text: "设计模式",
+            link: "/知识点整理/设计模式",
           },
         ],
       },
@@ -136,7 +176,19 @@ module.exports = {
           },
         ],
       },
-
+      {
+        text: '相关链接',
+        items: [
+          {
+            text: 'Awesome Vite',
+            link: 'https://github.com/vitejs/awesome-vite'
+          },
+          {
+            text: '更新日志',
+            link: 'https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md'
+          }
+        ]
+      },
       {
         text: '更多',
         items: [
@@ -148,70 +200,28 @@ module.exports = {
             text: 'BBB',
             link: '',
           },
-          {
-            text: 'CCC',
-            link: '',
-          },
         ],
-      },
-      {
-        text: '相关链接',
-        items: [
-          {
-            text: 'Twitter',
-            link: 'https://twitter.com/vite_js'
-          },
-          {
-            text: 'Discord Chat',
-            link: 'https://chat.vitejs.dev'
-          },
-          {
-            text: 'Awesome Vite',
-            link: 'https://github.com/vitejs/awesome-vite'
-          },
-          {
-            text: 'Dev.to 社区',
-            link: 'https://dev.to/t/vite'
-          },
-          {
-            text: 'Rollup 插件兼容',
-            link: 'https://vite-rollup-plugins.patak.dev/'
-          },
-          {
-            text: '更新日志',
-            link: 'https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md'
-          }
-        ]
       },
     ],
 
     // 不指定规则,所有的都自动生成导航菜单
     // 可以给指定目录特定的导航配置
     sidebar: {
+      // '/': [],
       // '/config': 'auto',
       // '/plugins': 'auto',
       // '/markdown': 'auto',
-      // catch-all fallback
-      // '/': [],
-      '/markdown': [
+      '/Guide/index': [
         {
           text: 'Juching',
           children: [
             {
-              text: '插件 API',
-              link: '/guide/api-plugin',
+              text: '首页',
+              link: '/Guide/index',
             },
             {
-              text: 'HMR API',
-              link: '/guide/api-hmr',
-            },
-            {
-              text: 'JavaScript API',
-              link: '/guide/api-javascript',
-            },
-            {
-              text: '配置参考',
-              link: '/config/',
+              text: 'MD',
+              link: '/Guide/markdown',
             },
           ],
         },
@@ -230,7 +240,6 @@ module.exports = {
     toc: { includeLevel: [1, 2] },
     config: (md) => {
       md.use(require('./markdown-it-custom-anchor'))
-
       // use more markdown-it plugins!
       // md.use(require('markdown-it-xxx'))
       // md.use(require('markdown-it-anchor'))
