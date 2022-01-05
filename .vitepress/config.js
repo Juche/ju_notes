@@ -30,9 +30,10 @@ module.exports = {
     // },
 
     nav: [
-      { text: '指引', link: '/guide/' },
-      { text: '配置', link: '/config/' },
-      { text: '插件', link: '/plugins/' },
+      // { text: '指引', link: '/guide/' },
+      // { text: '配置', link: '/config/' },
+      // { text: '插件', link: '/plugins/' },
+      // { text: 'md', link: '/markdown/' },
       {
         text: "指南",
         ariaLabel: "指南",
@@ -184,70 +185,17 @@ module.exports = {
       },
     ],
 
+    // 不指定规则,所有的都自动生成导航菜单
+    // 可以给指定目录特定的导航配置
     sidebar: {
-      '/config/': 'auto',
-      '/plugins': 'auto',
+      // '/config': 'auto',
+      // '/plugins': 'auto',
+      // '/markdown': 'auto',
       // catch-all fallback
-      '/': [
+      // '/': [],
+      '/markdown': [
         {
-          text: '指引',
-          children: [
-            {
-              text: '为什么选 Vite',
-              link: '/guide/why',
-            },
-            {
-              text: '开始',
-              link: '/guide/',
-            },
-            {
-              text: '功能',
-              link: '/guide/features',
-            },
-            {
-              text: '使用插件',
-              link: '/guide/using-plugins',
-            },
-            {
-              text: '依赖预构建',
-              link: '/guide/dep-pre-bundling',
-            },
-            {
-              text: '静态资源处理',
-              link: '/guide/assets',
-            },
-            {
-              text: '构建生产版本',
-              link: '/guide/build',
-            },
-            {
-              text: '部署静态站点',
-              link: '/guide/static-deploy',
-            },
-            {
-              text: '环境变量与模式',
-              link: '/guide/env-and-mode',
-            },
-            {
-              text: '服务端渲染（SSR）',
-              link: '/guide/ssr',
-            },
-            {
-              text: '后端集成',
-              link: '/guide/backend-integration',
-            },
-            {
-              text: '比较',
-              link: '/guide/comparisons',
-            },
-            {
-              text: '从 v1 迁移',
-              link: '/guide/migration',
-            },
-          ],
-        },
-        {
-          text: 'API',
+          text: 'Juching',
           children: [
             {
               text: '插件 API',
