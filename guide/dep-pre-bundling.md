@@ -2,7 +2,7 @@
 
 当你首次启动 `vite` 时，你可能会注意到打印出了以下信息：
 
-```
+```text
 Optimizable dependencies detected: （侦测到可优化的依赖：）
 react, react-dom
 Pre-bundling them to speed up dev server page load...（将预构建它们以提升开发服务器页面加载速度）

@@ -108,6 +108,10 @@
   font-size: 12px;
 }
 
+.page .container {
+  min-width: 1000px !important;
+}
+
 .page .container .content {
   clear: none !important;
 }

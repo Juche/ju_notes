@@ -8,18 +8,18 @@ altActionText: 了解更多
 altActionLink: /guide/why
 
 features:
-  - title: 💡 极速的服务启动
-    details: 使用原生 ESM 文件，无需打包!
-  - title: ⚡️ 轻量快速的热重载
-    details: 无论应用程序大小如何，都始终极快的模块热重载（HMR）
-  - title: 🛠️ 丰富的功能
-    details: 对 TypeScript、JSX、CSS 等支持开箱即用。
-  - title: 📦 优化的构建
-    details: 可选 “多页应用” 或 “库” 模式的预配置 Rollup 构建
-  - title: 🔩 通用的插件
-    details: 在开发和构建之间共享 Rollup-superset 插件接口。
-  - title: 🔑 完全类型化的API
-    details: 灵活的 API 和完整 TypeScript 类型。
+  # - title: 💡 极速的服务启动
+  #   details: 使用原生 ESM 文件，无需打包!
+  # - title: ⚡️ 轻量快速的热重载
+  #   details: 无论应用程序大小如何，都始终极快的模块热重载（HMR）
+  # - title: 🛠️ 丰富的功能
+  #   details: 对 TypeScript、JSX、CSS 等支持开箱即用。
+  # - title: 📦 优化的构建
+  #   details: 可选 “多页应用” 或 “库” 模式的预配置 Rollup 构建
+  # - title: 🔩 通用的插件
+  #   details: 在开发和构建之间共享 Rollup-superset 插件接口。
+  # - title: 🔑 完全类型化的API
+  #   details: 灵活的 API 和完整 TypeScript 类型。
 footer: Copyright © 2022 Juching
 ---
 
@@ -61,11 +61,29 @@ fetchReleaseTag()
  | [Home Tables](#Tables)
  |
 
+[👉 指南](/Guide/index)
+
+[📋 笔记](/Note/index)
+
+[💻 开发](/Develop/index)
+
+[📁 文档](/Doc/index)
+
+[📔 百科](/Wiki/index)
+
+[❓ 问题](/Issue/index)
+
+[👨‍🏫 会议](/Meeting/index)
+
+---
+
 [[toc]]
 
 ## img
 
 ![Profound](/logo.png)
+
+<button id="play-vite-audio" onclick="document.getElementById('vite-audio').play();"><img src="/voice.svg" height="15"></button>
 
 ## emoji
 
