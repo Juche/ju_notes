@@ -1,32 +1,29 @@
 {
-	"name": "ju_notes",
-	"version": "1.0.0",
-	"description": "Juching's notes",
-	"repository": "https://gitee.com/juching/ju_notes",
-	"main": "index.js",
-	"author": "Juching",
-	"license": "ISC",
-	"scripts": {
-		"dev": "vitepress dev .",
-		"build": "node ./scripts/build.js",
-		"serve": "vitepress serve ."
-	},
-	"devDependencies": {
-		"@algolia/client-search": "^4.11.0",
-		"@types/markdown-it": "^12.2.3",
-		"@types/react": "^17.0.38",
-		"chalk": "^4.1.0",
-		"gray-matter": "^4.0.3",
-		"lodash": "^4.17.21",
-		"markdown-it": "^12.3.0",
-		"markdown-it-anchor": "^8.4.1",
-		"markdown-it-html5-media": "^0.7.0",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
-		"vitepress": "^0.20.10",
-		"yorkie": "^2.0.0"
-	},
-	"gitHooks": {
-		"commit-msg": "node scripts/verifyCommit.js"
-	}
+  "name": "ju_notes",
+  "version": "1.0.0",
+  "description": "Juching's notes",
+  "repository": "https://gitee.com/juching/ju_notes",
+  "main": "index.js",
+  "author": "Juching",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "node ./scripts/build.js",
+    "serve": "vitepress serve ."
+  },
+  "devDependencies": {
+    "@algolia/client-search": "^4.11.0",
+    "@types/markdown-it": "^12.2.3",
+    "@types/react": "^17.0.38",
+    "chalk": "^4.1.0",
+    "gray-matter": "^4.0.3",
+    "lodash": "^4.17.21",
+    "markdown-it": "^12.3.0",
+    "markdown-it-anchor": "^8.4.1",
+    "markdown-it-html5-media": "^0.7.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "vitepress": "^0.20.10",
+    "yorkie": "^2.0.0"
+  }
 }
