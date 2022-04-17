@@ -49,17 +49,17 @@ fetchReleaseTag()
 
 ## Navigator
 
- | [教程](/guide/introduction)
- | [示例](/examples/markdown)
- | [主题](/community/themes)
- |
+| [教程](/guide/introduction)
+| [示例](/examples/markdown)
+| [主题](/community/themes)
+|
 
- | [Home](/)
- | [Home img](#img)
- | [Home emoji](#emoji)
- | [Home infoStatus](#infoStatus)
- | [Home Tables](#Tables)
- |
+| [Home](/)
+| [Home img](#img)
+| [Home emoji](#emoji)
+| [Home infoStatus](#infoStatus)
+| [Home Tables](#Tables)
+|
 
 [👉 指南](/Guide/index)
 
