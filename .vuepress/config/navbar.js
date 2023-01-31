@@ -42,8 +42,8 @@ export const navbar = [
     ],
   },
   {
-    text: '前端知识点',
-    ariaLabel: '前端知识点',
+    text: '前端',
+    ariaLabel: '前端',
     children: [
       {
         text: '01_html',

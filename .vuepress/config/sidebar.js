@@ -23,7 +23,7 @@ export const sidebar = {
   ],
   '/FE/': [
     {
-      text: '前端知识点',
+      text: '前端',
       children: [
         '/FE/01_html.md',
         '/FE/02_css.md',
