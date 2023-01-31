@@ -186,6 +186,64 @@ export default {
 
 <<< @/public/snippets/codepen.vue
 
+### CodeGroup
+
+<CodeGroup>
+  <CodeGroupItem title="PNPM" active>
+
+```bash
+# install in your project
+pnpm add -D vuepress@next @vuepress/client@next vue
+
+# create a markdown file
+echo '# Hello VuePress' > README.md
+
+# start writing
+pnpm vuepress dev
+
+# build to static files
+pnpm vuepress build
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="YARN">
+
+```bash
+# install in your project
+yarn add -D vuepress@next
+
+# create a markdown file
+echo '# Hello VuePress' > README.md
+
+# start writing
+yarn vuepress dev
+
+# build to static files
+yarn vuepress build
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="NPM">
+
+```bash
+# install in your project
+npm install -D vuepress@next
+
+# create a markdown file
+echo '# Hello VuePress' > README.md
+
+# start writing
+npx vuepress dev
+
+# build to static files
+npx vuepress build
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 [top](#top)
 
 <a id="bot"></a>

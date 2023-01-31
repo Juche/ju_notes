@@ -1,11 +1,20 @@
 ---
 home: true
-heroImage: logo.png
-actionText: 开始
-actionLink: /guide/
+heroImage: /logo.png
 
-altActionText: 了解更多
-altActionLink: /guide/why
+# actionText: 开始
+# actionLink: /guide/
+
+# altActionText: 了解更多
+# altActionLink: /guide/why
+
+actions:
+  - text: Get Started
+    link: /guide/getting-started.html
+    type: primary
+  - text: Introduction
+    link: /guide/
+    type: secondary
 
 features:
   # - title: 💡 极速的服务启动
@@ -49,9 +58,9 @@ fetchReleaseTag()
 
 ## Navigator
 
-| [教程](/guide/introduction)
-| [示例](/examples/markdown)
-| [主题](/community/themes)
+| [教程](/guide/introduction.md)
+| [示例](/examples/markdown.md)
+| [主题](/community/themes.md)
 |
 
 | [Home](/)
@@ -61,19 +70,19 @@ fetchReleaseTag()
 | [Home Tables](#Tables)
 |
 
-[👉 指南](/Guide/index)
+[👉 指南](/Guide/index.md)
 
-[📋 笔记](/Note/index)
+[📋 笔记](/Note/index.md)
 
-[💻 开发](/Develop/index)
+[💻 开发](/Develop/index.md)
 
-[📁 文档](/Doc/index)
+[📁 文档](/Doc/index.md)
 
-[📔 百科](/Wiki/index)
+[📔 百科](/Wiki/index.md)
 
-[❓ 问题](/Issue/index)
+[❓ 问题](/Issue/index.md)
 
-[👨‍🏫 会议](/Meeting/index)
+[👨‍🏫 会议](/Meeting/index.md)
 
 ---
 
