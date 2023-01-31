@@ -42,44 +42,44 @@ export const navbar = [
     ],
   },
   {
-    text: '知识点整理',
-    ariaLabel: '知识点整理',
+    text: '前端知识点',
+    ariaLabel: '前端知识点',
     children: [
       {
         text: '01_html',
-        link: '/知识点整理/01_html.md',
+        link: '/FE/01_html.md',
       },
       {
         text: '02_css',
-        link: '/知识点整理/02_css.md',
+        link: '/FE/02_css.md',
       },
       {
         text: '03_js',
-        link: '/知识点整理/03_js.md',
+        link: '/FE/03_js.md',
       },
       {
         text: '04_vue',
-        link: '/知识点整理/04_vue.md',
+        link: '/FE/04_vue.md',
       },
       {
         text: '性能',
-        link: '/知识点整理/性能.md',
+        link: '/FE/性能.md',
       },
       {
         text: '浏览器',
-        link: '/知识点整理/浏览器.md',
+        link: '/FE/浏览器.md',
       },
       {
         text: '算法',
-        link: '/知识点整理/算法.md',
+        link: '/FE/算法.md',
       },
       {
         text: '网络',
-        link: '/知识点整理/网络.md',
+        link: '/FE/网络.md',
       },
       {
         text: '设计模式',
-        link: '/知识点整理/设计模式.md',
+        link: '/FE/设计模式.md',
       },
     ],
   },
