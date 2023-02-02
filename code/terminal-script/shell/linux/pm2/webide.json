@@ -1,0 +1,12 @@
+{
+    "apps": [
+        {
+            "name": "webide",    //应用进程名称 
+            "cwd":"../../../webide",
+            "script": "npm",        //启动脚本或脚本路径
+            "args": "run server",  //传递给脚本的参数
+            "out_file": "~/aweb/logs/webide-app.log",   //记录标准输出流
+            "error_file": "~/aweb/logs/webide-err.log",   //记录标准错误流
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+	"apps":[
+		{
+			"name":"bff",
+			"cwd":"../../../bff",
+			"script":"java",
+			"args":[
+				"-Dfile.encoding=utf-8",
+				"-Dspring.config.location=../bff/application.yml",
+				"-jar",
+				"./bff.war"
+			],
+			"out_file": "~/aweb/logs/bff-app.log",   //记录标准输出流
+			"error_file": "~/aweb/logs/bff-err.log",   //记录标准错误流
+		}
+	]
+}

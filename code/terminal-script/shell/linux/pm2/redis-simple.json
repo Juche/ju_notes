@@ -1,0 +1,14 @@
+{
+	"apps":[
+		{
+			"name":"redis-simple",
+			"cwd":"../../../redis/redis-5.0.2",
+			"script":"./src/redis-server",
+			"args":[
+				"../conf/redis.conf"
+			],
+			"out_file": "~/aweb/logs/redis-app.log",   //记录标准输出流
+			"error_file": "~/aweb/logs/redis-err.log",   //记录标准错误流
+		}
+	]
+}

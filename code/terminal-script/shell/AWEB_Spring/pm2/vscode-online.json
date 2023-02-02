@@ -1,0 +1,10 @@
+{  
+     "apps": [{
+             "name": "vscode-online",
+             "script": "../../vscode-online/code-server-3.8.0-linux-amd64/node",
+             "args": "../../vscode-online/code-server-3.8.0-linux-amd64/out/node/entry.js --port 10242 --host 0.0.0.0 --auth none",
+	     "out_file": "~/webide/logs/vscode-online-app.log",   //记录标准输出流
+	     "error_file": "~/webide/logs/vscode-online-err.log",   //记录标准错误流
+         }]
+ }
+

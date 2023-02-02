@@ -1,0 +1,11 @@
+{  
+     "apps": [{
+             "name": "vscode-online",
+             "cwd":"../../../vscode-online",
+             "script": "./code-server-3.5.0-linux-x86_64/node",
+             "args": "./code-server-3.5.0-linux-x86_64/out/node/entry.js --port 10242 --host 0.0.0.0 --auth none",
+	     "out_file": "~/aweb/logs/vscode-online-app.log",   //记录标准输出流
+	     "error_file": "~/aweb/logs/vscode-online-err.log",   //记录标准错误流
+         }]
+ }
+

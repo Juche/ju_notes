@@ -1,0 +1,15 @@
+{
+	"apps":[
+		{
+			"name":"mysql",
+			"cwd":"../../../mysql",
+			"script":"./bin/mysqld",
+			"args":[
+				"--defaults-file=/home/dpusr/aweb/mysql/my.cnf",
+				"--user=dpuser &",
+			],
+			"out_file": "~/aweb/logs/mysql-app.log",   //记录标准输出流
+			"error_file": "~/aweb/logs/mysql-err.log",   //记录标准错误流
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"apps":[
+		{
+			"name":"aweb-screen",
+			"cwd":"../../../aweb_screen",
+			"script":"java",
+			"args":[
+				"-Dfile.encoding=utf-8",
+				"-Dspring.config.location=../aweb_screen/application.yml",
+				"-jar",
+				"./aweb_screen.war"
+			],
+			"out_file": "~/aweb/logs/aweb_screen-app.log",   //记录标准输出流
+			"error_file": "~/aweb/logs/aweb_screen-err.log",   //记录标准错误流
+		}
+	]
+}

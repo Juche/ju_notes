@@ -1,0 +1,23 @@
+{
+	"apps": [ 
+		{   
+			"name": "largeScreen-v2sual",	
+			"cwd":"../../../largeScreen",
+			"script": "node",        
+			"args": [
+				"./node_modules/@v2-services/webide.services.v2sual/server.js",
+				"ide=fusion",
+				"sh=http://localhost",
+				"sp=8080",
+				"id=screen",
+				"ch=http://localhost",
+				"cp=3005",
+				"preview=http://localhost:7003",
+				"name=大屏-应用展现"
+			], 
+			"out_file": "~/aweb/logs/large-screen-v2sual-app.log",  
+			"error_file": "~/aweb/logs/large-screen-v2sual-err.log" 
+		} 
+	]
+}
+       
