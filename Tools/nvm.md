@@ -1,8 +1,8 @@
-# node 版本管理工具(nvm-windows)
+# node 版本管理工具
 
 > <https://github.com/coreybutler/nvm-windows/releases>
 
-## 安装、管理 nodeJs
+## nvm 使用
 
 ```sh
 # 1、查看本地已经安装的所有版本命令（前面带\*号就是当前使用的）
