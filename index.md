@@ -72,7 +72,7 @@ fetchReleaseTag()
 
 [👉 指南](/Guide/index.md)
 
-[📋 笔记](/Note/index.md)
+[📋 笔记](/Deploy/index.md)
 
 [💻 开发](/Develop/index.md)
 

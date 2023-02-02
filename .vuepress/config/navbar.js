@@ -67,23 +67,23 @@ export const navbar = [
     children: [
       {
         text: 'index',
-        link: '/Note/index.md',
+        link: '/Deploy/index.md',
       },
       {
         text: '开发环境',
-        link: '/Note/1.开发环境.md',
+        link: '/Deploy/1.开发环境.md',
       },
       {
         text: '服务器环境',
-        link: '/Note/2.服务器环境.md',
+        link: '/Deploy/2.服务器环境.md',
       },
       {
         text: 'Dell服务器',
-        link: '/Note/3.Dell服务器.md',
+        link: '/Deploy/3.Dell服务器.md',
       },
       {
         text: 'docker笔记',
-        link: '/Note/4.docker笔记.md',
+        link: '/Deploy/4.docker笔记.md',
       },
     ],
   },
