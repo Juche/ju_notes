@@ -43,10 +43,4 @@ export const sidebar = {
       children: ['/Guide/index.md', '/Guide/markdown.md'],
     },
   ],
-  '/Meeting/': [
-    {
-      text: '会议',
-      children: ['/Meeting/index.md', '/Meeting/1.会议20210607.md'],
-    },
-  ],
 };

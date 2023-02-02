@@ -102,20 +102,6 @@ export const navbar = [
     ],
   },
   {
-    text: '会议',
-    ariaLabel: '会议',
-    children: [
-      {
-        text: 'index',
-        link: '/Meeting/index.md',
-      },
-      {
-        text: '会议20210607',
-        link: '/Meeting/1.会议20210607.md',
-      },
-    ],
-  },
-  {
     text: '相关链接',
     children: [
       {
