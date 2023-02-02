@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Plugin</title>
+</head>
+<body>
+  <h3>Vue Plugin</h3>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script>
+    const RulesPlugin = {
+      install(Vue) {
+        Vue.mixin({
+          created() {
+            this.m1();
+            if(this.$options.rules) {
+              console.log('RulesPlugin On Use');
+              console.log(`🚀 ~ Object.keys ~ this.$options`, this.$options)
+              Object.keys(this.$options.rules).forEach((key) => {
+                let rule = this.$options.rules[key]
+                console.log(rule);
+                this.$watch(key, (newVal, oldVal) => {
+                  let result = rule.validate(newVal);
+                  this.$options.data[key] = newVal;
+                  if(!result) {
+                    this.$options.data[key] = oldVal;
+                    console.log(rule.message);
+                  }
+                })
+              })
+            }
+          },
+          methods: {
+            m1() {
+              console.log('A mixin method');
+            }
+          },
+        })
+      }
+    }
+
+    Vue.use(RulesPlugin)
+
+    const app = new Vue({
+      data() {
+        return {
+          name: '',
+          age: 0
+        }
+      },
+      rules: {
+        name: {
+          validate: val => typeof val === 'string',
+          message: 'name must be string',
+        },
+        age: {
+          validate: val => val >=0 && val <= 100,
+          message: 'age is range from 0 to 100',
+        },
+      },
+      created() {
+        this.name = 'Juching';
+        console.log(`🚀 ~ mounted ~ this.name`, this.name)
+        this.age = 30;
+        console.log(`🚀 ~ mounted ~ this.age`, this.age)
+      },
+    })
+  </script>
+</body>
+</html>

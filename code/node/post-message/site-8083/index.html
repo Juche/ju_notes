@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site 8083</title>
+  </head>
+  <body>
+    <h1>Site 8083 主页</h1>
+    <button onclick="postMsgToParent()">发送数据给 8081</button>
+    <button onclick="pullMsgFromParent()">从 8081 获取数据</button>
+    <script>
+      function postMsgToParent() {
+        var targetOrigin = "http://localhost:8081/";
+        parent.postMessage("8083 copy that!", targetOrigin);
+      }
+      async function pullMsgFromParent() {
+        var targetOrigin = "http://localhost:8081/";
+        // 通过 promise 包装的 XMLHttpRequest 获取请求数据
+        // let userInfo = await getUser();
+
+        // 通过 fetch 获取请求数据
+        // fetch("/getUser")
+        //   .then((response) => response.json())
+        //   .then((json) => console.log(json))
+        //   .catch((err) => console.log("Request Failed", err));
+
+        // 通过 await 简写 fetch 请求结果
+        try {
+          var res = await fetch("/getUser", { method: "GET" });
+          var userInfo = await res.json();
+        } catch (error) {
+          console.log(`🚀 ~ pullMsgFromParent ~ error`, error);
+        }
+        // var userInfo = await (await fetch("/getUser", { method: "GET" })).json();
+        // console.log(`🚀 ~ pullMsgFromParent ~ userInfo`, userInfo)
+        parent.postMessage(userInfo, targetOrigin);
+      }
+      window.addEventListener("message", function (e) {
+        console.log("来自父页面的消息: ", e.data);
+      });
+
+      function getUser() {
+        // 包装成 promise 对象
+        return new Promise(function (resolve, reject) {
+          var xhr = new XMLHttpRequest();
+          // var response;
+          xhr.open("GET", "/getUser", true);
+          xhr.onload = function () {
+            // response = await xhr.response;
+            // console.log(`🚀 ~ xhr.response`, xhr.response);
+            resolve(JSON.parse(xhr.response));
+          };
+          xhr.send();
+        });
+
+        // return fetch
+      }
+
+      // xhr.open("get", "http://localhost:8083/getUser", true);
+      // xhr.onload = function () {
+      //   console.log(`🚀 ~ xhr.response`, xhr.response);
+      // };
+      // xhr.send();
+    </script>
+  </body>
+</html>

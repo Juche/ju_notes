@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site 8081</title>
+  </head>
+  <body>
+    <h1>Site 8081 主页</h1>
+    <h3>通过iframe引入的 Site 8083 主页</h3>
+    <iframe id="site-8083" src="http://localhost:8083/index.html"></iframe>
+    <hr>
+    <button onclick="postMsgToIframe('Hello site8083!')">给 8083 发送数据</button>
+    <script>
+      function postMsgToIframe (msg) {
+        var site8083 = document.getElementById("site-8083");
+        var targetOrigin = "http://localhost:8083";
+        site8083.contentWindow.postMessage(msg, targetOrigin);
+      };
+      window.addEventListener("message", function (e) {
+        console.log("来自 site8083 的消息:", e.data);
+
+        if(e.data.name) {
+          postMsgToIframe(`Hello ${e.data.name}, I'm Juche`);
+        }
+      });
+    </script>
+  </body>
+</html>

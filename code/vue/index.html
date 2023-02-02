@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Demo</title>
+    <!-- <link rel="stylesheet" href="./lib/ant-design-vue/antd.css" /> -->
+    <style lang="">
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="demo" v-cloak>
+      <h3>{{ message }}</h3>
+      <comp-prop :prop-ctt="propCtt"></comp-prop>
+      <br />
+      <comp-emit @trans="getCtt"></comp-emit>
+      <br />
+      <p>来自子元素的数据: {{emitCtt}}</p>
+      <br />
+      <comp-a></comp-a>
+      <br />
+      <comp-b></comp-b>
+      <br />
+      <button-counter></button-counter>
+      <br />
+      input event change:
+      <input :value="inputCtt" @input="inputCtt = $event.target.value" />
+      <br />
+      change event change:
+      <input :value="inputCtt" @change="inputCtt = $event.target.value" />
+      <br />
+      inputCtt: {{inputCtt}}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+
+      // const Bus = new Vue();  // vue2
+      // 为保持和vue2版本中使用bus一致，emit,on,off前面都加了$
+      const Bus = {
+        list: {},
+        constructor() {
+          // 收集订阅信息,调度中心
+          this.list = {};
+        },
+
+        // 订阅
+        $on(name, fn) {
+          this.list[name] = this.list[name] || [];
+          this.list[name].push(fn);
+        },
+
+        // 发布
+        $emit(name, data) {
+          if (this.list[name]) {
+            this.list[name].forEach((fn) => {
+              fn(data);
+            });
+          }
+        },
+
+        // 取消订阅
+        $off(name) {
+          if (this.list[name]) {
+            delete this.list[name];
+          }
+        },
+      }
+
+      const App = {
+        data() {
+          return {
+            propCtt: "prop ctt from father",
+            emitCtt: "",
+            message: "Hello Vue!!",
+            inputCtt: "123",
+          };
+        },
+        methods: {
+          getCtt(ctt) {
+            this.emitCtt = ctt;
+          },
+        },
+      };
+
+      const vm = Vue.createApp(App);
+
+      vm.component("compProp", {
+        template: `<p>{{ propCtt }}</p>`,
+        props: ["propCtt"],
+      });
+
+      vm.component("compEmit", {
+        template: `<button @click="trans">子传父</button>`,
+        data() {
+          return {
+            msgToFather: "msg from child",
+          };
+        },
+        methods: {
+          trans() {
+            this.$emit("trans", this.msgToFather);
+          },
+        },
+      });
+
+      vm.component("compA", {
+        template: `<button @click="toBus">子组件A</button>`,
+        methods: {
+          toBus() {
+            Bus.$emit("busEv", "来自兄弟组件A");
+          },
+        },
+      });
+
+      vm.component("compB", {
+        template: `<p>子组件B 接受来自A的消息: <b>{{msgFromA}}</b> </p>`,
+        data() {
+          return {
+            msgFromA: "",
+          };
+        },
+        mounted() {
+          Bus.$on('busEv', (event) => {
+            this.msgFromA = event;
+          })
+        },
+      });
+
+      vm.component("button-counter", {
+        data() {
+          return {
+            count: 0,
+          };
+        },
+        template: `
+        <button v-on:click="count++">
+          You clicked me {{ count }} times.
+        </button>`,
+      });
+
+      vm.mount("#app");
+    </script>
+  </body>
+</html>

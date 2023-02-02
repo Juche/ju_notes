@@ -1,0 +1,14 @@
+{
+  "name": "collect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Juching",
+  "license": "MIT",
+  "devDependencies": {
+    "koa": "^2.13.4",
+    "koa-cors": "^0.0.16",
+    "koa-router": "^10.1.1",
+    "koa-server-http-proxy": "^0.1.0",
+    "koa-static": "^5.0.0"
+  }
+}

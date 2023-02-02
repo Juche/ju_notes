@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .ctn {
+        width: 100%;
+        height: 50vh;
+        box-sizing: border-box;
+        display: flex;
+        /* flex-direction: row;
+        flex-wrap: nowrap; */
+        /* flex-flow: row wrap; */
+        /* align-content: center; */
+        align-items: center;
+        justify-content: center;
+        background: #eee;
+      }
+      .ctt {
+        width: 100px;
+        height: 100px;
+        /* flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 100px;
+        flex: 0 0 100px;
+        align-self: center; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .ctn1 {
+        transform-style: preserve-3d;
+        perspective: 200px;
+        perspective-origin: 50% 50%;
+        backface-visibility: hidden;
+      }
+      .ctn1 .ctt {
+        transform: rotateY(30deg) translateX(-50%);
+      }
+      .ctn2 .ctt {
+        perspective-origin: 0;
+        transform: perspective(200px) rotateY(30deg);
+      }
+
+      .ctt1 {
+        background: #f00;
+      }
+      .ctt2 {
+        height: 150px;
+        flex-basis: 150px;
+        /* align-self: start; */
+        background: #ff0;
+      }
+      .ctt3 {
+        background: #0f0;
+      }
+      .ctt4 {
+        background: #0ff;
+      }
+      .ctt5 {
+        background: #00f;
+      }
+      .ctt6 {
+        background: #f0f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ctn ctn1">
+      <div class="ctt ctt1">ctt1</div>
+      <div class="ctt ctt2">ctt2</div>
+      <div class="ctt ctt3">ctt3</div>
+      <div class="ctt ctt4">ctt4</div>
+      <div class="ctt ctt5">ctt5</div>
+      <div class="ctt ctt6">ctt6</div>
+    </div>
+    <div class="ctn ctn2">
+      <div class="ctt ctt1">ctt1</div>
+      <div class="ctt ctt2">ctt2</div>
+      <div class="ctt ctt3">ctt3</div>
+      <div class="ctt ctt4">ctt4</div>
+      <div class="ctt ctt5">ctt5</div>
+      <div class="ctt ctt6">ctt6</div>
+    </div>
+  </body>
+</html>

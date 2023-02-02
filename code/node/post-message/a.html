@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page A</title>
+  </head>
+  <body>
+    <h1>这是页面 A</h1>
+    <h3>下面是页面B,通过iframe引入</h3>
+    <!-- <iframe id="page-b" src="http://127.0.0.1:5500/b.html"></iframe>
+    <iframe id="page-c" src="http://127.0.0.1:5500/c.html"></iframe> -->
+    <iframe id="page-b" src="./b.html"></iframe>
+    <iframe id="page-c" src="./c.html"></iframe>
+    <script>
+      // window.onload = function () {
+      //   // let targetOrigin = "http://127.0.0.1:5500";
+      //   let targetOrigin = "/";
+      //   //想要操作当前iframe的时候，就像该ifranme中postMessage()一个东西。
+      //   window.frames[0].postMessage("我要给你发消息了!", targetOrigin);
+      //   //*表示任何域都可以监听。
+      // };
+      // //当我监听到message事件的时候，我就知道有人向我发送数据了，我获得了数据就可以做对应的事情。内部对消息做实现
+      // window.addEventListener("message", function (e) {
+      //   console.log("a.html 接收到的消息:", e.data);
+      // });
+
+      window.onload = function () {
+        var pageB = document.getElementById("page-b");
+        var pageC = document.getElementById("page-c");
+        // var targetOrigin = "http://www.google.com";
+        var targetOrigin = "/";
+        pageB.contentWindow.postMessage("Hello pageB!", targetOrigin);
+        pageC.contentWindow.postMessage("Hello pageC!", targetOrigin);
+      };
+      window.addEventListener("message", function (e) {
+        console.log("来自 pageB 的答复:", e.data);
+        console.log("来自 pageC 的答复:", e.data);
+      });
+    </script>
+  </body>
+</html>

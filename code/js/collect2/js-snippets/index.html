@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <title>JS Snippets</title>
+  </head>
+  <body>
+    <h1>JS Snippets</h1>
+    <div style="height:10000px"></div>
+
+    <!-- <script src="./0.test.js"></script> -->
+    <!-- <script src="./0.implementation.js"></script> -->
+    <script type="module">
+      // 模块仅为副作用（中性词、无贬义含义）而导入
+      // 而不是导入模块中的任何内容，这将运行模块中的全局代码，但实际上不导入任何值
+      // import './0.test.js'
+      import './0.implementation.js'
+      // import './1.deepCloneUse.js';
+      // import './2.proto.js';
+      // import './3.fetch.js';
+      // import './4.promiseUse.js'
+      // import './5.generatorUse.js'
+      // import './6.proxyUse.js'
+      // import './7.class.js'
+
+      // module 标签中的 this 为 undefined
+      // console.log(this); // undefined
+    </script>
+
+    <!-- 1. 直接引入 js,并直接使用里面定义的方法 -->
+    <!-- <script src="./deepCloneModule.js"></script>
+    <script>
+      let obj = { a: 123 };
+      let _obj = deepClone1(obj);
+      console.log(`🚀 ~ _obj`, _obj);
+      console.log(`🚀 ~ _obj === obj`, _obj === obj);
+    </script> -->
+    <!-- 2. 通过模块的方式引入 js 文件 -->
+    <!-- <script type="module">
+      // 1. export default deepClone
+      // export default 时,引入不需要大括号包裹
+      // import deepClone1 from "./deepCloneModule.js";
+
+      // 2. export { deepClone1, deepClone2, deepClone3 } 形式的输出通过以下方式引入
+      // import { deepClone1, deepClone2, deepClone3 } from "./deepCloneModule.js";
+
+      // 3. 通过下列方式按需引入,逻辑可以在判断条件中
+      import('./deepCloneModule.js').then(
+        ({deepClone1, deepClone2, deepClone3}) => {
+          let obj = { a: 123 };
+          let _obj = deepClone1(obj);
+          console.log(`🚀 ~ _obj`, _obj);
+          console.log(`🚀 ~ _obj === obj`, _obj === obj);
+        }
+      );
+    </script> -->
+  </body>
+</html>

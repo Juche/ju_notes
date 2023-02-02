@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page B</title>
+  </head>
+  <body>
+    <h3>我是页面B的内容</h3>
+    <script>
+      window.addEventListener("message", function (e) {
+        if (e.source != window.parent) {
+          return;
+        }
+        let data = e.data;
+        console.log("来自父页面的问候: ", data);
+        parent.postMessage("我已经接收到消息了!", e.origin);
+      });
+    </script>
+  </body>
+</html>

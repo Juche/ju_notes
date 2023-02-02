@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .ctn {
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse;
+        flex-wrap: wrap; */
+        flex-flow: row-reverse wrap;
+        padding: 20px;
+        /* align-content: center; */
+        align-items: center;
+        justify-content: center;
+        background: #eee;
+      }
+      .ctt {
+        /* width: 100px; */
+        height: 100px;
+        /* flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100px; */
+
+        /* flex: initial;
+        flex: 0 1 auto;
+
+        flex: auto;
+        flex: 1 1 auto;
+
+        flex: none;
+        flex: 0 0 auto;
+
+        flex: 1;
+        flex: 1 1 0; */
+
+        flex: 0 0 100px;
+      }
+      .ctt1 {
+        background: #f00;
+      }
+      .ctt2 {
+        height: 150px;
+        flex-basis: 150px;
+        background: #ff0;
+        align-self: start;
+      }
+      .ctt3 {
+        background: #0f0;
+      }
+      .ctt4 {
+        background: #0ff;
+      }
+      .ctt5 {
+        background: #00f;
+      }
+      .ctt6 {
+        background: #f0f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ctn">
+      <div class="ctt ctt1">ctt1</div>
+      <div class="ctt ctt2">ctt2</div>
+      <div class="ctt ctt3">ctt3</div>
+      <div class="ctt ctt4">ctt4</div>
+      <div class="ctt ctt5">ctt5</div>
+      <div class="ctt ctt6">ctt6</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page C</title>
+  </head>
+  <body>
+    <h3>我是页面C的内容</h3>
+    <script>
+      window.addEventListener("message", (event) => {
+        var data = event.data; //消息
+        var origin = event.origin; //消息来源地址
+        var source = event.source; //源Window对象
+        // if (origin == "http://www.baidu.com") {
+        //   console.log(data); //hello world!
+        // }
+        // console.log(`🚀 ~ window.addEventListener ~ event`, event);
+        console.log('来自父页面的问候: ', data); //hello world!
+      }, false);
+
+      // parent.postMessage('Hello parentPage!');
+    </script>
+  </body>
+</html>
