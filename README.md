@@ -15,6 +15,8 @@
 - [ ] node
 - [ ] 脚本工具(shell/node/cmd)
 - [x] 代码迁移到 github
+- [ ] 文档部署(gitee & vercel / netlify)
+- [ ] 整理 echarts 示例
 
 ## 文档清单
 
