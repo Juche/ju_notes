@@ -2,18 +2,19 @@
 
 ## TODO
 
-- 文档搜索: `algolia docsearch`
-- 评论: `giscus`
-- 主题调色板: `@vuepress/plugin-palette@next`
-- 文档分类整理
-- 设计模式
-- 前端新特性
-- 网络
-- 算法
-- 函数式编程
-- mini 框架
-- node
-- 脚本工具(shell/node/cmd)
+- [ ] 文档搜索: `algolia docsearch`
+- [ ] 评论: `giscus`
+- [ ] 主题调色板: `@vuepress/plugin-palette@next`
+- [ ] 文档分类整理
+- [ ] 设计模式
+- [ ] 前端新特性
+- [ ] 网络
+- [ ] 算法
+- [ ] 函数式编程
+- [ ] mini 框架
+- [ ] node
+- [ ] 脚本工具(shell/node/cmd)
+- [x] 代码迁移到 github
 
 ## 文档清单
 
