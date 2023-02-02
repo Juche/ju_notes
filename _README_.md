@@ -13,6 +13,7 @@
 - 函数式编程
 - mini 框架
 - node
+- 脚本工具(shell/node/cmd)
 
 ## 文档清单
 
