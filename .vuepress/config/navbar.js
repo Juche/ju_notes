@@ -2,46 +2,6 @@ export const navbar = [
   // { text: '指引', link: '/guide/' },
   // { text: '配置', link: '/config/' },
   {
-    text: '指南',
-    ariaLabel: '指南',
-    children: [
-      {
-        text: 'index',
-        link: '/Guide/index.md',
-      },
-      {
-        text: 'Markdown 示例',
-        link: '/Guide/markdown.md',
-      },
-    ],
-  },
-  {
-    text: '笔记',
-    ariaLabel: '笔记',
-    children: [
-      {
-        text: 'index',
-        link: '/Note/index.md',
-      },
-      {
-        text: '开发环境',
-        link: '/Note/1.开发环境.md',
-      },
-      {
-        text: '服务器环境',
-        link: '/Note/2.服务器环境.md',
-      },
-      {
-        text: 'Dell服务器',
-        link: '/Note/3.Dell服务器.md',
-      },
-      {
-        text: 'docker笔记',
-        link: '/Note/4.docker笔记.md',
-      },
-    ],
-  },
-  {
     text: '前端',
     ariaLabel: '前端',
     children: [
@@ -102,32 +62,42 @@ export const navbar = [
     ],
   },
   {
-    text: '文档',
-    ariaLabel: '文档',
+    text: '部署',
+    ariaLabel: '部署',
     children: [
       {
         text: 'index',
-        link: '/Doc/index.md',
+        link: '/Note/index.md',
+      },
+      {
+        text: '开发环境',
+        link: '/Note/1.开发环境.md',
+      },
+      {
+        text: '服务器环境',
+        link: '/Note/2.服务器环境.md',
+      },
+      {
+        text: 'Dell服务器',
+        link: '/Note/3.Dell服务器.md',
+      },
+      {
+        text: 'docker笔记',
+        link: '/Note/4.docker笔记.md',
       },
     ],
   },
   {
-    text: '百科',
-    ariaLabel: '百科',
+    text: '指南',
+    ariaLabel: '指南',
     children: [
       {
         text: 'index',
-        link: '/Wiki/index.md',
+        link: '/Guide/index.md',
       },
-    ],
-  },
-  {
-    text: '问题',
-    ariaLabel: '问题',
-    children: [
       {
-        text: 'index',
-        link: '/Issue/index.md',
+        text: 'Markdown 示例',
+        link: '/Guide/markdown.md',
       },
     ],
   },
