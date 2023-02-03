@@ -7,13 +7,15 @@ function start(route, handleMap) {
 
   const server = createServer((req, res) => {
     const { path } = parse(req.url);
-    const resMsg = route(path, handleMap);
+    route(path, handleMap, res);
 
-    res.statusCode = 200;
-    res.setHeader('Content-type', 'text/plain');
-    // res.write(`Hello ${path}`);
-    res.write(resMsg);
-    res.end();
+    // const resMsg = route(path, handleMap);
+
+    // res.statusCode = 200;
+    // res.setHeader('Content-type', 'text/plain');
+    // // res.write(`Hello ${path}`);
+    // res.write(resMsg);
+    // res.end();
   });
 
   server.listen(port, hostname, () => {
