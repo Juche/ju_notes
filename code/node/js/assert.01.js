@@ -18,6 +18,7 @@ const err = (op) => {
 };
 
 // equal(arr1, arr2);
+deepEqual('+00000000', false, err('deepEqual'));
 equal(arr1, arr2, err('equal'));
 deepEqual(arr1, arr2, err('deepEqual'));
 notEqual(arr1, arr2, err('notEqual'));
