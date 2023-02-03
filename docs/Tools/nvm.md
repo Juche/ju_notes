@@ -13,6 +13,8 @@ nvm list available
 
 # 3、安装指定版本(v 版本号)
 nvm install v12.16.0
+nvm install latest // 最新版
+nvm install lts // 最新长期支持版
 
 # 4、指定版本
 nvm use v12.16.0
