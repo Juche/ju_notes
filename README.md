@@ -13,6 +13,7 @@
 - [ ] 函数式编程
 - [ ] mini 框架
 - [ ] node
+- [ ] mock & 测试用例
 - [ ] 脚本工具(shell/node/cmd)
 - [x] 代码迁移到 github
 - [ ] 文档部署(gitee & vercel / netlify)
