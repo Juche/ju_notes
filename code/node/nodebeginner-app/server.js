@@ -10,17 +10,18 @@ function start(route, handleMap) {
 
     let postData = '';
 
-    req.setEncoding('utf8');
+    // req.setEncoding('utf8');
 
-    req.addListener('data', (chunk) => {
-      debugger;
-      console.log(`🚀 ~ req.addListener ~ chunk`, chunk);
-      postData += chunk;
-    });
+    // req.addListener('data', (chunk) => {
+    //   console.log(`🚀 ~ req.addListener ~ chunk`, chunk);
+    //   postData += chunk;
+    // });
 
-    req.addListener('end', () => {
-      route(path, handleMap, res, postData);
-    });
+    // req.addListener('end', () => {
+    //   route(path, handleMap, req, res, postData);
+    // });
+
+    route(path, handleMap, req, res, postData);
 
     // const resMsg = route(path, handleMap);
 
