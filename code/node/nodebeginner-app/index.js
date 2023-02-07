@@ -6,6 +6,7 @@ const handleMap = {
   '/': request.start,
   '/index': request.start,
   '/upload': request.upload,
+  '/show': request.show,
 };
 
 start(route, handleMap);

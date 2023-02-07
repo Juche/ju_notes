@@ -8,11 +8,12 @@ function start(route, handleMap) {
   const server = createServer((req, res) => {
     const { path } = parse(req.url);
 
-    let postData;
+    let postData = '';
 
     req.setEncoding('utf8');
 
     req.addListener('data', (chunk) => {
+      debugger;
       console.log(`🚀 ~ req.addListener ~ chunk`, chunk);
       postData += chunk;
     });
