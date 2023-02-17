@@ -1,0 +1,7 @@
+{
+  "fileOrder": true,
+  "fileType": "md",
+  "initCtt": "# $NAME\n",
+  "filePath": "test/md",
+  "fileList": ["简单工厂模式", "工厂方法模式"]
+}
