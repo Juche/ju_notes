@@ -1,4 +1,7 @@
 {
+  "fileOrder": true,
+  "fileType": "js",
+  "initCtt": "/**\n * @$NAME\n */",
   "filePath": "code/js/设计模式",
   "fileList": [
     "简单工厂模式",
