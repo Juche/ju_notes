@@ -19,9 +19,10 @@
   - [ ] 算法
   - [ ] 函数式编程
   - [ ] mini 框架
-  - [ ] node (Node in action)
   - [ ] mock & 测试用例
+  - [ ] node (Node in action)
   - [ ] 脚本工具(shell/node/cmd)
+  - [ ] 工程化
 
 ## 文档清单
 
