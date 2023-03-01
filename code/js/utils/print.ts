@@ -1,3 +1,8 @@
+// https://juejin.cn/post/7029126309393465358
+// https://segmentfault.com/a/1190000010145260
+// https://developer.mozilla.org/en-US/docs/Web/Guide/Printing
+// https://printjs.crabbly.com/
+
 type RowIndex = {
   title: string;
   style?: string;
