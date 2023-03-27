@@ -1,0 +1,35 @@
+// TODO: 考虑直接使用 CDN 资源
+$dev: 'http://192.168.2.34:5500/assets/fonts/';
+// $dev: 'http://127.0.0.1:5500/assets/fonts/';
+// $pro: 'http://39.105.138.30/assets/fonts/';
+// $pro: 'http://123.57.225.133/prod-api/profile/fonts/';
+$pro: 'https://dekochina.com/prod-api/profile/assets/fonts/';
+$fonts: $pro;
+// // 中文
+// @font-face {
+//   font-family: 'NotoSans';
+//   src: url($fonts + 'NotoSansHans-Medium.otf') format('TrueType');
+// }
+// // 英文 & 数字
+// @font-face {
+//   font-family: 'OpenSans';
+//   src: url($fonts + 'OpenSans-Semibold.ttf') format('OpenType');
+// }
+// @font-face {
+//   font-family: 'OpenSansBold';
+//   src: url($fonts + 'OpenSans-Bold.ttf') format('OpenType');
+// }
+// 中文
+@font-face {
+  font-family: 'Lantinghei';
+  src: url($fonts + 'Lantinghei.ttc');
+}
+// 英文 & 数字
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url($fonts + 'Gotham-Light.otf');
+}
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url($fonts + 'Gotham-Bold.otf');
+}

@@ -1,0 +1,377 @@
+page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  // 配置底部安全区域
+  //iOS 11
+  // padding-right: constant(safe-area-inset-right);
+  // padding-bottom: constant(safe-area-inset-bottom);
+  // padding-left: constant(safe-area-inset-left);
+
+  // iOS 11.2+
+  // padding-right: env(safe-area-inset-right);
+  // padding-bottom: env(safe-area-inset-bottom);
+  // padding-left: env(safe-area-inset-left);
+}
+
+.container,
+.container-sb,
+.container-full {
+  background-color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-between;
+  box-sizing: border-box;
+  // padding: $px50 $px32 $px36 $px32;
+  // padding: $px150 0 $px36 0;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Lantinghei';
+  font-size: $px18;
+  // font-weight: 600;
+  color: #515151;
+}
+.container {
+  padding: px(120) 0 $px60 0;
+}
+.container-sb {
+  padding: $px150 0 $px60 0;
+  justify-content: space-between;
+}
+// .container-full {}
+
+// 350 是设计稿版心的宽度
+.type-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  // width: $px350;
+}
+.type-area-ctt {
+  width: $px350;
+  box-sizing: border-box;
+}
+.has-tab-bar {
+  padding-bottom: $px76;
+}
+
+.hide-scrollbar {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+  }
+}
+
+// .pt-150 {
+//   padding-top: $px150;
+// }
+// .pt-50 {
+//   padding-top: $px50;
+// }
+
+// 字体样式
+.f-zh {
+  font-family: 'Lantinghei';
+}
+.f-zh-b {
+  font-family: 'Lantinghei';
+  font-weight: bold;
+}
+
+.f-en,
+.num {
+  font-family: 'Gotham-Light', 'Lantinghei';
+}
+.f-en-b,
+.num-b {
+  font-family: 'Gotham-Bold', 'Lantinghei';
+  font-weight: bold;
+}
+.fwb {
+  font-weight: bold;
+}
+.h1,
+.fz-36 {
+  line-height: $px50;
+  font-size: $px36;
+  font-weight: bold;
+}
+.h2,
+.fz-24 {
+  line-height: $px36;
+  font-size: $px24;
+  font-weight: bold;
+}
+.h3,
+.fz-20 {
+  line-height: $px24;
+  font-size: $px20;
+}
+.h4,
+.fz-18 {
+  line-height: $px20;
+  font-size: $px18;
+}
+.h5,
+.fz-14 {
+  line-height: $px16;
+  font-size: $px14;
+}
+.h-note {
+  // 标题的说明文字
+  margin-top: px(8);
+  margin-bottom: $px24;
+  // color: #9C9C9C;
+  // font-weight: bold;
+}
+
+// 系统默认样式或第三方组件样式自定义
+.border-input,
+.custom-input,
+.custom-picker {
+  margin-top: $px16;
+  padding: 0 48rpx;
+  box-sizing: border-box;
+  width: $px350;
+  // height: $px76;
+  // line-height: $px76;
+  height: $px60;
+  line-height: $px60;
+  border-radius: $px20;
+  font-size: $px14;
+  // &::placeholder {
+  //   font-size: $px18;
+  //   color: #C0C0C0;
+  // }
+}
+.border-input {
+  margin-top: 0;
+  border: 1.5px solid #e8e8e8;
+}
+.custom-input {
+  background: #f6f6f6;
+}
+button {
+  flex-shrink: 0;
+  // margin-top: $px16;
+  // width: $px350;
+  // width: 100%;
+  height: $px50;
+  line-height: $px50;
+  border-radius: $px16;
+  font-size: $px14;
+}
+button:after {
+  // border: 2px solid rgba(58, 212, 212, 0.37);
+  // border: 2px solid rgba(151, 197, 188, 0.63);
+  border: none;
+  border-radius: $px32;
+}
+button[type='default'] {
+  margin: 0; // 适配微信样式
+  background-color: #eaeaea;
+}
+button.primary {
+  margin: 0; // 适配微信样式
+  background-color: $uni-primary;
+  // color: rgba(81, 81, 81, 1);
+  color: #fff;
+  // &:hover {
+  //   background-color: darken($uni-primary, 20%);
+  // }
+}
+button.white {
+  margin: 0; // 适配微信样式
+  background-color: #fff;
+}
+/**
+  * 适配 App && H5 样式
+  * 按钮点击样式 && 按钮特定状态样式
+  */
+.button-hover[type='primary'] {
+  background-color: $uni-color-success;
+  // color: hsla(0,0%,100%,.6);
+}
+
+uni-button[disabled][type='primary'] {
+  background: $uni-color-disable;
+  // color: #eee;
+}
+
+.btn-filter,
+.btn-filter-active {
+  margin: 0 px(6);
+  // margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: px(90);
+  height: $px40;
+  line-height: $px40;
+  border-radius: $px10;
+  &:after {
+    border: 2px solid #838383;
+    border-radius: px(20);
+  }
+}
+.btn-filter-active {
+  background: #363636;
+  color: #fff;
+}
+
+.icon-filter-border .icon-box {
+  border: 1px solid #838383;
+}
+
+// 竖直排列按钮组
+.btn-group-col {
+  margin-top: $px32;
+  box-sizing: border-box;
+  width: $px350;
+  button:not(:first-child) {
+    margin-top: $px16;
+  }
+}
+// 水平排列按钮组
+.btn-group-row,
+.btn-group-row-sm {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 100%;
+  button {
+    flex: 1;
+    &:not(:first-child) {
+      margin-left: px(16);
+    }
+  }
+}
+
+.btn-group-row-sm {
+  // padding: px(16);
+  button {
+    height: px(48);
+    line-height: px(48);
+  }
+}
+
+// .checkbox {
+//   display: flex;
+//   align-items: center;
+//   &::before {
+//     content: '';
+//     margin-right: px(16);
+//     display: block;
+//     width: px(16);
+//     height: px(16);
+//     border: 4rpx solid $uni-color-primary;
+//     border-radius: 50%;
+//   }
+//   &.checked {
+//     &::before {
+//       background-color: $uni-color-primary;
+//     }
+//   }
+// }
+
+/deep/ uni-search-bar .uni-searchbar {
+  margin: $px24 0;
+  padding: 0 !important;
+  .uni-searchbar__box {
+    justify-content: flex-start;
+    height: $px56;
+    // line-height: $px56;
+    border-radius: $px20 !important;
+    background: #f6f6f6;
+  }
+  .uni-icons {
+    margin-left: px(8);
+    font-size: $px24 !important;
+  }
+  .uniui-search {
+    font-weight: bold;
+    color: #9aa5c1 !important;
+  }
+}
+
+.icon-close {
+  position: relative;
+  z-index: 10; // 防止被其他元素遮罩
+  .icon-box {
+    border-radius: $px10 !important;
+    // .icon {
+    //   transform: scale(0.7);
+    // }
+  }
+}
+
+.cart-shortcut {
+  position: fixed;
+  bottom: px(114);
+  right: $px24;
+  z-index: 88;
+  /deep/ .icon-box {
+    box-shadow: px(3) px(3) $px20 #0003;
+  }
+}
+
+.custom-tabs {
+  // margin-bottom: $px24;
+  z-index: 90;
+  display: flex;
+  align-items: baseline;
+  width: $px350;
+  // height: px(60);
+  .tab-item {
+    margin-right: $px20;
+    font-size: px(16);
+    font-weight: bold;
+    color: #9C9C9C;
+    &.tab-active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // font-size: $px36;
+      font-size: px(24);
+      color: #444444;
+      &::after {
+        content: '';
+        display: block;
+        margin-top: px(6);
+        width: px(60);
+        height: px(6);
+        background-color: $uni-color-primary;
+        border-radius: px(5);
+      }
+    }
+  }
+}
+
+.limit {
+  width: 100%;
+  height: 100%;
+}
+
+// 微信小程序弹窗样式覆写,遮罩层添加模糊效果
+uni-popup.mask-light uni-transition .vue-ref {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(9px);
+}
+// H5弹窗样式覆写,遮罩层添加模糊效果
+.uni-popup.mask-light [name='mask'] {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(9px);
+}
+// APP弹窗样式覆写,遮罩层添加模糊效果
+.uni-popup.mask-light > uni-view > uni-view:first-child {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(9px);
+}
+
+.dg.ac {
+  top: 30px !important;
+  z-index: 100 !important;
+}

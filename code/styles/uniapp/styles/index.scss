@@ -1,0 +1,356 @@
+/* 标题 */
+.first-title {
+  font-size: $px20;
+  font-weight: bold;
+  color: #1f1f21;
+}
+
+.second-title {
+  font-size: $px18;
+  color: #000000;
+}
+
+.third-title {
+  font-size: $px16;
+  color: #000000;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-end{
+  text-align: end;
+}
+
+/* 色彩 */
+.text-primary {
+  color: #1998F1;
+}
+
+.text-content {
+  color: #737373;
+}
+
+.text-success {
+  color: #47C654;
+}
+
+.text-warning {
+  color: #FFB30E;
+}
+
+.text-error {
+  color: #EA0000;
+}
+
+.text-black {
+  color: #2E2D2D;
+}
+
+.text-gray {
+  color: #868BA1;
+}
+
+.text-666 {
+  color: #666;
+}
+
+.text-999 {
+  color: #999;
+}
+
+.text-orange {
+  color: #FF9137;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+/* 字号 */
+.font-blg {
+  font-size: 46rpx;
+}
+
+.font-lg {
+  font-size: $px20;
+}
+
+.font-md {
+  font-size: $px18;
+}
+
+.font-sm {
+  font-size: $px16;
+}
+
+.font-mini {
+  font-size: 24rpx;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-medium {
+  font-weight: normal;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+.flex-box{
+  display: flex;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-around {
+  justify-content: space-around;
+}
+.flex-row-start {
+  justify-content: flex-start;
+}
+.flex-row-center {
+  justify-content: center;
+}
+.flex-row-end {
+  justify-content: flex-end;
+}
+.flex-center{
+  justify-content: center;
+}
+.flex-col-center {
+  align-items: center;
+}
+.flex-col-top {
+  align-items: flex-start;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.flex-wrap{
+  flex-wrap:wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2{
+  flex:2;
+}
+.flex-3{
+  flex:3
+}
+.flex-4{
+  flex:4
+}
+.flex-w-1 {
+  flex: 1;
+  width: 0;
+}
+.flex-w-3 {
+  flex: 1;
+  width: 0;
+}
+.flex-h-1 {
+  flex: 1;
+  height: 0;
+}
+/* 辅助类 */
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ellipsis {
+  lines: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// 刘永存自定义css
+uni-modal .uni-modal__bd {
+	white-space: pre-wrap;
+}
+
+
+.go-back {
+	width: 50rpx;
+	height: 50rpx;
+	position: fixed;
+	top: 52rpx;
+	left: 32rpx;
+}
+
+/* flex  */
+.flex_cc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex_fs {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.flex_fsc {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flex_sb {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex_sbc {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex_sbs {
+	display: flex;
+	justify-content: space-between;
+	align-items: space-between;
+}
+
+.flex_sa {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex_sac {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.flex_fe {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.flex_fec {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.flex_sae {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.flex_fee {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex_wrap {
+	flex-wrap: wrap;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* start--文本行数限制--start */
+.u-line-1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.u-line-2 {
+    -webkit-line-clamp: 2;
+}
+
+.u-line-3 {
+    -webkit-line-clamp: 3;
+}
+
+.u-line-4 {
+    -webkit-line-clamp: 4;
+}
+
+.u-line-5 {
+    -webkit-line-clamp: 5;
+}
+
+.u-line-2, .u-line-3, .u-line-4, .u-line-5 {
+    overflow: hidden;
+	word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+/* end--文本行数限制--end */
+
+.text-center {
+	text-align: center;
+}
+
+.text-w {
+	font-weight: bold;
+}
+ 
+ // 定义字体(rpx)单位，10-100的都为rpx单位字体
+ @for $i from 10 through 100 {
+ 	.z-font-#{$i} {
+ 		font-size: $i + rpx;
+ 	}
+ }
+ 
+ @for $i from 0 through 140 {
+ 	// 只要双数和能被5除尽的数
+ 	@if $i % 2 == 0 or $i % 5 == 0 {
+ 		@each $short, $long in l left, t top, r right, b bottom {
+ 			// 缩写版，结果如： u-m-l-30
+ 			// 定义外边距
+ 			.z-m-#{$short}-#{$i} {
+ 				margin-#{$long}: $i + rpx!important;
+ 			}
+ 			
+ 			.z-m-#{$i} {
+ 				margin: $i + rpx!important;
+ 			}
+ 			
+ 			// 定义内边距
+ 			.z-p-#{$short}-#{$i} {
+ 				padding-#{$long}: $i + rpx!important;
+ 			}
+ 			
+ 			.z-p-#{$i} {
+ 				padding: $i + rpx!important;
+ 			}
+ 		}
+ 	}
+ }
