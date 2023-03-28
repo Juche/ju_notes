@@ -1,0 +1,119 @@
+.flex {
+  display: flex;
+  box-sizing: border-box;
+}
+
+// 布局方向
+.flex-row {
+  @extend .flex;
+  flex-direction: row;
+  // width: 100%;
+}
+.flex-col {
+  @extend .flex;
+  flex-direction: column;
+}
+
+// -----  -----  -----  ----- //
+
+// 水平布局 => 对齐方式拓展
+@mixin flex-row-align($horizon: flex-start, $vertical: flex-start,){
+  @extend .flex-row;
+  justify-content: $horizon;
+  align-items: $vertical;
+}
+
+/**
+ * 水平布局 => 居中对齐
+ * .flex-row-水平-竖直(默认值可省略)
+ */
+.flex-c,
+.flex-row-c,
+.flex-row-c-c {
+  @include flex-row-align (center, center);
+}
+.flex-row-hc,
+.flex-row-c-fs {
+  @include flex-row-align (center);
+}
+.flex-row-vc,
+.flex-row-fs-c {
+  @include flex-row-align ('', center);;
+}
+.flex-row-ve {
+  @include flex-row-align ('', end);;
+}
+// 水平布局 => space-between
+.flex-row-sb {
+  @include flex-row-align (space-between);
+}
+.flex-row-sb-c {
+  @include flex-row-align (space-between, center);
+}
+// 水平布局 => space-around
+.flex-row-sa {
+  @include flex-row-align (space-around);
+}
+.flex-row-sa-c {
+  @include flex-row-align (space-around, center);
+}
+// 水平布局 => space-evenly
+.flex-row-se {
+  @include flex-row-align (space-evenly);
+}
+.flex-row-se-c {
+  @include flex-row-align (space-evenly, center);
+}
+// 水平布局 => flex-end
+.flex-row-fe {
+  @include flex-row-align (flex-end);
+}
+.flex-row-fe-c {
+  @include flex-row-align (flex-end, center);
+}
+
+// -----  -----  -----  ----- //
+
+// 垂直布局 => 对齐方式拓展
+@mixin flex-col-align($horizon: flex-start, $vertical: flex-start,){
+  @extend .flex-col;
+  align-items: $horizon;
+  justify-content: $vertical;
+}
+
+/**
+ * 垂直布局 => 居中对齐
+ * .flex-row-水平-竖直(默认值可省略)
+ */
+.flex-col-c {
+  @include flex-col-align (center, center);
+}
+.flex-col-hc,
+.flex-col-c-fs {
+  @include flex-col-align (center);
+}
+.flex-col-vc,
+.flex-col-fs-c {
+  @include flex-col-align ('', center);;
+}
+// 垂直布局 => space-between
+.flex-col-sb {
+  @include flex-col-align ('', space-between);;
+}
+.flex-col-c-sb {
+  @include flex-col-align (center, space-between);
+}
+// 垂直布局 => space-around
+.flex-col-sa {
+  @include flex-col-align ('', space-around);;
+}
+.flex-col-c-sa {
+  @include flex-col-align (center, space-around);
+}
+// 垂直布局 => space-evenly
+.flex-col-se {
+  @include flex-col-align ('', space-evenly);;
+}
+.flex-col-c-se {
+  @include flex-col-align (center, space-evenly);
+}
