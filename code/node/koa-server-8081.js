@@ -1,10 +1,17 @@
-const Koa = require('koa');
-const Router = require('koa-router');
-const static = require('koa-static');
+import Koa from 'koa';
+import Router from 'koa-router';
+import KS from 'koa-static';
+
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = new Koa();
-// app.use(static(__dirname + '/static'));
+// app.use(KS(__dirname + '/static'));
 // 使用根目录下的 index.html 文件
-app.use(static(__dirname + '/'));
+app.use(KS(__dirname + '/'));
 // const router = new Router();
 // router.get('/api', ctx => {
 //   let obj = {
