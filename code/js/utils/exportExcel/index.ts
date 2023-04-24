@@ -170,32 +170,9 @@ export default async function exportExcel(
   writeFile(wb, `${sheetCfg.fileName}.${sheetCfg.fileFormat}`, { compression: true });
 }
 
-/**
- * 使用示例
-async function downloadExcel() {
-  const header = {
-    t_group_list_autoid: 'ID',
-    t_group_list_ad_list_id: '物料ID',
-    t_group_list_mae_geo_code: '行政区编号',
-    t_group_list_area_name: '行政区名',
-    t_group_list_group_name: '资源分类',
-    t_group_list_start_time: '播放开始时间',
-    t_group_list_end_time: '播放结束时间',
-    t_group_list_create_time: '创建时间',
-    // t_group_list_group_id: '分组ID',
-  };
-
-  const data = await getSheetData(); // 获取需转换的数据
-
-  const sheetCfg = {
-    fileName: 'Excel表格1',
-    sheetName: 'Sheet1',
-    fileFormat: 'xlsx',
-    colWidth: [10, 10, 10, 10, 10, 20, 20, 20],
-  };
-
-  // 在传入转换前按需做对应的数据格式转换
-
-  exportExcel(header, data, sheetCfg);
+// 表格数据导出为 excel
+export async function downLoadTableToExcel(tableId, sheetName) {
+  const { utils, writeFile } = await import('./xlsx.min.mjs');
+  const wb = utils.table_to_book(document.getElementById(tableId));
+  writeFile(wb, `${sheetName}.xlsx`);
 }
- */
