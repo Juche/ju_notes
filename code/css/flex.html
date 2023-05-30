@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+      }
+      .flex-item {
+        width: 100px;
+        height: 100px;
+        background: #000;
+        border: 1px solid #f00;
+        color: #fff;
+        flex: 1;
+      }
+      .item1 {
+        flex: 0 0 100px;
+        order: 1;
+      }
+      .item2 {
+        order: -1;
+      }
+      .item3 {
+        order: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-row">
+      <div class="flex-item item1">item1</div>
+      <div class="flex-item item2">item2</div>
+      <div class="flex-item item3">item3</div>
+    </div>
+  </body>
+</html>
