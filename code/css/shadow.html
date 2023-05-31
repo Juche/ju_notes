@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow</title>
+    <style>
+      :root {
+        --text-c: #999;
+        --bg-c: #f2f2f2;
+        --bd-c: #ccc;
+        --shadow-c: #0006;
+      }
+      .ctn {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-gap: 20px;
+        font-size: 14px;
+        color: var(--text-c);
+      }
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid var(--bd-c);
+        background: var(--bg-c);
+        /* background-clip: content-box; */
+      }
+      .item1 {
+        box-shadow: 0 0 10px var(--shadow-c);
+      }
+      .item2 {
+        box-shadow: 0 8px 10px -5px var(--shadow-c);
+      }
+      .item3 {
+        box-shadow: 0 8px 10px -5px var(--shadow-c), 8px 0 10px -5px var(--shadow-c);
+      }
+      .item4 {
+        box-shadow: -8px 0 10px -5px var(--shadow-c), 8px 0 10px -5px var(--shadow-c);
+      }
+      .item5 {
+        border: none;
+        border-radius: 0 0 50% 0;
+        box-shadow: 0 0 5px var(--shadow-c);
+        background: linear-gradient(45deg, transparent 12px, var(--bg-c) 13px) bottom left,
+          linear-gradient(135deg, transparent 12px, var(--bg-c) 13px) top left,
+          linear-gradient(-135deg, transparent 12px, var(--bg-c) 13px) top right,
+          linear-gradient(-45deg, transparent 12px, var(--bg-c) 13px) bottom right;
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+      }
+      .item6 {
+        /* border: none;
+        border-radius: 0 0 50% 0; */
+        /* box-shadow: 0 0 5px var(--shadow-c); */
+        filter: drop-shadow(0 0 5px var(--shadow-c));
+        background: linear-gradient(45deg, transparent 12px, var(--bg-c) 13px) bottom left,
+          linear-gradient(135deg, transparent 8px, var(--bg-c) 9px) top left,
+          linear-gradient(-135deg, transparent 12px, var(--bg-c) 13px) top right,
+          linear-gradient(-45deg, transparent 45px, var(--bg-c) 46px) bottom right;
+        /* linear-gradient(-45deg, transparent 50px, var(--bg-c) 51px) bottom right; */
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+      }
+      .item7 {
+        /* border: none; */
+        /* border-radius: 0 0 50% 0; */
+        /* box-shadow: 0 0 10px var(--shadow-c); */
+        filter: drop-shadow(0 0 5px var(--shadow-c));
+        background: radial-gradient(circle at bottom left, transparent 15px, var(--bg-c) 16px)
+            bottom left,
+          radial-gradient(circle at top left, transparent 10px, var(--bg-c) 11px) top left,
+          radial-gradient(circle at top right, transparent 15px, var(--bg-c) 16px) top right,
+          radial-gradient(circle at bottom right, transparent 45px, var(--bg-c) 46px) bottom right;
+        /* background: radial-gradient(circle at bottom right, transparent 29px, var(--bg-c) 30px)
+          bottom right; */
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+      }
+      .item8 {
+        border: 10px dotted var(--bg-c);
+        /* border-radius: 0 0 50% 0; */
+        /* box-shadow: 0 0 10px var(--shadow-c); */
+        filter: drop-shadow(0 0 3px var(--shadow-c));
+        /* background: radial-gradient(circle at bottom left, transparent 15px, var(--bg-c) 16px)
+            bottom left,
+          radial-gradient(circle at top left, transparent 10px, var(--bg-c) 11px) top left,
+          radial-gradient(circle at top right, transparent 15px, var(--bg-c) 16px) top right,
+          radial-gradient(circle at bottom right, transparent 45px, var(--bg-c) 46px) bottom right; */
+        background: radial-gradient(circle at bottom right, transparent 29px, var(--bg-c) 30px)
+          bottom right;
+        /* background-size: 51% 51%; */
+        background-repeat: no-repeat;
+      }
+      .item9 {
+        border: 10px dashed var(--bg-c);
+        /* border-radius: 0 0 50% 0; */
+        /* box-shadow: 0 0 10px var(--shadow-c); */
+        filter: drop-shadow(0 0 3px var(--shadow-c));
+        /* background: radial-gradient(circle at bottom left, transparent 15px, var(--bg-c) 16px)
+            bottom left,
+          radial-gradient(circle at top left, transparent 10px, var(--bg-c) 11px) top left,
+          radial-gradient(circle at top right, transparent 15px, var(--bg-c) 16px) top right,
+          radial-gradient(circle at bottom right, transparent 45px, var(--bg-c) 46px) bottom right; */
+        background: radial-gradient(circle at bottom right, transparent 75px, var(--bg-c) 76px)
+          bottom right;
+        /* background-size: 51% 51%; */
+        background-repeat: no-repeat;
+      }
+      /* .item5 {
+        background: linear-gradient(45deg, transparent 12px, #b4a078 13px) bottom left,
+          linear-gradient(135deg, transparent 12px, #b4a078 13px) top left,
+          linear-gradient(-135deg, transparent 12px, #b4a078 13px) top right,
+          linear-gradient(-45deg, transparent 12px, #b4a078 13px) bottom right;
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+      }
+      .item6 {
+        background: radial-gradient(circle at bottom left, transparent 15px, #b4a078 16px) bottom
+            left,
+          radial-gradient(circle at top left, transparent 15px, #b4a078 16px) top left,
+          radial-gradient(circle at top right, transparent 15px, #b4a078 16px) top right,
+          radial-gradient(circle at bottom right, transparent 15px, #b4a078 16px) bottom right;
+        background-size: 51% 51%;
+        background-repeat: no-repeat;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="ctn">
+      <div class="item item1">常规投影</div>
+      <div class="item item2">单侧投影</div>
+      <div class="item item3">邻侧投影</div>
+      <div class="item item4">对侧投影</div>
+      <div class="item item5">不规则图形常规投影</div>
+      <div class="item item6">不规则图形适配投影</div>
+      <div class="item item7">变化</div>
+      <div class="item item8">千变</div>
+      <div class="item item9">万化</div>
+    </div>
+  </body>
+</html>
