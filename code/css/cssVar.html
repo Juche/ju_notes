@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css var</title>
+    <style>
+      :root {
+        --r: 0;
+        --g: 0;
+        --b: 0;
+        --color: #000;
+      }
+      .theme-color {
+        width: 100px;
+        height: 100px;
+        /* background: rgb(var(--r), var(--g), var(--b)); */
+        background: var(--color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="theme-color"></div>
+    <input id="colorPicker" type="color" value="#ff0000" />
+  </body>
+
+  <script>
+    colorPicker.addEventListener('input', (e) => {
+      console.log(`🚀 ~ colorPicker.addEventListener ~ e.target.value:`, e.target.value);
+      document.documentElement.style.setProperty('--color', e.target.value);
+    });
+  </script>
+</html>
