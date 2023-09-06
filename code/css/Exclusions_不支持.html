@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exclusions</title>
+    <style>
+      img {
+        -ms-wrap-flow: auto;
+        -ms-wrap-margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://juejin.cn/post/6844903463005093901 -->
+    <div class="block">
+      <p>
+        在CSS2.1时代，众所周知，Web的布局局限性非常的大，只能实现矩形方式布局，如果要实现一些流线的布局，比如说类似于杂志排版风格的布局，那是非常痛苦的，甚至是不太现实的。
+        虽然以前的布局在这方面局限性非常的大，但技术是不断向前发展的。早前很多同行专家就在这方面不断进行革新，才有了一些新的布局特性。比如说CSS
+        Shapes和CSS Grid等。 其中CSS
+        Shapes直接打破了Web排版仅限于矩形排版，它可以实现一些流线性的排版，比如下面排版效果
+      </p>
+      <img src="../assets/logo.png" alt="" />
+      <p>
+        前面也简单的说到过，CSS Shapes和CSS
+        Grids让我们的布局变得越来越有意思，也越来越灵活。但在某些场景中，还是存在一定的缺陷，也没有那么灵活，比如说文本围绕图片的布局方式。而今天要说的CSS
+        Exclusions就是致力于解决文本围绕图片（当然也可以是其他的元素）方式。它看上去类似于CSS
+        Shapes，但又和CSS
+        Shapes有很大的区别，它不需要依赖浮动，也不管是否设置了position的值为absolute、relative或者fixed。允许内容围绕一个内联元素。如下图所示：
+      </p>
+    </div>
+  </body>
+</html>
