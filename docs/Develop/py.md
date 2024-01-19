@@ -19,3 +19,46 @@
     - 云空间 => 5Gb (查看使用情况) ?
     - OSS ?
     - 考虑上传限制和方案
+
+---
+
+## 微信云函数外链跳转
+
+```js
+// 云函数入口文件
+const cloud = require('wx-server-sdk')
+
+cloud.init()
+
+// 云函数入口函数
+exports.main = async (event, context) => {
+  const wxContext = cloud.getWXContext()
+
+  switch (event.action) {
+    case 'getUrlScheme': {
+      return getUrlScheme(event.options)
+    }
+  }
+
+  return 'action not found'
+}
+
+async function getUrlScheme(options) {
+  return cloud.openapi.urlscheme.generate({
+    jumpWxa: {
+      path: '/page/component/index', // <!-- replace -->
+      query: '',
+    },
+    // 如果想不过期则置为 false，并可以存到数据库
+    isExpire: true,
+    // 一分钟有效期
+    expireTime: parseInt(Date.now() / 1000 + 60),
+  })
+}
+
+https://www.smzdm.com/p/99562075/?zdm_ss=Android_4376972076_&send_by=4376972076&from=other&invite_code=zdm6v3k296inv
+
+https://go.smzdm.com/52a15e82609b0514/ca_aa_fx_95_99562075_0_23501_1627_0
+
+https://product.suning.com/0070191013/12187003988.html?utm_source=union&utm_medium=005003&adtype=5&utm_campaign=95525945-7cce-43a8-a3e8-4858d9455813&union_place=un
+```
