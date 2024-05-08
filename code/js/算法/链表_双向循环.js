@@ -140,6 +140,21 @@ class LinkList {
     return n ? null : node
   }
 
+  editNth(n, data) {
+    let node = this.head
+
+    while (--n && node?.next) {
+      node = node.next
+
+      if (node.isHead) break
+    }
+
+    n && console.warn('取值节点超出链表长度!')
+
+    // return n ? null : node
+    if (n === 0) node.data = data
+  }
+
   getFirst() {
     return this.head
   }
@@ -197,6 +212,8 @@ console.log(`🚀 ~ size:`, size)
 
 const fNode = link.find(2)
 console.log(`🚀 ~ fNode:`, fNode)
+
+link.editNth(1, 111)
 
 const nth1 = link.getNth(1)
 console.log(`🚀 ~ nth1:`, nth1)
