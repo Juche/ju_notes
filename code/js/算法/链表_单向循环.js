@@ -37,6 +37,7 @@ class LinkList {
 
     while (--n && node?.next) {
       node = node.next
+      if (node?.isHead) break
     }
 
     n && console.warn('取值节点超出链表长度!')
@@ -50,7 +51,10 @@ class LinkList {
 
   getLast() {
     let lastNode = this.head
-    while (lastNode?.next) lastNode = lastNode.next
+    while (lastNode?.next) {
+      if (lastNode.next?.isHead) break
+      lastNode = lastNode.next
+    }
 
     return lastNode
   }
