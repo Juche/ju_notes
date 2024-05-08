@@ -1,3 +1,10 @@
+class LinkNode {
+  constructor(data) {
+    this.data = data
+    this.next = null
+  }
+}
+
 class LinkList {
   constructor(head = null) {
     this.head = head
@@ -40,13 +47,6 @@ class LinkList {
 
   clear() {
     this.head = null
-  }
-}
-
-class LinkNode {
-  constructor(data) {
-    this.data = data
-    this.next = null
   }
 }
 
