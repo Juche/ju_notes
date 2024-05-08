@@ -58,6 +58,9 @@ class LinkList {
 
     this.head = head
   }
+  insert() {}
+  remove() {}
+  slice() {}
   splice() {}
   find(data) {
     let node = this.head
