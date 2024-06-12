@@ -1,4 +1,4 @@
-class LinkNode {
+export class LinkNode {
   constructor(data, isHead = false) {
     this.data = data
     this.pre = null
@@ -7,7 +7,7 @@ class LinkNode {
   }
 }
 
-class LinkList {
+export class LinkList {
   constructor(head = null) {
     this.head = head
   }
@@ -189,46 +189,47 @@ class LinkList {
 // node3.next = node1
 
 // const link = new LinkList(node1)
-const link = new LinkList()
-console.log(`🚀 ~ link:`, link)
 
-link.list2Link([11, 22, 33])
-console.log(`🚀 ~ link:`, link)
+// const link = new LinkList()
+// console.log(`🚀 ~ link:`, link)
 
-const dataList1 = link.link2List()
-console.log(`🚀 ~ dataList1:`, dataList1)
+// link.list2Link([11, 22, 33])
+// console.log(`🚀 ~ link:`, link)
 
-link.shift(0)
-link.push(44)
+// const dataList1 = link.link2List()
+// console.log(`🚀 ~ dataList1:`, dataList1)
 
-const dataList2 = link.link2List()
-console.log(`🚀 ~ dataList2:`, dataList2)
+// link.shift(0)
+// link.push(44)
 
-link.unshift()
-link.pop()
+// const dataList2 = link.link2List()
+// console.log(`🚀 ~ dataList2:`, dataList2)
 
-const dataList3 = link.link2List()
-console.log(`🚀 ~ dataList3:`, dataList3)
+// link.unshift()
+// link.pop()
 
-const size = link.getSize()
-console.log(`🚀 ~ size:`, size)
+// const dataList3 = link.link2List()
+// console.log(`🚀 ~ dataList3:`, dataList3)
 
-const fNode = link.find(2)
-console.log(`🚀 ~ fNode:`, fNode)
+// const size = link.getSize()
+// console.log(`🚀 ~ size:`, size)
 
-link.editNth(1, 111)
+// const fNode = link.find(2)
+// console.log(`🚀 ~ fNode:`, fNode)
 
-const nth1 = link.getNth(1)
-console.log(`🚀 ~ nth1:`, nth1)
-const nth2 = link.getNth(2)
-console.log(`🚀 ~ nth2:`, nth2)
-const nth3 = link.getNth(3)
-console.log(`🚀 ~ nth3:`, nth3)
-const nth4 = link.getNth(4)
-console.log(`🚀 ~ nth4:`, nth4)
+// link.editNth(1, 111)
 
-const firstNode = link.getFirst()
-console.log(`🚀 ~ firstNode:`, firstNode)
+// const nth1 = link.getNth(1)
+// console.log(`🚀 ~ nth1:`, nth1)
+// const nth2 = link.getNth(2)
+// console.log(`🚀 ~ nth2:`, nth2)
+// const nth3 = link.getNth(3)
+// console.log(`🚀 ~ nth3:`, nth3)
+// const nth4 = link.getNth(4)
+// console.log(`🚀 ~ nth4:`, nth4)
 
-const lastNode = link.getLast()
-console.log(`🚀 ~ lastNode:`, lastNode)
+// const firstNode = link.getFirst()
+// console.log(`🚀 ~ firstNode:`, firstNode)
+
+// const lastNode = link.getLast()
+// console.log(`🚀 ~ lastNode:`, lastNode)
