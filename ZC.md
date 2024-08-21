@@ -65,8 +65,43 @@
 
 ### 定制
 
-### 手机
+<!-- ### 手机
 
 荣耀 X50 1305/[X50 GT 1604]
 红米 Note 12 Turbo 1380/Note 13 Pro 1373/[Turbo 3 1435]
-IQoo Z8 1318/[Neo8 1608]/[Z9 Turbo 1648]
+IQoo Z8 1318/[Neo8 1608]/[Z9 Turbo 1648] -->
+
+### 技术
+
+- 前端/后端/SSR/微前端/全栈/跨平台/鸿蒙/AI
+- WebAssembly
+
+- 前端
+  - 前端基础 html/css  tailwind css / styled components / css modules / Open Props / HTMX
+  - 微前端 / Web Components
+  - 前端现状/新事物
+    - js-doc / ts-doc
+    - Signals、Hybrid Routing、Edge
+    - Open Props
+    - AI 流 (ChatGPT 和 GitHub Copilot)
+    - css 滚动动画
+  - vue / react / SSR Next.js Astro
+  - 无障碍
+- 后端
+  - node/java/NestJS
+
+- 个人笔记/blog/资源、素材
+- 工具，折腾笔记
+
+HTMX - 返璞归真🚲
+Wasp - 全栈，开箱即用🚀
+  一体化解决方案
+  使用React、Node.js和Prisma
+  为React和Node.js预配置的免费SaaS模板—— Open SaaS
+  编译后输出一个标准的React + Vite前端、Node.js后端和PostgreSQL数据库
+Solid.js - 一流的reactivity库 ↔️
+Astro - 静态网站之王👑
+  一款优秀的博客、CMS重型网站工具
+  能够集成其他库和框架的框架
+<!-- Svelte - 简单而有效🎯
+Qwik - 非常快🚤 -->
