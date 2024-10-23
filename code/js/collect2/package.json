@@ -10,5 +10,8 @@
     "koa-router": "^10.1.1",
     "koa-server-http-proxy": "^0.1.0",
     "koa-static": "^5.0.0"
+  },
+  "dependencies": {
+    "collect": "file:"
   }
 }
