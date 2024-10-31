@@ -1,4 +1,4 @@
-b# Marathon
+# Marathon
 
 ## 参考阶段一
 
