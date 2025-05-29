@@ -143,7 +143,7 @@ body {
 ## 盒模型
 
 - 标准盒子模型: width 和 height 指的是内容区域的宽度和高度。增加内边距、边框和外边距不会影响内容区域的尺寸，但是会增加元素框的总尺寸。
-- IE盒子模型: width 和 height 指的是内容区域+border+padding的宽度和高度
+- IE盒子模型: width 和 height 指的是内容区域+padding+border的宽度和高度
 
 box-sizing：border-box; 相当于使用IE盒模型来计算元素尺寸,利于使用百分比模式的自适应的布局
 

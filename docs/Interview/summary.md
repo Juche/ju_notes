@@ -110,8 +110,8 @@ window.addEventListener('scroll', throttle(() => console.log('window scrolling')
 **冒泡阶段** 与捕获阶段相反,事件由目标元素向父元素传播
 
 target.addEventListener(type, listener, useCapture)
-通过省略或将 useCapture 参数设置为 false，将注册冒泡阶段的事件
-通过在 listener 中使用 event.stopPropagation 来阻止事件的继续传播
+通过省略或将 useCapture 参数设置为 false，将注册冒泡阶段的事件,否则事件在捕获阶段处理
+通过在 listener 中使用 event.stopPropagation 来阻止事件冒泡
 
 
 ### 事件委托
