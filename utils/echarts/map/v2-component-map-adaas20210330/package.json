@@ -1,0 +1,45 @@
+{
+  "author": {
+    "name": "zhucheng@agree.com.cn"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "echarts": "4.5.0",
+    "echarts-wordcloud": "^1.1.3",
+    "echarts-liquidfill": "^2.0.5",
+    "echarts-gl": "^1.1.1"
+  },
+  "deprecated": false,
+  "description": "adaas地图",
+  "docs": {
+    "belongTo": "aui",
+    "icon": "iconzhuzhuangtu",
+    "type": "project",
+    "href": "v2-component-map-adaas",
+    "author": "zhucheng@agree.com.cn",
+    "version": 610000,
+    "accept": "divCtn",
+    "name": "adaas地图",
+    "index": 10,
+    "option": [
+      {
+        "type": "string_input",
+        "name": "mapData",
+        "defaultValue": "",
+        "desp": "地图数据",
+        "details": "",
+        "doc": "#"
+      }
+    ],
+    "css": {}
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.vue",
+  "name": "@v2-components/v2-component-map-adaas",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "14.0.0",
+  "index": 31000001
+}

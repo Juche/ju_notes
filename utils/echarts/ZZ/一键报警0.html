@@ -1,0 +1,234 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/zh/editor.html?c=bar-rich-text&lang=js&code=MYewdgzgLgBAkqMMC8MBKB5DAVA-gBQEFsAJGAahgHIB6AEwEMoGaGIIBTKGgSwFsA5jQDuHJgAsOAJxoQArmDABPXAEYATAA4AdAAcwAqgG4AUCcTQYnKTw4QAMgwBGHADYoYAbxMwr4kMIAXDAAZgyunCYAvqYgulA84B7evlAgIK4JusEpvjC6IBA8CeDBVGm6VAA0PnlQNgIC0mXFHHxUtVE1vgAehD08EDm1qUq6HGUAbuFyHNUjMDQ0MGAMfBPUACIMShDzeYvLEP5BoeGRBxC6rsX2PGAbuZcnwWERHAtRC0swDAMOzjcwwOP18IRAUj4TCgzWonmmrlmUQ6IOWX18XVqSn6g2BdTGGyowCYHAEEKU-zyP2OAVe5w43Spy3uk2knGC9VmjN8jGYwQA2lQEOAqABdbm_f53B54560s7vT4Sv6DbA8YAAa1leRppzeFzymIOKoBLlc2t8urpioO6JgmNq1lsQxg_IWTzyq3WZUpBygBLKTgYUl9eSDUgA4gxstQALSqAAMCYApKHfD9wwB1Hh0KDiYLqAAsEtS6UyPBjHrlevpCwxJZgrT4AGV_a5HnWmTAnBC6NJs7n8zAAKwN9PLHtSPtSADCGQhZQAxBwQiEAMwhYBpruT6doBh0HhyF2JscwUCuBfURer1cog72hsAL2CsdHnd5DAF6iToqV7s7L1CW3f1xkDYNtwzYMBzzAti07NIMiyC0dReBUDVtBsm1bJR2xQ8du17fsc1gkczwzIjZ3nKQfXIidKP3Q9j2CU9OwIi8ryoRdh00YB1AAdi3Njz2o4IHmEGAOGAcRgygCBtAEKRo3EdVtGlMRIyUw8ODAKAAAoEyqGBDJgVQjJMt0HwfH5PBgEBV04KBghMjiaOvNcN03LdH2EgjbPskJHJYozXKXVRVFXAA2SKqB8qyDn8hyuGckLROoKQBCDAyjPUYdR2M8ztATYcAEpYqNeLfESwLktM1LLzcqgMqykzcvykyE20Ncyri-LRRKzsKoOKEpA1dT8KsJQ-B7c1XSoMBwDmIz5sWsUz1cQFZqrB8rXQj5KqGh8bgeHC8K8XyRIapckxCbcDmEEih3UYTDoOT8BQu7arL6f4WMi4cLrtKy_ys16YHe11VH-8VOw2s1gidOxHDNCVDu20DCRXEIpKgZtiSgGEQwbICykAADlADpUwBSo0AM2jIOWDGyggfHCe3CAppm5seCfDZWKs0LrxCJM6ZgQBCK0Af3NAA3lQB5xMASHMvAYLovCcKJABh_zxgFVzw6E1jhVcAMCVAGolQALCMALk9AG-fQB0JUAWBUVcAB1NADtjG2HcAHgVAElvQAgBhgQAKdRgeoeEaaQYEALjlqBNWLABC3QA300ATAUVcALHkZcALE1ACo5S3w4dlXABNrSPAHvlQBTuUALATAHH4-WE0VzwGFUcuGHUKIYEATfjAFnPQA4FUAI3TAAKlQAiX0AVH1w8ATtNAHh9U2057z3AFg5QAYFUAP7UjcAbx9AGj1QBoOXD-XNeVtWNbV7WYEAahVAEk5MfScAdgtPcAN0VAFo5aWK_L5WjPV8vta9yeZ4XxfAGO5I2Hf3oPACx_zsfkABlGgB-v0ABD_gAuZUAPvqgBIf6noAQAZACP5oANqcQGAENzQARvowNgQAaSAVPGAOQFYgMtlbQAD55QLVsrEBs9AB3bs7ch98QG2zoXfbWIDAAHplA_-yxADGpoATocp4gMACg2gBDmxgfg1eRDrZkIoVERhjtpEMKYbbQAI35QJYbIjhXCYCAAZ1PBBDZHEIUZQyBpD6EaxAYACBVABuekwtRXhWGaKsj8QAPplwMAFdyRtAAbbrAwA8PaAHTTKe-jJGmJkXIwAnhkhMUcw-xsjAB-bnrQAK9acKsohcslZhK7mkHOK66VMoMD0uoNcrUik5RKaZMqZ5MlSBgkOMywkfjgkhNCWEVAK4AB9r72nVh0jWyI6KhAhFCAmLTr4AB4nBSEWAAPkjoAF9Scga3vFZRpQzCbBD0roYMawIAlRQFM86lV2LgAgBkDg2hLwCD0lQTZSk-B7CMjc7ZA1DkwCkFwOQUgkB6Qur4KgozdBWDbBwZAAAiQ8VwNpKFeO2HoRgQgwtjIeN5wAShgGCFIAIRhfg3AEGAWMTZgjAB0oTIwI0BD3FjD2AmIA-CBGHLoHoIKpmxUoD86g4zAW4WBSCnsPRYxFCfPcAQwQqmUpALCh6g4CwJgZUYSQ_txBORgD-WVQZNSKRAAoOgwQbxJiMFU4I9KehWAyDmGAN5Vz6sorGLSR4XTDhTEYJloyaBOGZRQNlfynCcvbKCslFL2whCVZFWVTKWX5C2Xc7QiMIAADk1gcA9S835Lq3Uut0O68gnr_k-u5eCXS_KuY83ULKgZBbRAKqVQtJprgsX80XNFSKTK5llAoBG258kESzH5KoUUba_k0AzUs-KJVTAvJ-G8qAHykCWUOaCB8jyo0xvjesftozxCTIFcC1Qua_XBnJWimAa4GXGTDWeAiVkqAtuoG2xdnaZgcB7X2ygXqZDMvPYceKPwqAzkvOyG9lBF3aE_E-tdEyaDvouvO1E1B7ABDsEq8NQGQPqGfey8DkHx3LCccsKgJAFUIdbYByNwGmAMH5GuNDr6IPDpww-UU2gABWIB7hXKoKOl6Z4OA9HqAwGc7BsDccQ_6vFFRXyJgZbR3qMHsJApQvOqpNTgpaN8FU7JnELW3S0WDCGs6rIUZMlQH86h1CxgTPxMzO7EyBCKYEIWMNKr8k0IZ4zpnzOWdMpoGzCY7MJjFJ2EGhoJTowDNQLGOM8bNKJoBBNZMqa0wbD8Bm1AmZRdZuzDInNuYsUMp2fmXEbrC3FtLOW1877r3vlvHW-tjbm2tnbR2DW3aex9n7AOkyQ5UDDjAKOscE4pzThnbO-di6l2rlXO-Nc65Nzbl3Xug9h4W3DqPGAz855LxXtfGRG9Nbb33ofE-MAL5XwVuV8uGt1FP2nut9-n97bfz_nR4B4DoFwKQagjBcCcF6IkYY-hlCaF0J24w6JWsNHJOsjw_hQjRE_evsEoxsiHaRPMUo1R6j2EQ5g7o8R8O_uhJMQo8x1jbEY8cZDmArjYEeO8f4wJv2pH_aR_bCJROkeg9YfEpJCEyzIQOfFNTaUmp5IKWUwpxSTKqAqRkyiSm6r1OWCsqLZR2mdKiN0--fSFcDKacMxqYyJnTOvffKTYJBnK5gBsyNOy9n88qj8CwpzzkgEudc631R21PIupO6dlvs0AugFy0F4Lrg7GhdxuFCKkU40SIejFwgsXhH9nigl55iXSFJfuilVK0i0qNWGtt2bvWB99Ty8VhbBUGBFda3lRhJWkRVbC-VAhFXStVQwdVGKtU6pulaqcsIjUmpuHQc1t4-_ThtQeO1hrHXOtdZmovu6QUidjIG4NobM2e6XdIZ0K7E1ZuTey-f6aF-H7-QHoFoL81QAr8W0t1_YwVpb1W83tbLpXgbdFZt8yANb_vYiR9XtNdQdZlC6DjLDV5d5T5V0KDbDBda3aNHfOwPfNdDdKwItZAHdEvblETYIY9Y1BMM9WA-KK9H_JDBArtQAqjcZN9O6LsOjH9P9QkW9EjEDIAl9GgmjD9aDLsKgODUQaAIjLfUjZgfkVDMDWg7guAmDPDAjQQ3_ZDMjCjagjDU3egvIBjZjVjKgdjMdeKMGXwITJSfjCAQTHjMoFfMTGAeMGVHoKTMGH4WTLleTOAxTR6ZTOjVTSidTRqTTKTH4HTMjD6RzB1ZaVzMzCzBMKzHzWzezM8HtH8MIhMEzCIjzVQLzWIvzQLA4bI-0WoP8GIIAA
+	请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    var ROOT_PATH = 'https://echarts.apache.org/examples';
+    var option;
+
+    const Icon = ROOT_PATH + '/data/asset/img/weather/sunny_128.png';
+
+const seriesLabel = {
+  show: false
+};
+option = {
+  tooltip: {
+    position: 'top',
+    trigger: 'item'
+  },
+  xAxis: {
+    type: 'value',
+    // name: 'Days',
+    // show: false
+    splitLine: {
+      show: false
+    }
+    // axisLabel: {
+    //   formatter: '{value}'
+    // }
+  },
+  yAxis: {
+    type: 'category',
+    // show: false,
+    // inverse: true,
+    data: ['Icon'],
+    axisLine: {
+      show: false
+    },
+    axisTick: {
+      show: false
+    },
+    axisLabel: {
+      show: false
+    }
+  },
+
+  series: [
+    {
+      name: '',
+      type: 'bar',
+      barGap: '-100%',
+      // barWidth: 24,
+      tooltip: {
+        show: false
+      },
+      itemStyle: {
+        // borderWidth: 5,
+        // borderColor: '#eff3fc',
+        // borderRadius: 10,
+        color: '#ffff'
+      },
+      z: -5,
+      data: [200]
+    },
+    {
+      name: '',
+      type: 'bar',
+      // barWidth: 24,
+      tooltip: {
+        show: false
+      },
+      itemStyle: {
+        // borderWidth: 5,
+        // borderColor: '',
+        // borderRadius: 10,
+        // color: '#58c27c'
+        color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+          // { offset: 0, color: '#33ffcc' },
+          // { offset: 1, color: '#11ff66' },
+          { offset: 0, color: 'rgba(0, 255, 0, 0.05)' },
+          { offset: 1, color: 'rgba(0, 255, 0, 0.3)' },
+        ])
+      },
+      markLine: {
+        symbol: ['none', 'none'],
+        label: {
+          show: false
+        },
+        lineStyle: {
+          color: '#00f',
+          width: 2
+        },
+        data: [
+          {
+            xAxis: 165
+          }
+        ]
+      },
+      data: [165],
+      label: seriesLabel,
+    },
+    {
+      type: 'effectScatter',
+      name: '一键报警',
+      // type: 'scatter',
+      symbolSize: 10,
+      color: '#f00',
+      // 模板变量有 {a}, {b}，{c}，{d}，{e}，分别表示系列名，数据名，数据值等。 在 trigger 为 'axis' 的时候，会有多个系列的数据，此时可以通过 {a0}, {a1}, {a2} 这种后面加索引的方式表示系列的索引。 不同图表类型下的 {a}，{b}，{c}，{d} 含义不一样。 其中变量{a}, {b}, {c}, {d}在不同图表类型下代表数据含义为：
+      // 折线（区域）图、柱状（条形）图、K线图 : {a}（系列名称），{b}（类目值），{c}（数值）, {d}（无）
+      // 散点图（气泡）图 : {a}（系列名称），{b}（数据名称），{c}（数值数组）, {d}（无）
+      // 地图 : {a}（系列名称），{b}（区域名称），{c}（合并数值）, {d}（无）
+      // 饼图、仪表盘、漏斗图: {a}（系列名称），{b}（数据项名称），{c}（数值）, {d}（百分比）
+      tooltip: {
+        borderColor: 'rgba(230, 230, 230, 1)',
+        borderWidth: 1,
+        // formatter: '{a|{a} }{c|{c}}',
+        // formatter: '{a}<br />时间: {c}'
+        formatter: (params) => {
+          // console.log('params', params)
+          return (
+            '<p style="display: flex;flex-direction: row; align-item: center;margin-bottom:5px">' + 
+            '<b style="box-sizing: border-box;width: 20px;height: 20px;background: #f00;border: 5px solid #fff;border-radius: 50%;"></b>' +
+            '<b style="margin-left: 6px;">' + params.seriesName +
+            '</b></p>' +
+            '<p style="font-size: 12px; font-weight: normal; color: #666">时间: ' + params.value[1] + '</p>'
+          );
+          // return [
+          //       params.seriesName + '<hr size=1 style="margin: 3px 0">',
+          //       '时间: ' + params.value[1] + '<br/>',
+          //       // 'Close: ' + param.data[1] + '<br/>',
+          //       // 'Lowest: ' + param.data[2] + '<br/>',
+          //       // 'Highest: ' + param.data[3] + '<br/>'
+          //     ].join('');
+        },
+        extraCssText: 'margin-top: -10px'
+      },
+      // itemStyle: {
+      //   borderWidth: 1,
+      //   borderColor: '#fff'
+      // },
+      data: [
+        [30, '2022-07-01 10:30:00'],
+        [80, '2022-07-01 18:30:00']
+      ]
+    },
+    {
+      type: 'effectScatter',
+      name: '一键报警',
+      // type: 'scatter',
+      symbolSize: 10,
+      color: '#00f',
+      // 模板变量有 {a}, {b}，{c}，{d}，{e}，分别表示系列名，数据名，数据值等。 在 trigger 为 'axis' 的时候，会有多个系列的数据，此时可以通过 {a0}, {a1}, {a2} 这种后面加索引的方式表示系列的索引。 不同图表类型下的 {a}，{b}，{c}，{d} 含义不一样。 其中变量{a}, {b}, {c}, {d}在不同图表类型下代表数据含义为：
+      // 折线（区域）图、柱状（条形）图、K线图 : {a}（系列名称），{b}（类目值），{c}（数值）, {d}（无）
+      // 散点图（气泡）图 : {a}（系列名称），{b}（数据名称），{c}（数值数组）, {d}（无）
+      // 地图 : {a}（系列名称），{b}（区域名称），{c}（合并数值）, {d}（无）
+      // 饼图、仪表盘、漏斗图: {a}（系列名称），{b}（数据项名称），{c}（数值）, {d}（百分比）
+      tooltip: {
+        borderColor: 'rgba(230, 230, 230, 1)',
+        borderWidth: 1,
+        // formatter: '{a|{a} }{c|{c}}',
+        // formatter: '{a}<br />时间: {c}'
+        formatter: (params) => {
+          // console.log('params', params)
+          return (
+            '<p style="display: flex;flex-direction: row; align-item: center;margin-bottom:5px">' + 
+            '<b style="box-sizing: border-box;width: 20px;height: 20px;background: #00f;border: 5px solid #fff;border-radius: 50%;"></b>' +
+            '<b style="margin-left: 6px;">' + params.seriesName +
+            '</b></p>' +
+            '<p style="font-size: 12px; font-weight: normal; color: #666">时间: ' + params.value[1] + '</p>'
+          );
+          // return [
+          //       params.seriesName + '<hr size=1 style="margin: 3px 0">',
+          //       '时间: ' + params.value[1] + '<br/>',
+          //       // 'Close: ' + param.data[1] + '<br/>',
+          //       // 'Lowest: ' + param.data[2] + '<br/>',
+          //       // 'Highest: ' + param.data[3] + '<br/>'
+          //     ].join('');
+        },
+        extraCssText: 'margin-top: -10px'
+      },
+      // itemStyle: {
+      //   borderWidth: 1,
+      //   borderColor: '#fff'
+      // },
+      data: [
+        [50, '2022-07-01 10:30:00'],
+        [120, '2022-07-01 18:30:00']
+      ]
+    }
+  ]
+};
+
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>

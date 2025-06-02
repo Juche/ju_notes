@@ -1,0 +1,2140 @@
+[
+  {
+    "desp": "全行总业务量",
+    "name": "all_bank_business_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "all_bank_business_day"
+          }
+        ]
+      },
+      "token": "all_bank_business_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "存款总额（银监口径）",
+    "name": "every_deposit_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "every_deposit_day"
+          }
+        ]
+      },
+      "token": "every_deposit_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "贷款总额",
+    "name": "every_loan_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "every_loan_day"
+          }
+        ]
+      },
+      "token": "every_loan_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "经营情况",
+    "name": "every_business_collect_day",
+    "schemaType": "c_normal_text_7",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "every_business_collect_day"
+          }
+        ]
+      },
+      "token": "every_business_collect_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "资产总额",
+    "name": "all_means_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "all_means_money_day"
+          }
+        ]
+      },
+      "token": "all_means_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "比年初增减额",
+    "name": "all_means_year",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "all_means_year"
+          }
+        ]
+      },
+      "token": "all_means_year"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "比年初增减率",
+    "name": "all_means_rate_year",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "all_means_rate_year"
+          }
+        ]
+      },
+      "token": "all_means_rate_year"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "运营效能占比及业务量",
+    "name": "effect_buss_rate_day",
+    "schemaType": "c_normal_text_2",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "effect_buss_rate_day"
+          }
+        ]
+      },
+      "token": "effect_buss_rate_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "热门业务TOP5",
+    "name": "gm_business_top_five_day",
+    "schemaType": "c_normal_text_2",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "gm_business_top_five_day"
+          }
+        ]
+      },
+      "token": "gm_business_top_five_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "机构地图TOP5",
+    "name": "every_org_business_five_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "every_org_business_five_day"
+          }
+        ]
+      },
+      "token": "every_org_business_five_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "预警",
+    "name": "warning_collect_day",
+    "schemaType": "c_normal_text_2",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "warning_collect_day"
+          }
+        ]
+      },
+      "token": "warning_collect_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "集中作业-已处理业务量",
+    "name": "focus_finish_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "focus_finish_num_day"
+          }
+        ]
+      },
+      "token": "focus_finish_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "集中作业-待处理的业务量",
+    "name": "focus_deal_wait_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "focus_deal_wait_num_day"
+          }
+        ]
+      },
+      "token": "focus_deal_wait_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "集中作业-人均业务量",
+    "name": "focus_avg_buss_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "focus_avg_buss_num_day"
+          }
+        ]
+      },
+      "token": "focus_avg_buss_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "远程授权-已处理业务量",
+    "name": "remote_finish_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "remote_finish_num_day"
+          }
+        ]
+      },
+      "token": "remote_finish_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "远程授权-待处理的业务量",
+    "name": "remote_deal_wait_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "remote_deal_wait_num_day"
+          }
+        ]
+      },
+      "token": "remote_deal_wait_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "远程授权-人均业务量",
+    "name": "remote_avg_buss_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "remote_avg_buss_num_day"
+          }
+        ]
+      },
+      "token": "remote_avg_buss_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "机构地图",
+    "name": "branch_map_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "branch_map_day"
+          }
+        ]
+      },
+      "token": "branch_map_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "三大片区存款余额",
+    "name": "three_area_balance_day",
+    "schemaType": "three_area_balance_day",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "three_area_balance_day"
+          }
+        ]
+      },
+      "token": "three_area_balance_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "大额支付系统-净轧差额",
+    "name": "bigpay_difference_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "bigpay_difference_money_day"
+          }
+        ]
+      },
+      "token": "bigpay_difference_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "大额支付系统-流入额",
+    "name": "bigpay_onflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "bigpay_onflow_money_day"
+          }
+        ]
+      },
+      "token": "bigpay_onflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "大额支付系统-流出额",
+    "name": "bigpay_outflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "bigpay_outflow_money_day"
+          }
+        ]
+      },
+      "token": "bigpay_outflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "小额支付系统-净轧差额",
+    "name": "smallpay_difference_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "smallpay_difference_money_day"
+          }
+        ]
+      },
+      "token": "smallpay_difference_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "小额支付系统-流入额",
+    "name": "smallpay_onflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "smallpay_onflow_money_day"
+          }
+        ]
+      },
+      "token": "smallpay_onflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "小额支付系统-流出额",
+    "name": "smallpay_outflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "smallpay_outflow_money_day"
+          }
+        ]
+      },
+      "token": "smallpay_outflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "网联清算-净轧差额",
+    "name": "webunion_difference_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "webunion_difference_money_day"
+          }
+        ]
+      },
+      "token": "webunion_difference_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "网联清算-流入额",
+    "name": "webunion_onflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "webunion_onflow_money_day"
+          }
+        ]
+      },
+      "token": "webunion_onflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "网联清算-流出额",
+    "name": "webunion_outflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "webunion_outflow_money_day"
+          }
+        ]
+      },
+      "token": "webunion_outflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "超级网银-净轧差额",
+    "name": "superweb_difference_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "superweb_difference_money_day"
+          }
+        ]
+      },
+      "token": "superweb_difference_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "超级网银-流入额",
+    "name": "superweb_onflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "superweb_onflow_money_day"
+          }
+        ]
+      },
+      "token": "superweb_onflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "超级网银-流出额",
+    "name": "superweb_outflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "superweb_outflow_money_day"
+          }
+        ]
+      },
+      "token": "superweb_outflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "金融服务平台-净轧差额",
+    "name": "finance_difference_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "finance_difference_money_day"
+          }
+        ]
+      },
+      "token": "finance_difference_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "金融服务平台-流入额",
+    "name": "finance_onflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "finance_onflow_money_day"
+          }
+        ]
+      },
+      "token": "finance_onflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "金融服务平台-流出额",
+    "name": "finance_outflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "finance_outflow_money_day"
+          }
+        ]
+      },
+      "token": "finance_outflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "农信银系统-净轧差额",
+    "name": "agricul_difference_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "agricul_difference_money_day"
+          }
+        ]
+      },
+      "token": "agricul_difference_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "农信银系统-流入额",
+    "name": "agricul_onflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "agricul_onflow_money_day"
+          }
+        ]
+      },
+      "token": "agricul_onflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "农信银系统-流出额",
+    "name": "agricul_outflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "agricul_outflow_money_day"
+          }
+        ]
+      },
+      "token": "agricul_outflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "客户业务资金清算-净轧差额",
+    "name": "custom_difference_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "custom_difference_money_day"
+          }
+        ]
+      },
+      "token": "custom_difference_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "客户业务资金清算-流入额",
+    "name": "custom_onflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "custom_onflow_money_day"
+          }
+        ]
+      },
+      "token": "custom_onflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "客户业务资金清算-流出额",
+    "name": "custom_outflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "custom_outflow_money_day"
+          }
+        ]
+      },
+      "token": "custom_outflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "金融业务资金清算-净轧差额",
+    "name": "onbank_difference_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "onbank_difference_money_day"
+          }
+        ]
+      },
+      "token": "onbank_difference_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "金融业务资金清算-流入额",
+    "name": "onbank_onflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "onbank_onflow_money_day"
+          }
+        ]
+      },
+      "token": "onbank_onflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "金融业务资金清算-流出额",
+    "name": "onbank_outflow_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "onbank_outflow_money_day"
+          }
+        ]
+      },
+      "token": "onbank_outflow_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "资金清算净总额",
+    "name": "all_difference_money_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "all_difference_money_day"
+          }
+        ]
+      },
+      "token": "all_difference_money_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "大额支付系统-净轧差额",
+    "name": "bigpay_difference_money_day_chart",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "bigpay_difference_money_day_chart"
+          }
+        ]
+      },
+      "token": "bigpay_difference_money_day_chart"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "小额支付系统-净轧差额",
+    "name": "smallpay_difference_money_day_chart",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "smallpay_difference_money_day_chart"
+          }
+        ]
+      },
+      "token": "smallpay_difference_money_day_chart"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "网联清算-净轧差额",
+    "name": "webunion_difference_money_day_chart",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "webunion_difference_money_day_chart"
+          }
+        ]
+      },
+      "token": "webunion_difference_money_day_chart"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "超级网银-净轧差额",
+    "name": "superweb_difference_money_day_chart",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "superweb_difference_money_day_chart"
+          }
+        ]
+      },
+      "token": "superweb_difference_money_day_chart"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "金融服务平台-净轧差额",
+    "name": "finance_difference_money_day_chart",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "finance_difference_money_day_chart"
+          }
+        ]
+      },
+      "token": "finance_difference_money_day_chart"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "农信银系统-净轧差额",
+    "name": "agricul_difference_money_day_chart",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "agricul_difference_money_day_chart"
+          }
+        ]
+      },
+      "token": "agricul_difference_money_day_chart"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "正常账户日均存款-对公",
+    "name": "normal_avgday_deposit_count_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "normal_avgday_deposit_count_day"
+          }
+        ]
+      },
+      "token": "normal_avgday_deposit_count_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "正常账户日均存款-个人",
+    "name": "normal_personal_deposit_count_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "normal_personal_deposit_count_day"
+          }
+        ]
+      },
+      "token": "normal_personal_deposit_count_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "有效账户日均存款-对公",
+    "name": "avgday_deposit_count_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "avgday_deposit_count_day"
+          }
+        ]
+      },
+      "token": "avgday_deposit_count_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "有效账户日均存款-个人",
+    "name": "personal_avgday_deposit_count_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "personal_avgday_deposit_count_day"
+          }
+        ]
+      },
+      "token": "personal_avgday_deposit_count_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "正常账户及有效账户-正常",
+    "name": "normal_account_collect",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "normal_account_collect"
+          }
+        ]
+      },
+      "token": "normal_account_collect"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "正常账户及有效账户-有效",
+    "name": "normal_active_account_collect",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "normal_active_account_collect"
+          }
+        ]
+      },
+      "token": "normal_active_account_collect"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本季新开户数对公-净增量",
+    "name": "quarter_new_user_incre_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "quarter_new_user_incre_day"
+          }
+        ]
+      },
+      "token": "quarter_new_user_incre_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本季新开户数对公-新开户数",
+    "name": "quarter_new_user_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "quarter_new_user_day"
+          }
+        ]
+      },
+      "token": "quarter_new_user_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本季新开户数个人-净增量",
+    "name": "personal_quarter_new_user_incre_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "personal_quarter_new_user_incre_day"
+          }
+        ]
+      },
+      "token": "personal_quarter_new_user_incre_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本季新开户数个人-新开户数",
+    "name": "personal_quarter_new_user_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "personal_quarter_new_user_day"
+          }
+        ]
+      },
+      "token": "personal_quarter_new_user_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本期存款余额-对公",
+    "name": "quarter_deposit_count_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "quarter_deposit_count_day"
+          }
+        ]
+      },
+      "token": "quarter_deposit_count_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本期存款余额-个人",
+    "name": "personal_quarter_deposit_count_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "personal_quarter_deposit_count_day"
+          }
+        ]
+      },
+      "token": "personal_quarter_deposit_count_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本季日均存款余额-对公",
+    "name": "avgday_quarter_deposit_count_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "avgday_quarter_deposit_count_day"
+          }
+        ]
+      },
+      "token": "avgday_quarter_deposit_count_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本季日均存款余额-个人",
+    "name": "personal_avgquarter_deposit_count_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "personal_avgquarter_deposit_count_day"
+          }
+        ]
+      },
+      "token": "personal_avgquarter_deposit_count_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本月开户数走势图-对公开户数",
+    "name": "public_new_user_map",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "public_new_user_map"
+          }
+        ]
+      },
+      "token": "public_new_user_map"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本月开户数走势图-个人开户数",
+    "name": "personal_new_user_map",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "personal_new_user_map"
+          }
+        ]
+      },
+      "token": "personal_new_user_map"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本月开户数走势图-对公账户净增量",
+    "name": "public_new_user_incre_map",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "public_new_user_incre_map"
+          }
+        ]
+      },
+      "token": "public_new_user_incre_map"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "本月开户数走势图-个人账户净增量",
+    "name": "personal_new_user_incre_map",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "personal_new_user_incre_map"
+          }
+        ]
+      },
+      "token": "personal_new_user_incre_map"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "系统机具-在线机具总数",
+    "name": "onwork_dev_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "onwork_dev_num_day"
+          }
+        ]
+      },
+      "token": "onwork_dev_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "系统机具-智能柜台-总台数",
+    "name": "stm_all_dev_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "stm_all_dev_num_day"
+          }
+        ]
+      },
+      "token": "stm_all_dev_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "系统机具-智能柜台-在线台数",
+    "name": "stm_onwork_dev_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "stm_onwork_dev_num_day"
+          }
+        ]
+      },
+      "token": "stm_onwork_dev_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "系统机具-云柜台-总台数",
+    "name": "ytm_all_dev_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "ytm_all_dev_num_day"
+          }
+        ]
+      },
+      "token": "ytm_all_dev_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "系统机具-云柜台-在线台数",
+    "name": "ytm_onwork_dev_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "ytm_onwork_dev_num_day"
+          }
+        ]
+      },
+      "token": "ytm_onwork_dev_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "系统机具-存取款机-总台数",
+    "name": "crs_all_dev_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "crs_all_dev_num_day"
+          }
+        ]
+      },
+      "token": "crs_all_dev_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "系统机具-存取款机-在线台数",
+    "name": "crs_onwork_dev_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "crs_onwork_dev_num_day"
+          }
+        ]
+      },
+      "token": "crs_onwork_dev_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "系统机具-其他-总台数",
+    "name": "others_all_dev_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "others_all_dev_num_day"
+          }
+        ]
+      },
+      "token": "others_all_dev_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "系统机具-其他-在线台数",
+    "name": "others_onwork_dev_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "others_onwork_dev_num_day"
+          }
+        ]
+      },
+      "token": "others_onwork_dev_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "机构及人员情况-营业网点数量",
+    "name": "work_netpoint_num_day",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "work_netpoint_num_day"
+          }
+        ]
+      },
+      "token": "work_netpoint_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "机构及人员情况-总网点数",
+    "name": "total_netpoint_num_day",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "total_netpoint_num_day"
+          }
+        ]
+      },
+      "token": "total_netpoint_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "机构及人员情况-上岗人员总数",
+    "name": "work_alluser_num_day",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "work_alluser_num_day"
+          }
+        ]
+      },
+      "token": "work_alluser_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "机构及人员情况-全行网点人员总数",
+    "name": "all_user_num_day",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "all_user_num_day"
+          }
+        ]
+      },
+      "token": "all_user_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "机构及人员情况-上岗柜员总数",
+    "name": "reception_work_user_day",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "reception_work_user_day"
+          }
+        ]
+      },
+      "token": "reception_work_user_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "机构及人员情况-前台柜员总数",
+    "name": "reception_user_day",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "reception_user_day"
+          }
+        ]
+      },
+      "token": "reception_user_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "存量卡数",
+    "modelId": "c_normal_text",
+    "name": "crdisu_stk_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "crdisu_stk_day"
+          }
+        ]
+      },
+      "token": "crdisu_stk_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "累计发卡数",
+    "modelId": "c_normal_text",
+    "name": "crdisu_tnum_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "crdisu_tnum_day"
+          }
+        ]
+      },
+      "token": "crdisu_tnum_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "有效卡数",
+    "modelId": "c_normal_text",
+    "name": "vld_cst_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "vld_cst_num_day"
+          }
+        ]
+      },
+      "token": "vld_cst_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "机构资产规模",
+    "modelId": "c_normal_text",
+    "name": "branch_assets_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "branch_assets_day"
+          }
+        ]
+      },
+      "token": "branch_assets_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "总资产规模",
+    "modelId": "c_normal_text",
+    "name": "total_assets_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "total_assets_day"
+          }
+        ]
+      },
+      "token": "total_assets_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "总资产规模月势",
+    "modelId": "c_normal_chart",
+    "name": "total_assets_month",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "total_assets_month"
+          }
+        ]
+      },
+      "token": "total_assets_month"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "信用卡有效户",
+    "modelId": "c_normal_text",
+    "name": "vld_crd_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "vld_crd_num_day"
+          }
+        ]
+      },
+      "token": "vld_crd_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "贷款客户数",
+    "modelId": "c_normal_text",
+    "name": "stk_cst_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "stk_cst_num_day"
+          }
+        ]
+      },
+      "token": "stk_cst_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "信用卡资产规模",
+    "modelId": "c_normal_chart",
+    "name": "credit_card_assets_day",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "credit_card_assets_day"
+          }
+        ]
+      },
+      "token": "credit_card_assets_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "卡贷宝资产规模",
+    "modelId": "c_normal_chart",
+    "name": "cardaibao_assets_day",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "cardaibao_assets_day"
+          }
+        ]
+      },
+      "token": "cardaibao_assets_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "联合贷资产规模",
+    "modelId": "c_normal_chart",
+    "name": "union_loan_assets_day",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "union_loan_assets_day"
+          }
+        ]
+      },
+      "token": "union_loan_assets_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "产品资产规模总数",
+    "modelId": "c_normal_chart",
+    "name": "product_assets_day",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "product_assets_day"
+          }
+        ]
+      },
+      "token": "product_assets_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "年内月度产品余额",
+    "modelId": "c_normal_text",
+    "name": "money_remain_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "money_remain_day"
+          }
+        ]
+      },
+      "token": "money_remain_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "同比增速趋势",
+    "modelId": "c_normal_chart",
+    "name": "money_remain_growth_month",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "money_remain_growth_month"
+          }
+        ]
+      },
+      "token": "money_remain_growth_month"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "总目标完成率",
+    "modelId": "c_normal_text",
+    "name": "money_raise_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "money_raise_day"
+          }
+        ]
+      },
+      "token": "money_raise_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "目标完成走势图",
+    "modelId": "c_normal_chart",
+    "name": "money_raise_month",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "money_raise_month"
+          }
+        ]
+      },
+      "token": "money_raise_month"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "日均资产增量任务完成率",
+    "modelId": "c_normal_text",
+    "name": "finish_avg_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "finish_avg_day"
+          }
+        ]
+      },
+      "token": "finish_avg_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "按月统计日均资产增量任务完成率",
+    "modelId": "c_normal_chart",
+    "name": "finish_avg_month",
+    "schemaType": "c_normal_chart",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "finish_avg_month"
+          }
+        ]
+      },
+      "token": "finish_avg_month"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "年内累计进件",
+    "modelId": "c_normal_text",
+    "name": "year_in_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "year_in_num_day"
+          }
+        ]
+      },
+      "token": "year_in_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "当日新增申请数",
+    "modelId": "c_normal_text",
+    "name": "apply_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "apply_num_day"
+          }
+        ]
+      },
+      "token": "apply_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "当日自动审批申请数",
+    "modelId": "c_normal_text",
+    "name": "approve_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "approve_num_day"
+          }
+        ]
+      },
+      "token": "approve_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "当日待处理申请数",
+    "modelId": "c_normal_text",
+    "name": "wait_del_num_day",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "filter": [],
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "wait_del_num_day"
+          }
+        ]
+      },
+      "token": "wait_del_num_day"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "",
+    "name": "",
+    "schemaType": "",
+    "sourceDataParam": {
+      "type": "",
+      "params": "",
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": ""
+          }
+        ]
+      },
+      "token": ""
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "sx-资产列表",
+    "name": "source_table",
+    "schemaType": "c_normal_text_7",
+    "sourceDataParam": {
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {},
+            "id": "1001920"
+          }
+        ]
+      },
+      "token": "source_table"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "sx-资产总额",
+    "name": "sx-total-source",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {
+              "filter": [
+                {
+                  "filterJudge": "and",
+                  "filterValue": "'1'",
+                  "modalId": "1001930",
+                  "filterColumn": "type",
+                  "express": "="
+                }
+              ]
+            },
+            "id": "1001930"
+          }
+        ]
+      },
+      "token": "sx-total-source"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "sx-比年初增减额",
+    "name": "sx-means-year",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {
+              "filter": [
+                {
+                  "filterJudge": "and",
+                  "filterValue": "'2'",
+                  "modalId": "1001930",
+                  "filterColumn": "type",
+                  "express": "="
+                }
+              ]
+            },
+            "id": "1001930"
+          }
+        ]
+      },
+      "token": "sx-means-year"
+    },
+    "sourceClassify": ""
+  },
+  {
+    "desp": "sx-比年初增减率",
+    "name": "sx-means-rate-year",
+    "schemaType": "c_normal_text",
+    "sourceDataParam": {
+      "interval": 0,
+      "primaryKey": {
+        "screenInfos": [
+          {
+            "extObject": {
+              "filter": [
+                {
+                  "filterJudge": "and",
+                  "filterValue": "'3'",
+                  "modalId": "1001930",
+                  "filterColumn": "type",
+                  "express": "="
+                }
+              ]
+            },
+            "id": "1001930"
+          }
+        ]
+      },
+      "token": "sx-means-rate-year"
+    },
+    "sourceClassify": ""
+  }
+]

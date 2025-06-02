@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.js"></script>
+  </head>
+  <body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById("main"));
+
+      var option = {
+        backgroundColor: "#040d2d",
+        color: ["#d8a613", "#8fc736", "#01b3cc", "#0177d4", "#394bd0"],
+        //   tooltip: {
+        //     trigger: "item",
+        //     formatter: "{b} :<br/> {c} ({d}%)"
+        //   },
+        grid: [
+          {
+            left: "10%",
+            top: "10%",
+            right: "10%",
+            bottom: "10%",
+            containLabel: true
+          }
+        ],
+        series: [
+          {
+            name: "环形比例分割图",
+            type: "pie",
+            radius: ["36%", "50%"], //设置饼图大小
+            center: ["30%", "50%"], //设置饼图位置
+            zlevel: 1,
+            label: {
+              normal: {
+                show: false,
+                position: "center",
+                formatter: ["{value|{d}%}", "{name|{b}}"].join("\n"),
+                rich: {
+                  value: {
+                    color: "#fff",
+                    fontSize: 24,
+                    fontWeight: "bold",
+                    lineHeight: 24
+                  },
+                  name: {
+                    fontSize: 16,
+                    color: "#accfff",
+                    lineHeight: 24
+                  }
+                }
+              },
+              emphasis: {
+                show: true,
+                textStyle: {
+                  fontSize: "16",
+                  fontWeight: "bold"
+                }
+              }
+            },
+            itemStyle: {
+              normal: {
+                borderWidth: 5,
+                borderColor: "#040d2d"
+              }
+            },
+            data: [
+              { name: "新柜面签约数", value: 310460 },
+              { name: "ITM签约数", value: 177479 },
+              { name: "微信签约数", value: 106246 }
+            ]
+          }
+        ],
+        legend: {
+          // 图例说明
+          orient: "vertical",
+          left: "60%",
+          y: "center",
+          textStyle: {
+            color: "#accfff",
+            fontSize: 14,
+            lineHeight: 20
+          },
+          itemWidth: 14,
+          itemHeight: 14
+        }
+      };
+
+      myChart.setOption(option);
+
+      // 模拟请求过程
+      setTimeout(() => {
+        // 假想的原始数据
+        var data = [
+          { name: "新柜面签约数", value: 310460 },
+          { name: "ITM签约数", value: 177479 },
+          { name: "微信签约数", value: 106246 },
+          { name: "个人网上支付签约数", value: 53738 },
+          { name: "个人网银签约数", value: 33456 }
+        ];
+
+        option.series[0].data = data;
+
+        myChart.setOption(option);
+      }, 2000);
+
+      // 使用刚指定的配置项和数据显示图表。
+      // myChart.setOption(option);
+    </script>
+  </body>
+</html>

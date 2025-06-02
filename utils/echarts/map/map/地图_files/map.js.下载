@@ -1,0 +1,166 @@
+$(function(){
+
+    var myChart=echarts.init($('#app')[0]);
+
+    $(window).on('resize',function(){
+        myChart.resize();
+    })
+
+    $.getJSON('/data/geo.json',function(geoJson){
+        var cities=geoJson.features.map(e=>e.properties.name);
+        var emptyLabelMap={
+            '厚度':' ',
+            '阴影':'  '
+        };
+        var colorMap={
+            'textColor':'#374E71',
+            '厚度':new echarts.graphic.LinearGradient(0, 0, 1, 0, 
+                [
+                    {
+                        offset: 0,
+                        color: "#005c76"
+                    },
+                    {
+                        offset: 1,
+                        color: "#007e8d"
+                    }
+                ]),
+            '阴影':'rgba(0,66,8,0.2)',
+            '_default':{
+                type: 'linear',
+                x: 0,
+                y: 0,
+                x2: 0,
+                y2: 1,
+                colorStops: [{
+                    offset: 0, color: '#80C3C8' // 0% 处的颜色
+                }, {
+                    offset: 1, color: '#FFFFFF' // 100% 处的颜色
+                }],
+                global: false // 缺省为 false
+            },
+            '_default_hover':{
+                type: 'linear',
+                x: 0,
+                y: 0,
+                x2: 0,
+                y2: 1,
+                colorStops: [{
+                    offset: 0, color: '#FFF2B2' // 0% 处的颜色
+                }, {
+                    offset: 1, color: '#FFFFFF' // 100% 处的颜色
+                }],
+                global: false // 缺省为 false
+            },
+            'border':'#005C77'
+        };
+
+        var option;
+
+        echarts.registerMap('GD', geoJson);
+
+        myChart.setOption(option = {
+            title: {
+                text: 'ADaaS 地图',
+                textStyle:{
+                    color:'white'
+                },
+                
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: function(item){
+
+                    if(item.name in emptyLabelMap ||!item.name){
+                        
+                        return '';
+                    }else{
+                        return `<div class="echarts-tooltip">${item.name}</br>网点数：${item.value}</div>`
+                    }
+
+                }
+            },
+            // toolbox: {
+            //     show: true,
+            //     orient: 'vertical',
+            //     left: 'right',
+            //     top: 'center',
+            //     feature: {
+            //         dataView: {readOnly: false},
+            //         restore: {},
+            //         saveAsImage: {}
+            //     }
+            // },
+            dataRange: {
+                x: '-1000 px', //图例横轴位置
+                y: '-1000 px', //图例纵轴位置
+                splitList: cities.map((c,i)=>{
+                    return {
+                        start:i+1,
+                        end:i+1,
+                        label:c,
+                        color:colorMap[c]||colorMap._default
+                    }
+                })
+            },
+            series: [{
+                type: 'map',
+                mapType: 'GD',
+                label: {
+                    normal: {
+                        show: true, //显示省份标签
+                        textStyle: {
+                            color:colorMap.textColor
+                        } //省份标签字体颜色
+                    },
+                    emphasis: { //对应的鼠标悬浮效果
+                        show: true,
+                        textStyle: {
+                            color: colorMap.textColor
+                        }
+                    }
+                },
+                // aspectScale: 0.75,
+                // zoom: 1.2,
+                itemStyle: {
+                    normal: {
+                        borderWidth: .2, //区域边框宽度
+                        borderColor: colorMap.border, //区域边框颜色
+                        areaColor: colorMap._default, //区域颜色
+                    },
+                    emphasis: {
+                        borderWidth: .2,
+                        borderColor: colorMap.border, //区域边框颜色
+                        areaColor: colorMap._default_hover, //区域颜色
+                    }
+                },
+                data:  cities.map((c,i)=>{
+                    return {
+                        value:i+1,
+                        selected:false,
+                        name:c
+                    }
+                }),
+                // nameMap: (function(){
+                //     let ret={
+                //         ...emptyLabelMap
+                //     };
+
+                //     cities.map(c=>{
+                //         if(!(c in emptyLabelMap)){
+                //             ret[c]=c;
+                //         }else {
+                            
+                //         }
+                //     })
+                    
+                //     return ret;
+                // }())
+            }] 
+        });
+
+        window.echartsOpt=option;
+
+        console.log(option);
+    });
+});

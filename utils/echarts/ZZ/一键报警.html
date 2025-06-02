@@ -1,0 +1,234 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/zh/editor.html?c=bar-simple&code=MYewdgzgLgBAkqMBBATikB3GBeAUDGAcgEsBbAQwHMBTALgHp6ATcqc2sq6-y4gMwDcAI3IRqANgAsAGgBKABgA2AcQDyAEUUALAKJIkARSQBZI0lWyAEpdUA1AMoBpAK5M-q54pT3VABwDMAOqqAJ7qAFrO4gZMAG4AwsBaAArKIIru8iD0ABoAQhD0fAByGHwAVuHyfCiK_vQAXiEA7IyMGPqdXd09vX39A_3xlgCseUgA1vrjSAAyPUYz-ra2cPE-4cqK8UYgEABS4qTOzXzEIeHUjgCOxY4AKiAGyuoQxgAcWuPqlACqOSBlEhiNctPZYr4RkYwAZHMo4H8tBgAGK_ACas3itnUyPiKEcvx0AEZFHlyLEkLZiMi4Jp7nBSEJHPERspSAAmL7yeyk-J5UzEPLyX7lOBGZqEAS4RDQeCIOBgPggHD4IicGgMZisdjq7i-MCUYSiCQyYi2PIWDDyOGUEBdYr2X66X6UTrxSRdCDxJBorrkYBokDvLrxfJwQI5YzTNGKTqBfYGZH7X7Ee4dLo5B0KOCoCCSYDRLqyGG_IkzeIAD3KGFi7zRBl-nUcfEdsjytkslDyRPCilkQigviQOjgQnoxnII-uBneI1Q8gtv0sTF8FfI1FUI6hTDg90U-0klGaBgoYGueRG5F86nEOks13i8hSOlk4jy9iJBi092a_nsQOGZRikoKBqDRehin2CZyBCIlYj4CYAE5VHoWJYmaJA4F-ex1GochNBGSw-BCRCjDgex4moYxkn8ZIUGRfxrkQphjBGKBAhPYhjEkXw8nULQ4BQa4iR0YoiXIYpiR0eh9lIWkAGpMPUSQRn2HRHHZYAr1iZI-CQXwbDyJhVGuSx_GUX5EORWZAgmdlqD4NERWQFAchCL9SGSeh5H2RDyggYAcggOA8gaEB7BQch4nId56hASh3kkX5ZgCHQQlUJhgCYCt9hi-5fGKIQqN8CYoHiZQcnkeTZEcPsQmIRRbArVQJnkKBJC0EBkjRCAUD4H99gwa5lGuHRSAMRREOoZJgEQ9kJn2eQ0WMRDrF3fxmjRWJnHiKA9Oceh2TAdQiUsWIQirMBZmMRxjF9UhbvKZRgHkoRjFiRD7k3ZFZEy1QQF8HQdHEeJfCgZE8kcZFLHq8QoGIHwMAmXxJGuJhlB7QJhRGCBZmRIkoBGcRmnxwI4Fma52TyHQIGadQ4BGOAoDuKKRneND40Mxw0WAIQckcd5wmaCYqPKLR_FkZEdGSKAkHEIXbBCHItGKYp1H2OprnUc5G38f57iECAIGUZJ4kCcR2SEX5CXkWQ0XIIlZEUeTYmKdkQFsXxrkoWIcgaYo8h-nRfaJczmnkiYMGUHRZn3a5fAgF1yH2eIiUSFBKEUccUGIYpyC0dRgGoOB5BycQMHZXxwnITktd3FZ5AmfxfDRa4EhQaghGcIRFGaChFFIWZSFkchmWcCYQmRJBqAMe57jyK0hHCfSciEEYmC0cRrmMCYiVmYpLBAYhLH1KBbDSUhVFIcpIYMeJwlIa4GnofciWGjAdHkcRFEI8amCEZIjgdCzWALEew7JUQenppIPafBnDKHkFXYwIQIB5H2M4eqxBxCqEsM4ZK9hiiqDyBWdwuDbDJGRPYDqthqBaB5ohBo-xVKyFUHwUg1EmA6FCM0cQk5JDKECPJJgGA4CWDAGmeSWhJATDyOUSQigMDqCYPcZQ_hxDlHkgYRCtNkiWAOLIVRlxYi_HeL8YoUBxryBGEIfeWhHCqGMMUBm6gQgTHiEwX49x9goAmPQQIlBbjAHoMkAwKAwDyT4BAZIlADDiCYMkHIOgGjGFfMoaiKA4DXAgBWAwlh5I5FsGFZIvwRjyV8CsbaIx1DyDgHwRCIA4jkCYGAEA1VQpEgaPIYA696ATHlloYA9R5KUHoFAZoz9D4NFkPEco3Q0GyBKToHx-xKCrOwNgSU0pwCygQOAQIIAwkqgICQCgGpGAsDYBwU5eoDRGjEFIaQZoLSyCtDaO0nQHROh0C6To6guj8m9L6ToKBJDlC0d0TM9hsy5nzIWJA8RZBaH2LIHQqJJwy0CESZwxhLDAPIUIJg8swBMHZLEYAfSdDlFxfcLQFY4AVh0NxPQOhiAGEoMyPIeR3h5GSFMQI8RKAoAErIemcBiAjMQicYwzRiggECGAAuEAwBZWcE9WQmEQCOAMMpKACBgBwEAeoegAlJDjAgBMIwBgXmKDgDIiYLLgCSHiPcdQFYUDlFJc0EAzhrhRGcP4KIaI-BEi-g0BF8l5DhGMESdkRIhBHWaNcUg4hEKIXIOUEIkh7DAHUMxa4mSmCOGSLEZE6aJp_BCL8SefASEZEKJQJgTBmjhEsEW_Qqh158EcPYfwsw4A8yQMkSQjDSBQH2EIPIx0iSqEJr4BGDRSC_GMP4RiQr7DOGcOyWV0AbBgH2OodQaJlDspjVoWQ1BqCOhyOQWwasMB7vkNI-4BT4j5OMIrWoTA8jOBGIhWY-xijKFkPJfwEBigoHajNe47xpo5HeCgExGBFbPVULMYgiEoDGEoGifwP9nBoneMoRCfNighGoNtHuKUwDIkoPcYw6hii8o3DkZQ4QIDsm1gioyxRJDvESK6BolAcg5FAsoDAswhBijAPIe4dEkBgBzNxdQQhSD3B0EZUgqx_CWENg0ZoQgwDGBYnwZozbAzyFUIoeQKUUDKCtU6_YitJBoh0CMSg5BiANOcIhPgDR1byRimAEYzRuqzHsKQcI4hAjGAnc4JQP94jIK0B06ikgwCnAwJmwIITki2BOPsWq9gIDEFkPsWIDQe3Ea0M0EY9x5LvEQm4hwKB3jNHiBAQIshigGFsOyNEGBgx_HiFIvIaaPS2FjuIXNfACXZExYoSQ7J_RQG5blHIIKDAGGRSEjrgQ0R5H8PcdjSAICX1UC5xwvhAhMGCuDHQiFKzhAMCAdQJUhDlBQEgM7R7kRaOoMQcgyIoDqBADpheGFlDiENiAXKOb9hXwcBAALKjNh5GKDlIQygwC-GoCgJgUB_DUBO5MUgyhHAhEcI4SgDN7iXfkEScasRjDxFUA0IQth3j3HZMuJgIxkiYuXIEZ-_gmTEDgBx0ziDqDuS3QYOAjhqDyH8JfWwihBnQAaHAcoOhdqyqgLMfTnCP5eJWuUHHsjrg5BPL4d4xBxNfowHUEYRJ6D-ARrYUgWg7OOCYOAlA7GQjjqKu8SgYByDJFIJYRCyQYJ9MUBWHIlD6CxOcCgEYKBlPFHiPEDAJwJjqDyOyAwq84DaHZHweYHh-tNVsJFmmxQGgVnsAYYAaevXJHUIEIQnT2Te8VsUNEshEKKGoMAEIpAIDvFHRReQgRkTIi3tWVQhwqzPxCDZKA9B5IWzl7GHz6gyno2eA0Vt7wdPUDMuILPzReuSFmPceQzR9hIEQuIZv9hEI5FUI4EAr5naUArFiCSQnmRAwGAGSB0DSWXULgMHKHiGKCfGXFiArEzRyGIGUA_CC3EGSH2CYXuGuGoHuFsDfmKDAFijs32ExHq0sAIzRAaHnniB0H8EQjAXIAEQwA8zV0sHZHXiYS0AmFICYH2H8EDlUBQCmliDUniGIByGSAwEcFmBABlUdwmBGmSAgHkHiDACEGagv3jTElU0CD20CHkWuCgEoGlSA3kksBbzzjl0nnGUsF-BoXsDRBQFkFtxyHZArEdw-kkD4DYBKzuBP2RBeGMEYXH2cHkiJjznkHUNDy1x0LqBeTyF_y0A9USEFGmmuD6RESkFV2fzRA7AINV3CD4HhDawGx9DgDrBphyAwAaGuFsCYHiGuDRHUFsECBvm-WkUQnCCYlmAgB0BpS_jyBQCqnq1mEkGRByFiHjmaHuH8A_lGGUGoEoAKkkGKHKCJEcHTQskQlkCKxQHuEkCVxO1iAk02IJwrGUivDyCgHsGSGdjViimUEsFG1UBUwL0cFAViCi2cCiWQmIxyEsBQNUAwGMhf0kGXyEEoCJBlXEArFmDf1UByFkAJx0GcEcBGA92cDLCJCSmKB9HuEcgaEYSqTyC0ByCxX2G8nkDQAmD4FCJAGRHELQXFkoGSE6XzU82yiJCYHGPknsAaHeFmArBzWMXwgwDv1B2iViFIBCBc3GigFkHpG9kQmIDhGUF8A9igCZCgHLygFciM2uGRGxNEGeB43_XknCCJBon0hLhVn8FECqhGFUHkFiRGEbBQArHaAZXeHXUZB7hCAwH4Foy1yQGMmRC0FUG0KVUbkrjRwwH2GaEsBZCJDgH2DozCR0HZFUGIHkkpXJGIHcQwGKDCw5GRHKHDigEcAwH-gONiFsFaHKHUCimREWNiAwEnyKHhGAEUHD3EAjnZHuHoBEBUA4hBByAC0CCyT8RAHkHOMUBvH2GSHmlmCIXkjRH2HyWIGAHCHCEcDgHEF4FmDPDyGUEW2oG11iEoBkSxMQkoEkx0FsAfzgPrCEHkDADYAV1-CYCQC8PU0iz7GcF5XICQHsGEjiBfwZm9MUB5DgDEyO2IRyGuHZxGGJUsH2ByCQEsEj3CGRDREXP0xwnUF-AwBe3ZC3Whh9wpneHZGaFkBCG6yFUkE_nkkCBQOcFnizXkDknMTBgwHoHuHgj4D63eGMDV1-EcGIIoq3S0F8BCD4EkABHoAUFTXCBQGAE2jAGUAaAB2oC7zAG2P2GMHkmoGdVUCQBCBCAgJGFIHoDyFkECAgEs1ZwrHCGIGo1kD4D418VsC0DiFkFq2REQgZAnnsHSijhUnuCxHzkkAMB7n8HkmeliF7ArGSFmBCEQSKgkCV1IE7yInS3sCb3sFALYrREkCJC0HZCQD4C0FBEfNnI7zKHPCJDRHZEJm7BGGMHECDVIEoH8A7kA3HWSWKFsByD4BGGDm_VkHCC4UoD7VUGSrZD4GAGRAp3oAVWSGcDAQmDP1-D4GuEcFkH8AuK30TAaNkR2OYnsBAD4Hc0T1iCEFe1-GkWcEA18HIC8RQAwHvXKDfB0Cs091uDyQMAmF-CHXIEsAQXCDRHjHkFsDADxH2DRAB3kHDzyCwrUssFdWKGuHoo0S_GksUHIvexKtUHCHkmMGIF8EXR0EkAgC0FyXEGcuuHkAPwMGICrWyoMGaG6TAESQB261UHuCYE9wUNIHkFBMQhCHKDy2cFmBnjIOUATAwBZGcAwGMCpWMGpj4Hh16pyFBR4TXHCF-nEMcAM3eHiggEQnMuuAcRUl-AgGcHIFfFsHIHEHuF-DiypH8BbAxq8jJwdvLgMHMtNmKHECQHoGcHQwmnKVUGjyQHKAJDyF8B8gaACJF0WMGvuFmE3nlvkm3nCBoByEUCYHeA0maEkEvkoFpIKXCD52MFICQAaCzmcAaAgGuHIDACJBGFiGICQGUGMRepGGuFkAfHEBzW6nkgoC9AwqOjTvECCECCVniHRBbxJDyD4HkmPPZssAaCQEoAgEUGg070QgrC-uOGuEM29WoEUCZCNVq3TVsFUGUEhnuqFE-PKCYG9knhO11omBoGLCLQNSQy9y0EctIGAH1GaEoAaGCHUHsHCCEEiVQSJ3WFiHZE8iKz4G5HZBQECHUBxmcrrOAGngEXuECB0G9niHUASA0KQBpWPUcDLvCHUGMArGRHzzgFOLZSxTrFiCwsUCgEZTAGKGIHKxwpPNGEoEkFEQnTXg9R0EOEqHMnRhZNmEZkbD4DyEUHKGoAmHCASUPt8DSAaGRF8H7XoGADtk7zKCfJVNBD3ECHeGeyJBCF8ByF3FJ3eGqTKIyGAFwPZGSVIGMorAdpPFmEsFtl8GaHKHxmhNcoFl6j7AgAJUkAgIrGaArGUHkmWpCEUGRHA2SljAmFKgmCEHAXuEQkcSHLStvULNrFiDRGEVmAOvCGglwhg2KGRGABvohJACwcmOSGMA-vEAmG0NAl-DHWSHXWHwmArHZECHZEoHSlbpAD7WQPKD8HURQc7BobPiEBEUCvQBUhJmcCulVRv0cCKGRCL2UFqHCFiC0HeF0iQF6a0v9g8rSA0McvHTKwwpADCH_F8HoIpyYc2JGFmA5pyHKAby2GIAzWoCYDkVUCSBGEcEsAwBqjAFPuRPoHhrdiEDRFUGSCYDrs5X6lsE1UxH8C4YMFiHKAaHKGQHUDLNqUkGMBACgEQnBCmuMBY0pqCxLJhP8AwrQCJEI3ZCYBZNUhGGIGcH0gwGSqCjUByFmEE1jOGTcDyHoFaIZgSVzl8C0DWMTlvM8C9OSHeGAEMzgAaCJGUArCohaiYH6wZDRFGChlIAOyPvsHEByGAG80UCNpGG4HeCC3NXEfknKGkpU2buAgaGADlyO3eAwFiVmHklpvsHknHVCCYjMGmGRUWWWVWUoHWU2RlFgDEBzmoFxnICKkUBwBgAAG9VQmbMBaAYA-ByBFAxBcAABfKUXAOBZVeGcAGAKAEAdIeGXwZEA5CgKAUCFAAACi-sign2kBgFAEUAOWbcIAAGI8H5BCAABKVt1UDuKAVPMAGAFd1UAgRgIgAAHl8BgGgEKeoGwAACImBiAIBfAByQgu2-AR8KwBBQPqAKwABaP9juYAcdsALt9ADAAQGAXt8VMAaD4gUCUgLtoub83HAQCgDOLy6DoQHlqdvDkYVcb9gAPkIBgHkgfZgCfcIGfaEHfagE_Z_Yo5g-K30oNC7Yo7x1x3I5AHA9DPxy0C7fZEQXA9NfFS0CgFk_k6NHJUFW9WJS7aPfkHkGEAOSYFxy7Zo4rHffSGICYBgCPb4EEBE6M5QGg8ij_YBJM_kAAFIBB6Pn2xyGOmOWO2OOOuOePv2SPeAsOR8Aiu3xBVwvO_PmOCBH36AYB13yAJ8AA6Gt4gOtvOUgagfzxL1j5L9j3znz3weLgL4r194LkfH9pUb86DgTugGAGNWL7t8AKAaDjAf7SgZTrtlpFAfuNDndg5HT8Qcb-jwAN9NAAX1K7cY4S8S6fdS4y9iF7ecGoAAG0iQABdArxbqr-gcrwgXAFjgAA2q4_dq9_f_cA5ghA7A4g7A9g-IHg8Q-Q8wDQ4w9D2w9w_w-oEI5QGI_IFI6w4o6XZAGo9o7o5Y8K4ICC8u6_e_b48a-IEE8oGE8M7E744ECk6gBk5gDk9i8U965U4J7U5EA0_QEuaYC7YABIW2RuUAh37PjOYBTPzPFBLPrPbO7PMfHPnPFWIA3PPPvPfOYfYf4fuOruwuyPIvSeYvwP6PxfCv6fluIBMvcdsuwM0vqAB3lfEufOhA6OyvofYeJe32Ee6uOuUeGhmvWvwP2uGvuulPSeBuhvt30hRvrPxvxApvZv9eCBVfge0v1fVvFB1utvtu9ezfCuTfTvVRT2pQ9eAZEPm222CAp2Z3aau30_EudTis3uiAp3fBCBpAWOjTxUaAUA5ucPqBSBjuCAB2y-CAKwkAKx_2c_y_PHmvCAw_1vS-iuYAZvABjyMAATzQAWDlABja0ADsPFj_PnDzzJDovgGUvyrmAUgLyubvT2gbfvT1fwrp9igCsOb9kSQHf-Qc__fxLjfpf-QZv6_8gY_gnmQNfm_hUZdsPrtoke_pL9fx_9_3HJ_2f4_932gHHDmhjADNdc-hXDthgBA69t-2hXJvix0f7_tZgDbe-p3zN5PslQg3VgMuzm4ts--uvK_oV1wGLsCBd7Ygee2wB0cL2MfGAFexvYwBTu8gensQIHandMu3caAKu2g7shz28kFgef1O5Sgze0fRLhIN_7kD8BrPFdmHxoF0DoBg_AgKtxQAwAWAzbSAVgDbKgR5BvbRPmv1UHA932zbFgOlxoCYYOuWgFdoIJa5MciA0HebhoPIAWDqAwOVgNQFsFiD9uiXJgYcggA-Df-Eg5AQQBCBt8O-9AxLtxxxxzctIoEW0CgBCCkDB-sA-AX22oAgCn2XlWILjjEBdsjS63EARcnYAwANuhAXZGAEIDbcQBqA3GF5SgHi80h3bBAdQBY6hDEudQ-4HuQmBYDYezQnthkPaG1D2-9bRtn0JgGdQ4BLQoYUgNVDID22mvOtl2w24sdlBBAMPHlzm4pCM-3fObiIBQA7CYABw5QFeDm7QciQendzkcKfYHDAglnPHrJxf5m9M-IjbPlELN4DDWh4vDoYV1r6kB7AUvRoQwNuF897h0nEziAIP7JcWeKAeIJ72r5EAD2DkPgP7WABHDf-sIkeC5yF4tc7--vRnnNxs62cG-sPX4YlwaBdtoOIwKES4MuRlDT-23YYWsPF6bCe-RwmIT3wOE3CYRwPcEY8OAHi9Xhs7CYf0KmHpDEBZI2kf8MBGftRR0I44WCIeH48aR-vUEaJzhEIjthtIzEXz2xGC8v--IkEcl0JFIi2YwABiuiIJFaiYA2gmAKPi0DA8oA6vQVFeC0B7l0uEAvCLZgF7_coAK7O_jAEDHf8gxW7VYQwN_4tsYA91SJO4K7aBjTRh7FdLZ2ADoiYA5I7AclyjExixApPEMYmIPZEgiQtncboxwzGw9sxtnXMfGK3aJiM4IgAMVux4I0jQxQY9LlYlPZlidRiXSsbGLzG1ibRhAeseQEbEE8RgLYwMfIHS7-BOx6Y_Xtt1PY_DaRJHCYF6PlG-DAA4MaAAuT0AD9fvrwgDj4KOigFYYQAH6VDUAKHGofrwHLjCPhMfL4bMJj7liM-07N4b4HXGTDO2MwyUeIO7Gc9IBsokfB-OiF7CiAEACzkwAxGJcCxenPgFBIIC498e7IbsQQC0jviiAVPYlKSN_H68ShKwgPneIYGt9RhqnAiVINh5MicJZvPCQyPkBXizeN4zAe-yWFjD76zIwrusMnagTCAKI0fA8XiHLsjhbIuboAAA5QAHSpgAUqNAAZtE8iuJsQsCQJNxxHCDxjIdIF20qH7IwktIlSUePsCo87eqos3gWOPayTAAhFaAB_c0AAbyoAHnEwAJDmrbcgE31bZCAB2gAGH-GebkltkwE8m69XJgAMCVAA1EqAALCK3GABvn0ADoSoAFgVVyYAAdTQAHbG0U-KYAB4FQAJLegAIAYYAgACnVJ2OcVZLjhgCAAuOSIB1DGOgAELdJugATAVXJgALHlbJgALE1AAVHIRTSp8U1yYABNrSboAHvlQAKdygALATAA4_EOT5ATkltg7BGk1wB2MAQAJvxgAWc9AAcCqAAjdMAAFSoACJfQAKj6pUwAJ2mgAeH0QpzU9aRlPH6AAYFUAB_akFMADePoAGj1QANBypUhyZ5JcnuTgAnk7yTAEADUKoAEk5cfiJMADsFhlMABuioAFo5GyaNJGkuSt2HkiGd5MynHSzpV066YAGO5IKfFM-kFTAAWP_i8n2gADKMdxgACH_AAXMqAB99UACQ_ydMACADIAEfzQAG1OuMwAIbmgAI31SZZMxwDuJOkwAc-jk3GRFMimAAHz2JnuSXJuM86YADu3JKfzI8m4yYpYsqGQO1xmAAD02JmYzkugAY1NAAnQ4nTcZgAFBtAAhzakz2Z90rmVFL5kCzZZ8U3meLOemSykpMUwACN-xMmWfLMVmZiYAgABnU2ZHM2WdzONkttBZRM82U9NlmAAIFUABuelLPtmttvJjspWTAEAA-meTMABXckFMAAbbmTMADw9oAHTTE6R7MNn-yfZpsuKYAE8M3OZbLDkOzAAfm5-TAAK9ZOzYewo94ZxIICwj4Ru7REUOKfIjj2Q_gQMZ3O7ldyt2RITsd2NhH8j8e3_NUclxkFLtWehAUaQAB9QZ6YhnvPOekDsoJOAhdrINbmgyOO6g-gHRxm459np2E2HpPMoFrtg-E-RQZO1fGzt52eAqeauzV5btD2tnZoK1glCntuxUHI0lFCNj3Bv5c3GXlh2L5UjLhq4Y-Y31pHZDcOgE4EbDyfaNylREIlrlAuS6IKNRzcr3i_JJHRzyxNE8MTHy25TiWxhAOTlRWg6P4KFRIPEbQC7mX96JhCvuulxIVkL2QFC5oFQpa4jBaFF_PfpRIonsSexQo7ibxIQ7ZpN5QknXqJMkkyTUFcknvgFAkXaTDxakuUOAAVBKhlFqk-CvpK_6GTYeME6oByJvn1z9eTcwccOJXY9ymxfcgnrYoHlQTh5yor_t2PXn3zKBM88gPPMcmLzgAy8gdqvNcUTyN5D8wgY5J3msd95s3VtkfP16ny5BavK-XXLnYhLl258jdhAGfkHtJAPmByIhDPZfyKwP89rBAH_lFLAFwPcLtBxAUwALh8nCBemLkUyigR64hBYqI1EjyXF0c9BQ50wWtziRDSp9ngu1D4SGBW3dkMwufmsL2FnCmNDwvoXditu7wSZUQGmWUL6cLXd4PMr4Xi9-FjfVUEyKHZAA
+	请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body style="height: 100%; margin: 0">
+    <div id="container" style="height: 100%"></div>
+
+    <script
+      type="text/javascript"
+      src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"
+    ></script>
+    <!-- Uncomment this line if you want to dataTool extension
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/dataTool.min.js"></script>
+    -->
+    <!-- Uncomment this line if you want to use gl extension
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+    -->
+    <!-- Uncomment this line if you want to echarts-stat extension
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+    -->
+    <!-- Uncomment this line if you want to use map
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+    -->
+    <!-- Uncomment these two lines if you want to use bmap extension
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/bmap.min.js"></script>
+    -->
+
+    <script type="text/javascript">
+      var dom = document.getElementById('container');
+      var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false,
+      });
+      var app = {};
+
+      var option;
+
+      const IconArrow =
+        'image://data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7';
+      const IconInfo =
+        'image://data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAsCAYAAAAacYo8AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKfSURBVHgB1ZlRbtpAEIb/MaEIqQ85Ar0BOUHdpxaeOEI5QdITlJ4g7QmanqB5apD6EHqC0hPER6BS1QhT73SGACHGNgteY/NJkay1vfk9O/vv7AIUSDeaDl5Hfy9QAISCeMP3PrF3q9dM5tWQmiM4pBDhIrq1EN1aNE1E/JmID+AID45JEK2capvPfApHOBdOqH3GU9FLWk2efYUjnArXyQhmP/0J9jscXsIBzoSraCa83/og84ULp3EyOdcdxJa8TpNbeMpktCGX0+RKlRyilVxOk0t4hoPYsrfT7JwqGqEmQl9ePc92kJ0YM9HHIT37YvuCtfAu/2nD1HvyxjnLMKMYAmKMjGc+bMv9TOEFRdcOopEE6CptFBKFHyi6tiSOwkp4qdG1ZW0U5sLF1t567F1WILq2BEs7DI5ItNKaC58vvWJHOBKYcbXK8Z7keMjh3RFEPtA6Z7VyXhNNDJl3qDiyUA3UXTbssGPCW62bUUE0RYa1Rl+vN2oVpqgvXzNBFREvX13G7+kwGELlJqpsUgaJC1Ccrgl/MriNahDceI0X6w2pZa2hqDITVV0k3pYqvCrebubl7malmLmRaKCukyFAeQTTBw0bZApXb5dh6qMk1LNHoiHpntVGomOmjBKQCZmqz/lJ1qGwE06l5HmQdbPKEc9cvS2FU4ADI4tffuG0pZMysBJuyii6OHuULSNOBxfOHuVPFS4hVehYc9zJ5JROfmMPdEOy76aE4GW+dwIHnTw+h4kBj4lwDdTG36j+Q9s7PHsJRG3ZevU8UNtmQ05bLNhKOMNI5DykCdUTJrk/WgqNc/PQrn+fsPgQ6dPXEzMR6GMPrIqsxQH+XVzoPU5+pVVvu5D0If9odvadno+RBz1z0c5d/k6Zhc3/+g/t7z/HozRCjAAAAABJRU5ErkJggg==';
+      const IconWorn =
+        'image://data:image/png;base64,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';
+      const seriesLabel = {
+        show: false,
+      };
+
+      function tooltipFormatter(params, color = '#f00') {
+        return `<p style="display: flex;flex-direction: row; align-item: center;margin-bottom:5px">
+          <b style="box-sizing: border-box;width: 20px;height: 20px;background: ${color};border: 5px solid #fff;border-radius: 50%;"></b>
+          <b style="margin-left: 6px;">
+          ${params.seriesName}
+          </b></p>
+          <p style="font-size: 12px; font-weight: normal; color: #666">时间:
+          ${params.value[1]}
+          </p>`;
+      }
+      option = {
+        tooltip: {
+          position: 'top',
+          trigger: 'item',
+        },
+        xAxis: {
+          type: 'value', // 时间解析不正确
+          position: 'top',
+          // min: '00:00:00',
+          // max: '24:00:00',
+          min: 0,
+          max: 24,
+          // minInterval: 1,
+          // maxInterval: 24,
+          splitLine: {
+            show: false,
+          },
+          axisLabel: {
+            // formatter: '{value}',
+            formatter: (value) => {
+              return `0${value}`.substr(-2) + `:00`;
+            },
+          },
+          // formatter: (val) => {
+          //   var da = new Date(val);
+          //   var s = da.getMonth() + 1 + '-' + da.getDate();
+          //   return s;
+          // }
+        },
+        yAxis: {
+          type: 'category',
+          // show: false,
+          // inverse: true,
+          data: ['Icon'],
+          axisLine: {
+            show: false,
+          },
+          axisTick: {
+            show: false,
+          },
+          axisLabel: {
+            show: false,
+          },
+        },
+
+        series: [
+          {
+            name: '',
+            type: 'bar',
+            barGap: '-100%',
+            // barWidth: 24,
+            tooltip: {
+              show: false,
+            },
+            itemStyle: {
+              // borderWidth: 5,
+              // borderColor: '#eff3fc',
+              // borderRadius: 10,
+              color: '#ffff',
+            },
+            z: -5,
+            data: [24],
+          },
+          {
+            name: '',
+            type: 'bar',
+            // barWidth: 24,
+            tooltip: {
+              show: false,
+            },
+            itemStyle: {
+              // borderWidth: 5,
+              // borderColor: '',
+              // borderRadius: 10,
+              // color: '#58c27c'
+              color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+                // { offset: 0, color: '#33ffcc' },
+                // { offset: 1, color: '#11ff66' },
+                { offset: 0, color: 'rgba(0, 255, 0, 0.05)' },
+                { offset: 1, color: 'rgba(0, 255, 0, 0.3)' },
+              ]),
+            },
+            markLine: {
+              // 指示线
+              symbol: ['', IconArrow],
+              label: {
+                show: false,
+              },
+              tooltip: {
+                show: false,
+              },
+              lineStyle: {
+                type: 'solid',
+                color: '#00f',
+                width: 2,
+                cap: 'round',
+              },
+              data: [
+                {
+                  xAxis: 20,
+                },
+              ],
+            },
+            data: [20],
+            label: seriesLabel,
+          },
+          {
+            type: 'effectScatter',
+            name: '一键报警',
+            // type: 'scatter',
+            symbol: IconWorn,
+            symbolSize: 15,
+            color: '#f00',
+            // 模板变量有 {a}, {b}，{c}，{d}，{e}，分别表示系列名，数据名，数据值等。 在 trigger 为 'axis' 的时候，会有多个系列的数据，此时可以通过 {a0}, {a1}, {a2} 这种后面加索引的方式表示系列的索引。 不同图表类型下的 {a}，{b}，{c}，{d} 含义不一样。 其中变量{a}, {b}, {c}, {d}在不同图表类型下代表数据含义为：
+            // 折线（区域）图、柱状（条形）图、K线图 : {a}（系列名称），{b}（类目值），{c}（数值）, {d}（无）
+            // 散点图（气泡）图 : {a}（系列名称），{b}（数据名称），{c}（数值数组）, {d}（无）
+            // 地图 : {a}（系列名称），{b}（区域名称），{c}（合并数值）, {d}（无）
+            // 饼图、仪表盘、漏斗图: {a}（系列名称），{b}（数据项名称），{c}（数值）, {d}（百分比）
+            tooltip: {
+              borderColor: 'rgba(230, 230, 230, 1)',
+              borderWidth: 1,
+              // formatter: '{a|{a} }{c|{c}}',
+              // formatter: '{a}<br />时间: {c}'
+              formatter: (params) => tooltipFormatter(params, '#ff7877'),
+              extraCssText: 'margin-top: -10px',
+            },
+            // itemStyle: {
+            //   borderWidth: 1,
+            //   borderColor: '#fff'
+            // },
+            data: [
+              [10.5, '2022-07-01 10:30:00'],
+              [15.5, '2022-07-01 15:30:00'],
+            ],
+          },
+          {
+            type: 'effectScatter',
+            name: '一键报警',
+            // type: 'scatter',
+            symbol: IconInfo,
+            symbolSize: 15,
+            color: '#00f',
+            tooltip: {
+              borderColor: 'rgba(230, 230, 230, 1)',
+              borderWidth: 1,
+              // formatter: '{a|{a} }{c|{c}}',
+              // formatter: '{a}<br />时间: {c}'
+              formatter: (params) => tooltipFormatter(params, '#49fef9'),
+              extraCssText: 'margin-top: -10px',
+            },
+            // itemStyle: {
+            //   borderWidth: 1,
+            //   borderColor: '#fff'
+            // },
+            data: [
+              [12.5, '2022-07-01 12:30:00'],
+              [18.5, '2022-07-01 18:30:00'],
+            ],
+          },
+        ],
+      };
+
+      if (option && typeof option === 'object') {
+        myChart.setOption(option);
+      }
+
+      window.addEventListener('resize', myChart.resize);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    body {
+      background: #000000;
+    }
+
+    .cylinder-container {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 50px;
+      width: 160px;
+      height: 235px;
+    }
+
+    .cylinder {
+      position: relative;
+      margin-top: 6px;
+      height: 20px;
+      width: var(--ellipseWidth);
+      /*margin-top: calc(var(--ellipseHeight) * 0.5);*/
+      background: var(--sideColor);
+      z-index: 999;
+      transition: all 0.5s;
+    }
+
+    .cylinder:after,
+    .cylinder:before {
+      content: "";
+      position: absolute;
+      width: var(--ellipseWidth);
+      height: var(--ellipseHeight);
+      border-radius: 50%;
+    }
+
+    .cylinder:before {
+      top: calc(var(--ellipseHeight) * -0.5);
+      background: var(--topColor);
+      z-index: 99
+    }
+
+    .cylinder:after {
+      bottom: calc(var(--ellipseHeight) * -0.5);
+      background: var(--sideColor);
+      z-index: 9
+    }
+
+    .cylinder .cylinder-info {
+      position: absolute;
+      left: 140px;
+      bottom: 0;
+      line-height: 32px;
+      width: 295px;
+      display: grid;
+      grid-template-columns: 5fr 5fr 1fr;
+      text-align: right;
+      transition: all 0.5s;
+      border-bottom: 1px dashed rgba(179,219,255,1);
+    }
+
+    .cylinder-active .cylinder-info {
+      left: 150px;
+    }
+
+    .cylinder .cylinder-info .channelname {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .cylinder .cylinder-info>div:nth-child(1) {
+      width: 220px;
+      color: #98CEFF;
+    }
+
+    .cylinder .cylinder-info>div:nth-child(2) {
+      width: 70px;
+      color: #FFC955;
+      font-weight: bold;
+    }
+
+    .cylinder .cylinder-info>div:nth-child(2)::after {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      background: #B3DBFF;
+      position: absolute;
+      right: -5px;
+      bottom: -3px;
+      border-radius: 50%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="cylinder-container">
+    <div data-name="支付宝" class="cylinder"
+      style="height: 80px;--ellipseWidth: 140px;--ellipseHeight: 56px;--topColor: #cc681c;--sideColor: #FF8222;">
+      <div class="cylinder-info">
+        <div class="day_totalsumamt">48,367万元</div>
+        <div class="channelname">支付宝</div>
+      </div>
+    </div>
+    <div data-name="财付通" class="cylinder cylinder-active"
+      style="height: 50px;--ellipseWidth: 160px;--ellipseHeight: 68px;--topColor: #BF8804;--sideColor: #FFC028;">
+      <div class="cylinder-info">
+        <div class="day_totalsumamt">26,367万元</div>
+        <div class="channelname">财付通</div>
+      </div>
+    </div>
+    <div data-name="京东" class="cylinder"
+      style="height: 40px;--ellipseWidth: 140px;--ellipseHeight: 56px;--topColor: #5E34B7;--sideColor: #885AFA;">
+      <div class="cylinder-info">
+        <div class="day_totalsumamt">17,367万元</div>
+        <div class="channelname">京东</div>
+      </div>
+    </div>
+    <div data-name="苏宁" class="cylinder"
+      style="height: 40px;--ellipseWidth: 140px;--ellipseHeight: 56px;--topColor: #2143AB;--sideColor: #3465F5;">
+      <div class="cylinder-info">
+        <div class="day_totalsumamt">13,367万元</div>
+        <div class="channelname">苏宁</div>
+      </div>
+    </div>
+    <div data-name="百度" class="cylinder"
+      style="height: 20px;--ellipseWidth: 140px;--ellipseHeight: 56px;--topColor: #A82C42;--sideColor: #E13858;">
+      <div class="cylinder-info">
+        <div class="day_totalsumamt">5,367万元</div>
+        <div class="channelname">百度</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

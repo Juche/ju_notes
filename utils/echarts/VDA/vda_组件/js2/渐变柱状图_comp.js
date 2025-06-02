@@ -1,0 +1,200 @@
+/**
+ * ## 自定义组件 ##
+ * name: gradientBar
+ * desc: 柱状渐变图
+ */
+
+// ========================================
+// 实例 => created => 模拟动态数据
+
+// 展示数据更新
+// showDataUpdate
+
+var timer = setInterval(() => {
+
+  ctx.showData.pop()
+
+  console.log('ctx.showData.length: ', ctx.showData.length)
+
+  if(ctx.showData.length == 1) {
+      clearInterval(timer)
+  }
+
+}, 2000)
+
+
+// ========================================
+// 数据篮子 && 实例 => 数据篮子数据
+
+// 展示数据
+// showData
+
+[
+  {
+    name: "乐原道支行",
+    value: 27
+  },
+  {
+    name: "南京湖南路支行",
+    value: 34
+  },
+  {
+    name: "深圳红岭支行",
+    value: 35
+  },
+  {
+    name: "成都武侯支行",
+    value: 42
+  },
+  {
+    name: "深圳科技园支行",
+    value: 49
+  }
+]
+
+// ========================================
+// 自定义组件 => 数据篮子计算数据
+
+let ctx = this;
+
+var option = {
+  width: "90%",
+  backgroundColor: "#04113a",
+  grid: {
+    left: "5%",
+    top: "5%",
+    bottom: "5%"
+  },
+  tooltip: {
+    show: true,
+    trigger: "axis",
+    axisPointer: {
+      type: "shadow"
+    },
+    formatter: "{b}：{c}",
+    textStyle: {
+      fontSize: "20"
+    }
+  },
+  xAxis: {
+    type: "value",
+    splitLine: {
+      show: false
+    },
+    axisTick: {
+      show: false
+    },
+    axisLine: {
+      show: false
+    }
+  },
+  yAxis: {
+    type: "category",
+    axisTick: {
+      show: false
+    },
+    axisLine: {
+      show: false
+    },
+    axisLabel: {
+      show: false
+    },
+    data: [
+      "乐原道支行",
+      "南京湖南路支行",
+      "深圳科技园支行"
+    ]
+  },
+  series: [
+    {
+      barWidth: 8,
+      z: 10,
+      itemStyle: {
+        color: new (ctx.$echarts).graphic.LinearGradient(
+          0,
+          0,
+          1,
+          0,
+          [
+            {
+              offset: 0,
+              color: "rgba(255,128,91,1)"
+            },
+            {
+              offset: 0.7,
+              color: "rgba(255,227,122,1)"
+            }
+          ]
+        ),
+        barBorderRadius: 15
+      },
+      label: {
+        show: true,
+        fontSize: 16,
+        // distance: 10,
+        // position: [0, "-30px"],
+        // position: "top",
+        // formatter: "{b}",
+        position: ["150", "-24px"],
+        formatter: "{c}分钟",
+        // offset: [0, -10],
+        color: "rgba(239,254,255,1)"
+      },
+      type: "bar",
+      data: [27, 34, 49]
+    },
+    {
+      type: "bar",
+      barGap: "-100%",
+      barWidth: 8,
+      animation: false,
+      z: -1,
+      itemStyle: {
+        color: "#2f3b4e",
+        barBorderRadius: 15
+      },
+      label: {
+        show: true,
+        // position: "top",
+        fontSize: 16,
+        // lineHeight: 50,
+        // position: ["50%", "-30px"],
+        position: [0, "-24px"],
+        color: "rgba(172,207,255,1)",
+        formatter: "{b}"
+        // formatter: function(param) {
+        //   for (var i = 0; i < data.length; i++) {
+        //     if (param.name == data[i].name) {
+        //       return data[i].value + " 分钟";
+        //     }
+        //   }
+        // }
+      },
+      data: [55, 55, 55]
+    }
+  ]
+}
+
+var maxVal = 0; // 找到最大值
+var nameData = []; // bar 标题
+var valueData = []; // bar 数据进度条
+var indicateData; // bar 参考进度条
+
+ctx.showData.forEach(function(item) {
+  maxVal = item.value > maxVal ? item.value : maxVal;
+  nameData.push(item.name);
+  valueData.push(item.value);
+});
+
+indicateData = ctx.showData.map(function() {
+  return maxVal * 1.1;
+});
+
+// bar 标题
+option.yAxis.data = nameData;
+// bar 数据进度条
+option.series[0].data = valueData;
+// bar 参考进度条
+option.series[1].data = indicateData;
+
+return option

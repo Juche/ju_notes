@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body style="height: 100%; margin: 0">
+    <div id="container" style="height: 100%; background: #000"></div>
+
+    <script
+      type="text/javascript"
+      src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"
+    ></script>
+    <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/dataTool.min.js"></script>
+  -->
+    <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+    <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+    <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+    <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/bmap.min.js"></script>
+  -->
+
+    <script type="text/javascript">
+      var dom = document.getElementById('container');
+      var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false,
+      });
+      var app = {};
+      var ROOT_PATH = 'https://echarts.apache.org/examples';
+      var option;
+
+      const Icon = ROOT_PATH + '/data/asset/img/weather/sunny_128.png';
+
+      const seriesLabel = {
+        show: false,
+      };
+      option = {
+        tooltip: {
+          position: 'top',
+          trigger: 'item',
+        },
+        xAxis: {
+          type: 'value',
+          // name: 'Days',
+          // show: false，
+          min: 0,
+          max: 24,
+          // minInterval: 1,
+          // maxInterval: 24,
+          splitLine: {
+            show: false,
+          },
+          axisLabel: {
+            // formatter: '{value}',
+            formatter: (params) => {
+              return `0${params}`.substr(-2) + `:00`;
+            },
+          },
+        },
+        yAxis: {
+          type: 'category',
+          // show: false,
+          // inverse: true,
+          data: ['Icon'],
+          axisLine: {
+            show: false,
+          },
+          axisTick: {
+            show: false,
+          },
+          axisLabel: {
+            formatter: (value) => {
+              // return '{' + value + '| }\n{value|' + value + '}';
+              // return '{' + value + '| }\n{value|}';
+              return '{' + value + '|}';
+            },
+            // align: 'center',
+            // verticalAlign: 'center',
+            margin: -12,
+            padding: [10, 10, 10, 10],
+            borderRadius: 50,
+            // width: 60,
+            // height: 60,
+            backgroundColor: '#eff3fc',
+            rich: {
+              // value: {
+              //   width: 50,
+              //   height: 50,
+              //   backgroundColor: '#f00',
+              //   // lineHeight: 30,
+              //   // align: 'center'
+              // },
+              Icon: {
+                width: 50,
+                height: 50,
+                // align: 'center',
+                // padding: [0, 0, 0, 0],
+                // backgroundColor: '#f00',
+                backgroundColor: {
+                  image: Icon,
+                },
+              },
+            },
+          },
+        },
+
+        series: [
+          {
+            name: '',
+            type: 'bar',
+            barGap: '-100%',
+            barWidth: 24,
+            tooltip: {
+              show: false,
+            },
+            itemStyle: {
+              borderWidth: 5,
+              borderColor: '#eff3fc',
+              borderRadius: 10,
+              color: '#ffff',
+            },
+            z: -5,
+            data: [24],
+          },
+          {
+            name: '',
+            type: 'bar',
+            barWidth: 24,
+            tooltip: {
+              show: false,
+            },
+            itemStyle: {
+              borderWidth: 5,
+              borderColor: '#eff3fc',
+              borderRadius: 10,
+              color: '#58c27c',
+              // color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+              //   // { offset: 0, color: '#33ffcc' },
+              //   // { offset: 1, color: '#11ff66' },
+              //   { offset: 0, color: 'rgba(0, 255, 0, 0.05)' },
+              //   { offset: 1, color: 'rgba(0, 255, 0, 0.3)' },
+              // ])
+            },
+            data: [20],
+            label: seriesLabel,
+            markPoint: {
+              symbolSize: 1,
+              // symbolOffset: [0, '50%'],
+              tooltip: {
+                show: false,
+              },
+              label: {
+                // position: 'right',
+                // distance: -10,
+                backgroundColor: 'rgb(255,255,255)',
+                color: '#016efe',
+                // borderColor: '#aaa',
+                // borderWidth: 1,
+                borderRadius: 20,
+                padding: [0, 10],
+                // offset: [-10, 0],
+                height: 22,
+                lineHeight: 22,
+                shadowBlur: 2,
+                shadowColor: '#666',
+                // shadowOffsetX: 0,
+                // shadowOffsetY: 1,
+                // formatter: '{b|{b} }{c|{c}}',
+                formatter: ({ value }) => {
+                  return `0${value}`.substr(-2) + `:00`;
+                },
+                // rich: {
+                //   // a: {
+                //   //   align: 'center',
+                //   //   color: '#fff',
+                //   //   fontSize: 18,
+                //   //   textShadowBlur: 2,
+                //   //   textShadowColor: '#000',
+                //   //   textShadowOffsetX: 0,
+                //   //   textShadowOffsetY: 1,
+                //   //   textBorderColor: '#333',
+                //   //   textBorderWidth: 2
+                //   // },
+                //   // b: {
+                //   //   color: '#333'
+                //   // },
+                //   c: {
+                //     color: '#ff8811',
+                //     textBorderColor: '#000',
+                //     textBorderWidth: 1,
+                //     fontSize: 22
+                //   }
+                // }
+              },
+              data: [
+                { type: 'max', name: 'max: ' },
+                // { type: 'min', name: 'min: ' }
+              ],
+            },
+          },
+          {
+            type: 'effectScatter',
+            name: '有人',
+            // type: 'scatter',
+            symbolSize: 10,
+            color: '#f00',
+            // 模板变量有 {a}, {b}，{c}，{d}，{e}，分别表示系列名，数据名，数据值等。 在 trigger 为 'axis' 的时候，会有多个系列的数据，此时可以通过 {a0}, {a1}, {a2} 这种后面加索引的方式表示系列的索引。 不同图表类型下的 {a}，{b}，{c}，{d} 含义不一样。 其中变量{a}, {b}, {c}, {d}在不同图表类型下代表数据含义为：
+            // 折线（区域）图、柱状（条形）图、K线图 : {a}（系列名称），{b}（类目值），{c}（数值）, {d}（无）
+            // 散点图（气泡）图 : {a}（系列名称），{b}（数据名称），{c}（数值数组）, {d}（无）
+            // 地图 : {a}（系列名称），{b}（区域名称），{c}（合并数值）, {d}（无）
+            // 饼图、仪表盘、漏斗图: {a}（系列名称），{b}（数据项名称），{c}（数值）, {d}（百分比）
+            tooltip: {
+              borderColor: 'rgba(230, 230, 230, 1)',
+              borderWidth: 1,
+              // formatter: '{a|{a} }{c|{c}}',
+              // formatter: '{a}<br />时间: {c}'
+              formatter: (params) => {
+                // console.log('params', params)
+                return (
+                  '<p style="display: flex;flex-direction: row; align-item: center;margin-bottom:5px">' +
+                  '<b style="box-sizing: border-box;width: 20px;height: 20px;background: #f00;border: 5px solid #fff;border-radius: 50%;"></b>' +
+                  '<b style="margin-left: 6px;">' +
+                  params.seriesName +
+                  '</b></p>' +
+                  '<p style="font-size: 12px; font-weight: normal; color: #666">时间: ' +
+                  params.value[1] +
+                  '</p>'
+                );
+                // return [
+                //       params.seriesName + '<hr size=1 style="margin: 3px 0">',
+                //       '时间: ' + params.value[1] + '<br/>',
+                //       // 'Close: ' + param.data[1] + '<br/>',
+                //       // 'Lowest: ' + param.data[2] + '<br/>',
+                //       // 'Highest: ' + param.data[3] + '<br/>'
+                //     ].join('');
+              },
+              extraCssText: 'margin-top: -10px',
+            },
+            // itemStyle: {
+            //   borderWidth: 1,
+            //   borderColor: '#fff'
+            // },
+            data: [
+              [10.5, '2022-07-01 10:30:00'],
+              [15.5, '2022-07-01 15:30:00'],
+            ],
+          },
+        ],
+      };
+
+      if (option && typeof option === 'object') {
+        myChart.setOption(option);
+      }
+
+      window.addEventListener('resize', myChart.resize);
+    </script>
+  </body>
+</html>

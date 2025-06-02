@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <script src="./js/echarts.min.js"></script>
+    <script src="https://api.map.baidu.com/getscript?v=3.0&ak=E4805d16520de693a3fe707cdc962045"></script>
+    <script src="https://echarts.apache.org/examples/vendors/echarts/extension/bmap.min.js"></script>
+    <!-- <script src="https://api.map.baidu.com/getscript?v=3.0&ak=E4805d16520de693a3fe707cdc962045"></script> -->
+    <!-- <script src="https://echarts.apache.org/examples/vendors/echarts/extension/bmap.min.js></script> -->
+  </head>
+  <body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="chart" style="width: 600px; height: 400px;"></div>
+    <div id="chart2" style="width: 600px; height: 400px;"></div>
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById("chart"));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: "ECharts 入门示例",
+        },
+        tooltip: {},
+        legend: {
+          data: ["销量"],
+        },
+        xAxis: {
+          data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"],
+        },
+        yAxis: {},
+        series: [
+          {
+            name: "销量",
+            type: "bar",
+            data: [5, 20, 36, 10, 10, 20],
+          },
+        ],
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+    <script>
+      let myChart2 = echarts.init(document.getElementById("chart2"));
+
+      let option2 = {
+        bmap: {
+          // center: [104.114129, 37.550339],
+          // center: [114.31, 30.52],
+          zoom: 5,
+          roam: true,
+        },
+      };
+      myChart2.setOption(option2);
+
+      // 获取百度地图实例，使用百度地图自带的控件
+      var bmap = myChart2.getModel().getComponent("bmap").getBMap();
+      bmap.addControl(new BMap.MapTypeControl());
+    </script>
+  </body>
+</html>
