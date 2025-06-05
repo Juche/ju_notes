@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 灰色分隔线，高度1像素 */
+      hr {
+        height: 1px;
+        background-color: #ccc;
+        border: none;
+      }
+      /* 全屏覆盖的黑色半透明浮层，黑色透明度是75% */
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 用于获取url字符串对应的域名的函数
+      function getDomain(url) {
+        let domain = url.match(
+          /^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:/\n?=]+)/im,
+        )
+        return domain ? domain[1] : null
+      }
+
+      // 身份证正则
+      let idCard =
+        /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/
+      // 手机号正则
+      let phone =
+        /^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/
+      // 对象转map
+      function objToMap(obj) {
+        let map = new Map()
+        for (let key in obj) {
+          map.set(key, obj[key])
+        }
+        return map
+      }
+
+      // fetch 封装
+      function f(url, method) {
+        fetch(url, {
+          method: method,
+        })
+          .then(res => {
+            return res.json()
+          })
+          .then(res => {
+            console.log(res)
+          })
+      }
+    </script>
+  </body>
+</html>

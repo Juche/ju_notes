@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>resume</title>
+    <style>
+      .markdown-link-color {
+        color: #337ab7;
+      }
+      .markdown-preview:not([data-use-github-style]) {
+        padding: 2em;
+        font-size: 1.2em;
+        color: rgb(56, 58, 66);
+        background-color: rgb(250, 250, 250);
+        overflow: auto;
+      }
+      .markdown-preview:not([data-use-github-style]) > :first-child {
+        margin-top: 0px;
+      }
+      .markdown-preview:not([data-use-github-style]) h1,
+      .markdown-preview:not([data-use-github-style]) h2,
+      .markdown-preview:not([data-use-github-style]) h3,
+      .markdown-preview:not([data-use-github-style]) h4,
+      .markdown-preview:not([data-use-github-style]) h5,
+      .markdown-preview:not([data-use-github-style]) h6 {
+        line-height: 1.2;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+        color: rgb(0, 0, 0);
+      }
+      .markdown-preview:not([data-use-github-style]) h1 {
+        font-size: 2.4em;
+        font-weight: 300;
+      }
+      .markdown-preview:not([data-use-github-style]) h2 {
+        font-size: 1.8em;
+        font-weight: 400;
+      }
+      .markdown-preview:not([data-use-github-style]) h3 {
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+      .markdown-preview:not([data-use-github-style]) h4 {
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+      .markdown-preview:not([data-use-github-style]) h5 {
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+      .markdown-preview:not([data-use-github-style]) h6 {
+        font-size: 1em;
+        font-weight: 600;
+      }
+      .markdown-preview:not([data-use-github-style]) strong {
+        color: rgb(0, 0, 0);
+      }
+      .markdown-preview:not([data-use-github-style]) del {
+        color: rgb(94, 97, 110);
+      }
+      .markdown-preview:not([data-use-github-style]) a,
+      .markdown-preview:not([data-use-github-style]) a code {
+        color: rgb(82, 111, 255);
+      }
+      .markdown-preview:not([data-use-github-style]) img {
+        max-width: 100%;
+      }
+      .markdown-preview:not([data-use-github-style]) > p {
+        margin-top: 0px;
+        margin-bottom: 1.5em;
+      }
+      .markdown-preview:not([data-use-github-style]) > ul,
+      .markdown-preview:not([data-use-github-style]) > ol {
+        margin-bottom: 1.5em;
+      }
+      .markdown-preview:not([data-use-github-style]) blockquote {
+        margin: 1.5em 0px;
+        font-size: inherit;
+        color: rgb(94, 97, 110);
+        border-color: rgb(209, 209, 210);
+        border-width: 4px;
+      }
+      .markdown-preview:not([data-use-github-style]) hr {
+        margin: 3em 0px;
+        border-top: 2px dashed rgb(209, 209, 210);
+        background: none;
+      }
+      .markdown-preview:not([data-use-github-style]) table {
+        margin: 1.5em 0px;
+      }
+      .markdown-preview:not([data-use-github-style]) th {
+        color: rgb(0, 0, 0);
+      }
+      .markdown-preview:not([data-use-github-style]) th,
+      .markdown-preview:not([data-use-github-style]) td {
+        padding: 0.66em 1em;
+        border: 1px solid rgb(209, 209, 210);
+      }
+      .markdown-preview:not([data-use-github-style]) code {
+        color: rgb(0, 0, 0);
+        background-color: rgb(234, 234, 235);
+      }
+      .markdown-preview:not([data-use-github-style]) pre.editor-colors {
+        margin: 1.5em 0px;
+        padding: 1em;
+        font-size: 0.92em;
+        border-radius: 3px;
+        background-color: rgb(240, 240, 240);
+      }
+      .markdown-preview:not([data-use-github-style]) kbd {
+        color: rgb(0, 0, 0);
+        border-width: 1px 1px 2px;
+        border-style: solid;
+        border-color: rgb(209, 209, 210) rgb(209, 209, 210) rgb(193, 193, 194);
+        border-image: initial;
+        background-color: rgb(234, 234, 235);
+      }
+      .markdown-preview[data-use-github-style] {
+        font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans,
+          sans-serif;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+        padding: 30px;
+        font-size: 16px;
+        color: rgb(51, 51, 51);
+        background-color: rgb(255, 255, 255);
+        overflow: scroll;
+      }
+      .markdown-preview[data-use-github-style] > :first-child {
+        margin-top: 0px !important;
+      }
+      .markdown-preview[data-use-github-style] > :last-child {
+        margin-bottom: 0px !important;
+      }
+      .markdown-preview[data-use-github-style] a:not([href]) {
+        color: inherit;
+        text-decoration: none;
+      }
+      .markdown-preview[data-use-github-style] .absent {
+        color: rgb(204, 0, 0);
+      }
+      .markdown-preview[data-use-github-style] .anchor {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        padding-right: 6px;
+        padding-left: 30px;
+        margin-left: -30px;
+      }
+      .markdown-preview[data-use-github-style] .anchor:focus {
+        outline: none;
+      }
+      .markdown-preview[data-use-github-style] h1,
+      .markdown-preview[data-use-github-style] h2,
+      .markdown-preview[data-use-github-style] h3,
+      .markdown-preview[data-use-github-style] h4,
+      .markdown-preview[data-use-github-style] h5,
+      .markdown-preview[data-use-github-style] h6 {
+        position: relative;
+        margin-top: 1em;
+        margin-bottom: 12px;
+        font-weight: bold;
+        line-height: 1.4;
+      }
+      .markdown-preview[data-use-github-style] h1 .octicon-link,
+      .markdown-preview[data-use-github-style] h2 .octicon-link,
+      .markdown-preview[data-use-github-style] h3 .octicon-link,
+      .markdown-preview[data-use-github-style] h4 .octicon-link,
+      .markdown-preview[data-use-github-style] h5 .octicon-link,
+      .markdown-preview[data-use-github-style] h6 .octicon-link {
+        display: none;
+        color: rgb(0, 0, 0);
+        vertical-align: middle;
+      }
+      .markdown-preview[data-use-github-style] h1:hover .anchor,
+      .markdown-preview[data-use-github-style] h2:hover .anchor,
+      .markdown-preview[data-use-github-style] h3:hover .anchor,
+      .markdown-preview[data-use-github-style] h4:hover .anchor,
+      .markdown-preview[data-use-github-style] h5:hover .anchor,
+      .markdown-preview[data-use-github-style] h6:hover .anchor {
+        padding-left: 8px;
+        margin-left: -30px;
+        text-decoration: none;
+      }
+      .markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link,
+      .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link,
+      .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link,
+      .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link,
+      .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link,
+      .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link {
+        display: inline-block;
+      }
+      .markdown-preview[data-use-github-style] h1 tt,
+      .markdown-preview[data-use-github-style] h2 tt,
+      .markdown-preview[data-use-github-style] h3 tt,
+      .markdown-preview[data-use-github-style] h4 tt,
+      .markdown-preview[data-use-github-style] h5 tt,
+      .markdown-preview[data-use-github-style] h6 tt,
+      .markdown-preview[data-use-github-style] h1 code,
+      .markdown-preview[data-use-github-style] h2 code,
+      .markdown-preview[data-use-github-style] h3 code,
+      .markdown-preview[data-use-github-style] h4 code,
+      .markdown-preview[data-use-github-style] h5 code,
+      .markdown-preview[data-use-github-style] h6 code {
+        font-size: inherit;
+      }
+      .markdown-preview[data-use-github-style] h1 {
+        padding-bottom: 0.3em;
+        font-size: 2.25em;
+        line-height: 1.2;
+        border-bottom: 1px solid rgb(238, 238, 238);
+      }
+      .markdown-preview[data-use-github-style] h1 .anchor {
+        line-height: 1;
+      }
+      .markdown-preview[data-use-github-style] h2 {
+        padding-bottom: 0.3em;
+        font-size: 1.75em;
+        line-height: 1.225;
+        border-bottom: 1px solid rgb(238, 238, 238);
+      }
+      .markdown-preview[data-use-github-style] h2 .anchor {
+        line-height: 1;
+      }
+      .markdown-preview[data-use-github-style] h3 {
+        font-size: 1.35em;
+        /* line-height: 1.43; */
+      }
+      .markdown-preview[data-use-github-style] h3 .anchor {
+        /* line-height: 1.2; */
+      }
+      .markdown-preview[data-use-github-style] h4 {
+        font-size: 1.2em;
+      }
+      .markdown-preview[data-use-github-style] h4 .anchor {
+        /* line-height: 1.2; */
+      }
+      .markdown-preview[data-use-github-style] h5 {
+        font-size: 1.1em;
+      }
+      .markdown-preview[data-use-github-style] h5 .anchor {
+        /* line-height: 1.1; */
+      }
+      .markdown-preview[data-use-github-style] h6 {
+        font-size: 1em;
+        color: rgb(119, 119, 119);
+      }
+      .markdown-preview[data-use-github-style] h6 .anchor {
+        /* line-height: 1.1; */
+      }
+      .markdown-preview[data-use-github-style] p,
+      .markdown-preview[data-use-github-style] blockquote,
+      .markdown-preview[data-use-github-style] ul,
+      .markdown-preview[data-use-github-style] ol,
+      .markdown-preview[data-use-github-style] dl,
+      .markdown-preview[data-use-github-style] table,
+      .markdown-preview[data-use-github-style] pre {
+        margin-top: 0px;
+        margin-bottom: 16px;
+      }
+      .markdown-preview[data-use-github-style] hr {
+        height: 4px;
+        padding: 0px;
+        margin: 16px 0px;
+        background-color: rgb(231, 231, 231);
+        border: 0px none;
+      }
+      .markdown-preview[data-use-github-style] ul,
+      .markdown-preview[data-use-github-style] ol {
+        padding-left: 2em;
+      }
+      .markdown-preview[data-use-github-style] ul.no-list,
+      .markdown-preview[data-use-github-style] ol.no-list {
+        padding: 0px;
+        list-style-type: none;
+      }
+      .markdown-preview[data-use-github-style] ul ul,
+      .markdown-preview[data-use-github-style] ul ol,
+      .markdown-preview[data-use-github-style] ol ol,
+      .markdown-preview[data-use-github-style] ol ul {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .markdown-preview[data-use-github-style] li > p {
+        margin-top: 16px;
+      }
+      .markdown-preview[data-use-github-style] dl {
+        padding: 0px;
+      }
+      .markdown-preview[data-use-github-style] dl dt {
+        padding: 0px;
+        margin-top: 16px;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: bold;
+      }
+      .markdown-preview[data-use-github-style] dl dd {
+        padding: 0px 16px;
+        margin-bottom: 16px;
+      }
+      .markdown-preview[data-use-github-style] blockquote {
+        padding: 0 0 0 12px;
+        color: rgb(119, 119, 119);
+        border-left: 4px solid rgb(221, 221, 221);
+        margin-inline-start: 16px;
+        margin-inline-end: 16px;
+      }
+      .markdown-preview[data-use-github-style] blockquote > :first-child {
+        margin-top: 0px;
+      }
+      .markdown-preview[data-use-github-style] blockquote > :last-child {
+        margin-bottom: 0px;
+      }
+      .markdown-preview[data-use-github-style] table {
+        display: block;
+        width: 100%;
+        overflow: auto;
+        word-break: keep-all;
+      }
+      .markdown-preview[data-use-github-style] table th {
+        font-weight: bold;
+      }
+      .markdown-preview[data-use-github-style] table th,
+      .markdown-preview[data-use-github-style] table td {
+        padding: 6px 13px;
+        border: 1px solid rgb(221, 221, 221);
+      }
+      .markdown-preview[data-use-github-style] table tr {
+        background-color: rgb(255, 255, 255);
+        border-top: 1px solid rgb(204, 204, 204);
+      }
+      .markdown-preview[data-use-github-style] table tr:nth-child(2n) {
+        background-color: rgb(248, 248, 248);
+      }
+      .markdown-preview[data-use-github-style] img {
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+      .markdown-preview[data-use-github-style] .emoji {
+        max-width: none;
+      }
+      .markdown-preview[data-use-github-style] span.frame {
+        display: block;
+        overflow: hidden;
+      }
+      .markdown-preview[data-use-github-style] span.frame > span {
+        display: block;
+        float: left;
+        width: auto;
+        padding: 7px;
+        margin: 13px 0px 0px;
+        overflow: hidden;
+        border: 1px solid rgb(221, 221, 221);
+      }
+      .markdown-preview[data-use-github-style] span.frame span img {
+        display: block;
+        float: left;
+      }
+      .markdown-preview[data-use-github-style] span.frame span span {
+        display: block;
+        padding: 5px 0px 0px;
+        clear: both;
+        color: rgb(51, 51, 51);
+      }
+      .markdown-preview[data-use-github-style] span.align-center {
+        display: block;
+        overflow: hidden;
+        clear: both;
+      }
+      .markdown-preview[data-use-github-style] span.align-center > span {
+        display: block;
+        margin: 13px auto 0px;
+        overflow: hidden;
+        text-align: center;
+      }
+      .markdown-preview[data-use-github-style] span.align-center span img {
+        margin: 0px auto;
+        text-align: center;
+      }
+      .markdown-preview[data-use-github-style] span.align-right {
+        display: block;
+        overflow: hidden;
+        clear: both;
+      }
+      .markdown-preview[data-use-github-style] span.align-right > span {
+        display: block;
+        margin: 13px 0px 0px;
+        overflow: hidden;
+        text-align: right;
+      }
+      .markdown-preview[data-use-github-style] span.align-right span img {
+        margin: 0px;
+        text-align: right;
+      }
+      .markdown-preview[data-use-github-style] span.float-left {
+        display: block;
+        float: left;
+        margin-right: 13px;
+        overflow: hidden;
+      }
+      .markdown-preview[data-use-github-style] span.float-left span {
+        margin: 13px 0px 0px;
+      }
+      .markdown-preview[data-use-github-style] span.float-right {
+        display: block;
+        float: right;
+        margin-left: 13px;
+        overflow: hidden;
+      }
+      .markdown-preview[data-use-github-style] span.float-right > span {
+        display: block;
+        margin: 13px auto 0px;
+        overflow: hidden;
+        text-align: right;
+      }
+      .markdown-preview[data-use-github-style] code,
+      .markdown-preview[data-use-github-style] tt {
+        padding: 0.2em 0px;
+        margin: 0px;
+        font-size: 85%;
+        background-color: rgba(0, 0, 0, 0.04);
+        border-radius: 3px;
+      }
+      .markdown-preview[data-use-github-style] code::before,
+      .markdown-preview[data-use-github-style] tt::before,
+      .markdown-preview[data-use-github-style] code::after,
+      .markdown-preview[data-use-github-style] tt::after {
+        letter-spacing: -0.2em;
+        content: ' ';
+      }
+      .markdown-preview[data-use-github-style] code br,
+      .markdown-preview[data-use-github-style] tt br {
+        display: none;
+      }
+      .markdown-preview[data-use-github-style] del code {
+        text-decoration: inherit;
+      }
+      .markdown-preview[data-use-github-style] pre > code {
+        padding: 0px;
+        margin: 0px;
+        font-size: 100%;
+        word-break: normal;
+        white-space: pre;
+        background: transparent;
+        border: 0px;
+      }
+      .markdown-preview[data-use-github-style] .highlight {
+        margin-bottom: 16px;
+      }
+      .markdown-preview[data-use-github-style] .highlight pre,
+      .markdown-preview[data-use-github-style] pre {
+        padding: 16px;
+        overflow: auto;
+        font-size: 85%;
+        line-height: 1.45;
+        background-color: rgb(247, 247, 247);
+        border-radius: 3px;
+      }
+      .markdown-preview[data-use-github-style] .highlight pre {
+        margin-bottom: 0px;
+        word-break: normal;
+      }
+      .markdown-preview[data-use-github-style] pre {
+        overflow-wrap: normal;
+      }
+      .markdown-preview[data-use-github-style] pre code,
+      .markdown-preview[data-use-github-style] pre tt {
+        display: inline;
+        max-width: initial;
+        padding: 0px;
+        margin: 0px;
+        overflow: initial;
+        line-height: inherit;
+        overflow-wrap: normal;
+        background-color: transparent;
+        border: 0px;
+      }
+      .markdown-preview[data-use-github-style] pre code::before,
+      .markdown-preview[data-use-github-style] pre tt::before,
+      .markdown-preview[data-use-github-style] pre code::after,
+      .markdown-preview[data-use-github-style] pre tt::after {
+        content: normal;
+      }
+      .markdown-preview[data-use-github-style] kbd {
+        display: inline-block;
+        padding: 3px 5px;
+        font-size: 11px;
+        line-height: 10px;
+        color: rgb(85, 85, 85);
+        vertical-align: middle;
+        background-color: rgb(252, 252, 252);
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187);
+        border-image: initial;
+        border-radius: 3px;
+        box-shadow: rgb(187, 187, 187) 0px -1px 0px inset;
+      }
+      .markdown-preview[data-use-github-style] a {
+        color: rgb(51, 122, 183);
+      }
+      .markdown-preview[data-use-github-style] code {
+        color: inherit;
+      }
+      .markdown-preview[data-use-github-style] pre.editor-colors {
+        padding: 0.8em 1em;
+        margin-bottom: 1em;
+        font-size: 0.85em;
+        border-radius: 4px;
+        overflow: auto;
+      }
+      .markdown-preview pre.editor-colors {
+        user-select: auto;
+      }
+      .scrollbars-visible-always
+        .markdown-preview
+        pre.editor-colors
+        .vertical-scrollbar,
+      .scrollbars-visible-always
+        .markdown-preview
+        pre.editor-colors
+        .horizontal-scrollbar {
+        visibility: hidden;
+      }
+      .scrollbars-visible-always
+        .markdown-preview
+        pre.editor-colors:hover
+        .vertical-scrollbar,
+      .scrollbars-visible-always
+        .markdown-preview
+        pre.editor-colors:hover
+        .horizontal-scrollbar {
+        visibility: visible;
+      }
+      .markdown-preview .task-list-item input[type='checkbox'] {
+        position: absolute;
+        margin: 0.25em 0px 0px -1.4em;
+      }
+      .markdown-preview .task-list-item {
+        list-style-type: none;
+      }
+      .bracket-matcher .region {
+        border-bottom: 1px dotted lime;
+        position: absolute;
+      }
+      .line-number.bracket-matcher.bracket-matcher {
+        color: #383a42;
+        background-color: #e5e5e6;
+      }
+
+      .auto-cursor {
+        cursor: default;
+      }
+      .highlight-green .region {
+        background-color: #2db448;
+      }
+      .highlight-blue .region {
+        background-color: #52aeff;
+      }
+      .highlight-red .region {
+        background-color: #ff1414;
+      }
+
+      .spell-check-misspelling .region {
+        border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+      }
+      .spell-check-corrections {
+        width: 25em !important;
+      }
+
+      pre.editor-colors {
+        background-color: #fafafa;
+        color: #383a42;
+      }
+      pre.editor-colors .line.cursor-line {
+        background-color: rgba(56, 58, 66, 0.05);
+      }
+      pre.editor-colors .invisible {
+        color: #383a42;
+      }
+      pre.editor-colors .cursor {
+        border-left: 2px solid #526fff;
+      }
+      pre.editor-colors .selection .region {
+        background-color: #e5e5e6;
+      }
+      pre.editor-colors .bracket-matcher .region {
+        border-bottom: 1px solid #526fff;
+        box-sizing: border-box;
+      }
+      pre.editor-colors .invisible-character {
+        color: rgba(56, 58, 66, 0.2);
+      }
+      pre.editor-colors .indent-guide {
+        color: rgba(56, 58, 66, 0.2);
+      }
+      pre.editor-colors .wrap-guide {
+        background-color: rgba(56, 58, 66, 0.2);
+      }
+      pre.editor-colors .find-result .region.region.region,
+      pre.editor-colors .current-result .region.region.region {
+        border-radius: 2px;
+        background-color: rgba(82, 111, 255, 0.2);
+        transition: border-color 0.4s;
+      }
+      pre.editor-colors .find-result .region.region.region {
+        border: 2px solid transparent;
+      }
+      pre.editor-colors .current-result .region.region.region {
+        border: 2px solid #526fff;
+        transition-duration: 0.1s;
+      }
+      pre.editor-colors .gutter .line-number {
+        color: #9d9d9f;
+        -webkit-font-smoothing: antialiased;
+      }
+      pre.editor-colors .gutter .line-number.cursor-line {
+        color: #383a42;
+        background-color: #e5e5e6;
+      }
+      pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+        background-color: transparent;
+      }
+      pre.editor-colors .gutter .line-number .icon-right {
+        color: #383a42;
+      }
+      pre.editor-colors
+        .gutter:not(.git-diff-icon)
+        .line-number.git-line-removed.git-line-removed::before {
+        bottom: -3px;
+      }
+      pre.editor-colors
+        .gutter:not(.git-diff-icon)
+        .line-number.git-line-removed::after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 25px;
+        border-bottom: 1px dotted rgba(255, 20, 20, 0.5);
+        pointer-events: none;
+      }
+      pre.editor-colors .gutter .line-number.folded,
+      pre.editor-colors .gutter .line-number:after,
+      pre.editor-colors .fold-marker:after {
+        color: #383a42;
+      }
+      .syntax--comment {
+        color: #a0a1a7;
+        font-style: italic;
+      }
+      .syntax--comment .syntax--markup.syntax--link {
+        color: #a0a1a7;
+      }
+      .syntax--entity.syntax--name.syntax--type {
+        color: #cb7701;
+      }
+      .syntax--entity.syntax--other.syntax--inherited-class {
+        color: #cb7701;
+      }
+      .syntax--keyword {
+        color: #a626a4;
+      }
+      .syntax--keyword.syntax--control {
+        color: #a626a4;
+      }
+      .syntax--keyword.syntax--operator {
+        color: #383a42;
+      }
+      .syntax--keyword.syntax--other.syntax--special-method {
+        color: #4078f2;
+      }
+      .syntax--keyword.syntax--other.syntax--unit {
+        color: #b76b01;
+      }
+      .syntax--storage {
+        color: #a626a4;
+      }
+      .syntax--storage.syntax--type.syntax--annotation,
+      .syntax--storage.syntax--type.syntax--primitive {
+        color: #a626a4;
+      }
+      .syntax--storage.syntax--modifier.syntax--package,
+      .syntax--storage.syntax--modifier.syntax--import {
+        color: #383a42;
+      }
+      .syntax--constant {
+        color: #b76b01;
+      }
+      .syntax--constant.syntax--variable {
+        color: #b76b01;
+      }
+      .syntax--constant.syntax--character.syntax--escape {
+        color: #0184bc;
+      }
+      .syntax--constant.syntax--numeric {
+        color: #b76b01;
+      }
+      .syntax--constant.syntax--other.syntax--color {
+        color: #0184bc;
+      }
+      .syntax--constant.syntax--other.syntax--symbol {
+        color: #0184bc;
+      }
+      .syntax--variable {
+        color: #e45649;
+      }
+      .syntax--variable.syntax--interpolation {
+        color: #ca1243;
+      }
+      .syntax--variable.syntax--parameter {
+        color: #383a42;
+      }
+      .syntax--string {
+        color: #50a14f;
+      }
+      .syntax--string > .syntax--source,
+      .syntax--string .syntax--embedded {
+        color: #383a42;
+      }
+      .syntax--string.syntax--regexp {
+        color: #0184bc;
+      }
+      .syntax--string.syntax--regexp
+        .syntax--source.syntax--ruby.syntax--embedded {
+        color: #cb7701;
+      }
+      .syntax--string.syntax--other.syntax--link {
+        color: #e45649;
+      }
+      .syntax--punctuation.syntax--definition.syntax--comment {
+        color: #a0a1a7;
+      }
+      .syntax--punctuation.syntax--definition.syntax--method-parameters,
+      .syntax--punctuation.syntax--definition.syntax--function-parameters,
+      .syntax--punctuation.syntax--definition.syntax--parameters,
+      .syntax--punctuation.syntax--definition.syntax--separator,
+      .syntax--punctuation.syntax--definition.syntax--seperator,
+      .syntax--punctuation.syntax--definition.syntax--array {
+        color: #383a42;
+      }
+      .syntax--punctuation.syntax--definition.syntax--heading,
+      .syntax--punctuation.syntax--definition.syntax--identity {
+        color: #4078f2;
+      }
+      .syntax--punctuation.syntax--definition.syntax--bold {
+        color: #cb7701;
+        font-weight: bold;
+      }
+      .syntax--punctuation.syntax--definition.syntax--italic {
+        color: #a626a4;
+        font-style: italic;
+      }
+      .syntax--punctuation.syntax--section.syntax--embedded {
+        color: #ca1243;
+      }
+      .syntax--punctuation.syntax--section.syntax--method,
+      .syntax--punctuation.syntax--section.syntax--class,
+      .syntax--punctuation.syntax--section.syntax--inner-class {
+        color: #383a42;
+      }
+      .syntax--support.syntax--class {
+        color: #cb7701;
+      }
+      .syntax--support.syntax--type {
+        color: #0184bc;
+      }
+      .syntax--support.syntax--function {
+        color: #0184bc;
+      }
+      .syntax--support.syntax--function.syntax--any-method {
+        color: #4078f2;
+      }
+      .syntax--entity.syntax--name.syntax--function {
+        color: #4078f2;
+      }
+      .syntax--entity.syntax--name.syntax--class,
+      .syntax--entity.syntax--name.syntax--type.syntax--class {
+        color: #cb7701;
+      }
+      .syntax--entity.syntax--name.syntax--section {
+        color: #4078f2;
+      }
+      .syntax--entity.syntax--name.syntax--tag {
+        color: #e45649;
+      }
+      .syntax--entity.syntax--other.syntax--attribute-name {
+        color: #b76b01;
+      }
+      .syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+        color: #4078f2;
+      }
+      .syntax--meta.syntax--class {
+        color: #cb7701;
+      }
+      .syntax--meta.syntax--class.syntax--body {
+        color: #383a42;
+      }
+      .syntax--meta.syntax--method-call,
+      .syntax--meta.syntax--method {
+        color: #383a42;
+      }
+      .syntax--meta.syntax--definition.syntax--variable {
+        color: #e45649;
+      }
+      .syntax--meta.syntax--link {
+        color: #b76b01;
+      }
+      .syntax--meta.syntax--require {
+        color: #4078f2;
+      }
+      .syntax--meta.syntax--selector {
+        color: #a626a4;
+      }
+      .syntax--meta.syntax--separator {
+        color: #383a42;
+      }
+      .syntax--meta.syntax--tag {
+        color: #383a42;
+      }
+      .syntax--underline {
+        text-decoration: underline;
+      }
+      .syntax--none {
+        color: #383a42;
+      }
+      .syntax--invalid.syntax--deprecated {
+        color: #000000 !important;
+        background-color: #f2a60d !important;
+      }
+      .syntax--invalid.syntax--illegal {
+        color: white !important;
+        background-color: #ff1414 !important;
+      }
+      .syntax--markup.syntax--bold {
+        color: #b76b01;
+        font-weight: bold;
+      }
+      .syntax--markup.syntax--changed {
+        color: #a626a4;
+      }
+      .syntax--markup.syntax--deleted {
+        color: #e45649;
+      }
+      .syntax--markup.syntax--italic {
+        color: #a626a4;
+        font-style: italic;
+      }
+      .syntax--markup.syntax--heading {
+        color: #e45649;
+      }
+      .syntax--markup.syntax--heading
+        .syntax--punctuation.syntax--definition.syntax--heading {
+        color: #4078f2;
+      }
+      .syntax--markup.syntax--link {
+        color: #0184bc;
+      }
+      .syntax--markup.syntax--inserted {
+        color: #50a14f;
+      }
+      .syntax--markup.syntax--quote {
+        color: #b76b01;
+      }
+      .syntax--markup.syntax--raw {
+        color: #50a14f;
+      }
+      .syntax--source.syntax--cs .syntax--keyword.syntax--operator {
+        color: #a626a4;
+      }
+      .syntax--source.syntax--css .syntax--property-name,
+      .syntax--source.syntax--css .syntax--property-value {
+        color: #696c77;
+      }
+      .syntax--source.syntax--css .syntax--property-name.syntax--support,
+      .syntax--source.syntax--css .syntax--property-value.syntax--support {
+        color: #383a42;
+      }
+      .syntax--source.syntax--elixir
+        .syntax--source.syntax--embedded.syntax--source {
+        color: #383a42;
+      }
+      .syntax--source.syntax--elixir .syntax--constant.syntax--language,
+      .syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
+      .syntax--source.syntax--elixir .syntax--constant.syntax--definition {
+        color: #4078f2;
+      }
+      .syntax--source.syntax--elixir .syntax--variable.syntax--definition,
+      .syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
+        color: #a626a4;
+      }
+      .syntax--source.syntax--elixir
+        .syntax--parameter.syntax--variable.syntax--function {
+        color: #b76b01;
+        font-style: italic;
+      }
+      .syntax--source.syntax--elixir .syntax--quoted {
+        color: #50a14f;
+      }
+      .syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
+      .syntax--source.syntax--elixir .syntax--embedded.syntax--section,
+      .syntax--source.syntax--elixir
+        .syntax--embedded.syntax--source.syntax--empty {
+        color: #e45649;
+      }
+      .syntax--source.syntax--elixir
+        .syntax--readwrite.syntax--module
+        .syntax--punctuation {
+        color: #e45649;
+      }
+      .syntax--source.syntax--elixir .syntax--regexp.syntax--section,
+      .syntax--source.syntax--elixir .syntax--regexp.syntax--string {
+        color: #ca1243;
+      }
+      .syntax--source.syntax--elixir .syntax--separator,
+      .syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
+        color: #b76b01;
+      }
+      .syntax--source.syntax--elixir .syntax--variable.syntax--constant {
+        color: #cb7701;
+      }
+      .syntax--source.syntax--elixir .syntax--array,
+      .syntax--source.syntax--elixir .syntax--scope,
+      .syntax--source.syntax--elixir .syntax--section {
+        color: #696c77;
+      }
+      .syntax--source.syntax--gfm .syntax--markup {
+        -webkit-font-smoothing: auto;
+      }
+      .syntax--source.syntax--gfm .syntax--link .syntax--entity {
+        color: #4078f2;
+      }
+      .syntax--source.syntax--ini
+        .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
+        color: #e45649;
+      }
+      .syntax--source.syntax--java
+        .syntax--storage.syntax--modifier.syntax--import {
+        color: #cb7701;
+      }
+      .syntax--source.syntax--java .syntax--storage.syntax--type {
+        color: #cb7701;
+      }
+      .syntax--source.syntax--java
+        .syntax--keyword.syntax--operator.syntax--instanceof {
+        color: #a626a4;
+      }
+      .syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
+        color: #e45649;
+      }
+      .syntax--source.syntax--java-properties
+        .syntax--meta.syntax--key-pair
+        > .syntax--punctuation {
+        color: #383a42;
+      }
+      .syntax--source.syntax--ts .syntax--keyword.syntax--operator {
+        color: #0184bc;
+      }
+      .syntax--source.syntax--flow .syntax--keyword.syntax--operator {
+        color: #0184bc;
+      }
+      .syntax--source.syntax--json
+        .syntax--meta.syntax--structure.syntax--dictionary.syntax--json
+        > .syntax--string.syntax--quoted.syntax--json {
+        color: #e45649;
+      }
+      .syntax--source.syntax--json
+        .syntax--meta.syntax--structure.syntax--dictionary.syntax--json
+        > .syntax--string.syntax--quoted.syntax--json
+        > .syntax--punctuation.syntax--string {
+        color: #e45649;
+      }
+      .syntax--source.syntax--json
+        .syntax--meta.syntax--structure.syntax--dictionary.syntax--json
+        > .syntax--value.syntax--json
+        > .syntax--string.syntax--quoted.syntax--json,
+      .syntax--source.syntax--json
+        .syntax--meta.syntax--structure.syntax--array.syntax--json
+        > .syntax--value.syntax--json
+        > .syntax--string.syntax--quoted.syntax--json,
+      .syntax--source.syntax--json
+        .syntax--meta.syntax--structure.syntax--dictionary.syntax--json
+        > .syntax--value.syntax--json
+        > .syntax--string.syntax--quoted.syntax--json
+        > .syntax--punctuation,
+      .syntax--source.syntax--json
+        .syntax--meta.syntax--structure.syntax--array.syntax--json
+        > .syntax--value.syntax--json
+        > .syntax--string.syntax--quoted.syntax--json
+        > .syntax--punctuation {
+        color: #50a14f;
+      }
+      .syntax--source.syntax--json
+        .syntax--meta.syntax--structure.syntax--dictionary.syntax--json
+        > .syntax--constant.syntax--language.syntax--json,
+      .syntax--source.syntax--json
+        .syntax--meta.syntax--structure.syntax--array.syntax--json
+        > .syntax--constant.syntax--language.syntax--json {
+        color: #0184bc;
+      }
+      .syntax--ng.syntax--interpolation {
+        color: #e45649;
+      }
+      .syntax--ng.syntax--interpolation.syntax--begin,
+      .syntax--ng.syntax--interpolation.syntax--end {
+        color: #4078f2;
+      }
+      .syntax--ng.syntax--interpolation .syntax--function {
+        color: #e45649;
+      }
+      .syntax--ng.syntax--interpolation .syntax--function.syntax--begin,
+      .syntax--ng.syntax--interpolation .syntax--function.syntax--end {
+        color: #4078f2;
+      }
+      .syntax--ng.syntax--interpolation .syntax--bool {
+        color: #b76b01;
+      }
+      .syntax--ng.syntax--interpolation .syntax--bracket {
+        color: #383a42;
+      }
+      .syntax--ng.syntax--pipe,
+      .syntax--ng.syntax--operator {
+        color: #383a42;
+      }
+      .syntax--ng.syntax--tag {
+        color: #0184bc;
+      }
+      .syntax--ng.syntax--attribute-with-value .syntax--attribute-name {
+        color: #cb7701;
+      }
+      .syntax--ng.syntax--attribute-with-value .syntax--string {
+        color: #a626a4;
+      }
+      .syntax--ng.syntax--attribute-with-value .syntax--string.syntax--begin,
+      .syntax--ng.syntax--attribute-with-value .syntax--string.syntax--end {
+        color: #383a42;
+      }
+      .syntax--source.syntax--php .syntax--class.syntax--bracket {
+        color: #383a42;
+      }
+      /*
+   This defines styling rules for syntax classes.
+
+   See the naming conventions for a list of syntax classes:
+   https://flight-manual.atom.io/hacking-atom/sections/syntax-naming-conventions
+
+   When styling rules conflict:
+   - The last rule overrides previous rules.
+   - The rule with most classes and pseudo-classes overrides the last rule.
+*/
+      .syntax--keyword {
+        color: #a626a4;
+      }
+      .syntax--keyword.syntax--type {
+        color: #0184bc;
+      }
+      .syntax--keyword.syntax--operator {
+        color: #a626a4;
+      }
+      .syntax--keyword.syntax--function {
+        color: #e45649;
+      }
+      .syntax--keyword.syntax--variable {
+        color: #e45649;
+      }
+      .syntax--keyword.syntax--symbolic {
+        color: #383a42;
+      }
+      .syntax--entity {
+        color: #383a42;
+      }
+      .syntax--entity.syntax--parameter {
+        color: #383a42;
+      }
+      .syntax--entity.syntax--support {
+        color: #e45649;
+      }
+      .syntax--entity.syntax--decorator:last-child {
+        color: #4078f2;
+      }
+      .syntax--entity.syntax--label {
+        text-decoration: underline;
+      }
+      .syntax--entity.syntax--function {
+        color: #4078f2;
+      }
+      .syntax--entity.syntax--operator {
+        color: #4078f2;
+      }
+      .syntax--entity.syntax--operator.syntax--symbolic {
+        color: #383a42;
+      }
+      .syntax--entity.syntax--type {
+        color: #0184bc;
+      }
+      .syntax--entity.syntax--tag {
+        color: #e45649;
+      }
+      .syntax--entity.syntax--attribute {
+        color: #b76b01;
+      }
+      .syntax--punctuation {
+        color: #383a42;
+      }
+      .syntax--punctuation.syntax--accessor {
+        color: #383a42;
+      }
+      .syntax--string {
+        color: #50a14f;
+      }
+      .syntax--string.syntax--immutable {
+        color: #50a14f;
+      }
+      .syntax--string.syntax--part {
+        color: #0184bc;
+      }
+      .syntax--string.syntax--interpolation {
+        color: #383a42;
+      }
+      .syntax--string.syntax--regexp {
+        color: #50a14f;
+      }
+      .syntax--string.syntax--regexp.syntax--language {
+        color: #a626a4;
+      }
+      .syntax--string.syntax--regexp.syntax--variable {
+        color: #4078f2;
+      }
+      .syntax--string.syntax--regexp.syntax--punctuation {
+        color: #a626a4;
+      }
+      .syntax--constant {
+        color: #b76b01;
+      }
+      .syntax--constant.syntax--character {
+        color: #50a14f;
+      }
+      .syntax--constant.syntax--character.syntax--escape {
+        color: #50a14f;
+      }
+      .syntax--constant.syntax--character.syntax--code {
+        color: #0184bc;
+      }
+      .syntax--text {
+        color: #383a42;
+      }
+      .syntax--markup.syntax--heading {
+        color: #e45649;
+      }
+      .syntax--markup.syntax--list.syntax--punctuation {
+        color: #e45649;
+      }
+      .syntax--markup.syntax--quote {
+        color: #a0a1a7;
+        font-style: italic;
+      }
+      .syntax--markup.syntax--bold {
+        color: #b76b01;
+        font-weight: bold;
+      }
+      .syntax--markup.syntax--italic {
+        color: #a626a4;
+        font-style: italic;
+      }
+      .syntax--markup.syntax--underline {
+        color: #0184bc;
+        text-decoration: underline;
+      }
+      .syntax--markup.syntax--strike {
+        color: #e45649;
+      }
+      .syntax--markup.syntax--raw {
+        color: #50a14f;
+      }
+      .syntax--markup.syntax--link {
+        color: #0184bc;
+      }
+      .syntax--markup.syntax--alt {
+        color: #4078f2;
+      }
+      .syntax--markup.syntax--inserted {
+        color: #50a14f;
+      }
+      .syntax--markup.syntax--inserted .syntax--punctuation {
+        color: #50a14f;
+      }
+      .syntax--markup.syntax--highlighted {
+        color: #50a14f;
+      }
+      .syntax--markup.syntax--highlighted .syntax--punctuation {
+        color: #50a14f;
+      }
+      .syntax--markup.syntax--deleted {
+        color: #e45649;
+      }
+      .syntax--markup.syntax--deleted .syntax--punctuation {
+        color: #e45649;
+      }
+      .syntax--markup.syntax--changed {
+        color: #a626a4;
+      }
+      .syntax--markup.syntax--changed .syntax--punctuation {
+        color: #a626a4;
+      }
+      .syntax--markup.syntax--commented {
+        color: #a0a1a7;
+      }
+      .syntax--markup.syntax--commented .syntax--punctuation {
+        color: #a0a1a7;
+      }
+      .syntax--comment {
+        color: #a0a1a7;
+        font-style: italic;
+      }
+      .syntax--comment.syntax--caption {
+        color: #afb0b6;
+        font-weight: bold;
+      }
+      .syntax--comment.syntax--term {
+        color: #b7b8bd;
+      }
+      .syntax--comment.syntax--punctuation {
+        color: #a0a1a7;
+        font-weight: normal;
+      }
+      .syntax--invalid:not(.syntax--punctuation).syntax--illegal {
+        color: white !important;
+        background-color: #ff1414 !important;
+      }
+      .syntax--invalid:not(.syntax--punctuation).syntax--deprecated {
+        color: #000000 !important;
+        background-color: #f2a60d !important;
+      }
+      .syntax--source.syntax--css .syntax--entity.syntax--function {
+        color: #696c77;
+      }
+      .syntax--source.syntax--css
+        .syntax--entity.syntax--function.syntax--support {
+        color: #0184bc;
+      }
+      .syntax--source.syntax--css .syntax--entity.syntax--selector {
+        color: #b76b01;
+      }
+      .syntax--source.syntax--css .syntax--entity.syntax--selector.syntax--tag {
+        color: #e45649;
+      }
+      .syntax--source.syntax--css .syntax--entity.syntax--selector.syntax--id {
+        color: #4078f2;
+      }
+      .syntax--source.syntax--css .syntax--entity.syntax--property {
+        color: #696c77;
+      }
+      .syntax--source.syntax--css
+        .syntax--entity.syntax--property.syntax--support {
+        color: #383a42;
+      }
+      .syntax--source.syntax--css .syntax--entity.syntax--variable {
+        color: #e45649;
+      }
+      .syntax--source.syntax--css .syntax--constant {
+        color: #696c77;
+      }
+      .syntax--source.syntax--css .syntax--constant.syntax--support {
+        color: #383a42;
+      }
+      .syntax--source.syntax--css .syntax--constant.syntax--numeric {
+        color: #b76b01;
+      }
+      .syntax--source.syntax--css .syntax--constant.syntax--media {
+        color: #b76b01;
+      }
+      .syntax--source.syntax--css .syntax--constant.syntax--color {
+        color: #b76b01;
+      }
+      .syntax--source.syntax--css .syntax--constant.syntax--offset {
+        color: #383a42;
+      }
+      .syntax--source.syntax--css .syntax--constant.syntax--attribute-value {
+        color: #50a14f;
+      }
+      .syntax--source.syntax--css .syntax--punctuation.syntax--selector {
+        color: #b76b01;
+      }
+      .syntax--source.syntax--css
+        .syntax--punctuation.syntax--selector.syntax--wildcard {
+        color: #e45649;
+      }
+      .syntax--source.syntax--css
+        .syntax--punctuation.syntax--selector.syntax--id {
+        color: #4078f2;
+      }
+      .syntax--source.syntax--css
+        .syntax--punctuation.syntax--selector.syntax--attribute {
+        color: #383a42;
+      }
+    </style>
+  </head>
+  <body class="markdown-preview" data-use-github-style>
+    <!-- <h2 id="前端简历朱程">前端简历——朱程</h2> -->
+
+    <h3 id="📌-基本信息"><strong>📌 基本信息</strong></h3>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>姓名: <span class="markdown-link-color">朱程</span></td>
+          <td>生日: <span class="markdown-link-color">1990.9</span></td>
+          <td>
+            <!-- 手机: <b><a href="tel:18682340981">18682340981</a></b> -->
+            手机: <span class="markdown-link-color">18682340981</span>
+          </td>
+        </tr>
+        <!-- <tr>
+          <td>学历: <span class="markdown-link-color">本科</span></td>
+          <td>
+            邮箱:
+            <b
+            ><a href="mailto:azhucheng1@gmail.com">azhucheng1@gmail.com</a></b
+            >
+          </td>
+        </tr> -->
+        <tr>
+          <td>大学: <span class="markdown-link-color">湖北工程学院</span></td>
+          <td>学历: <span class="markdown-link-color">本科</span></td>
+          <td>
+            专业: <span class="markdown-link-color">光信息科学与技术</span>
+          </td>
+        </tr>
+        <!-- <tr>
+        <td>在校时间: <span class="markdown-link-color"
+              >2010-2014</span></td>
+      </tr> -->
+        <!-- <tr>
+          <td colspan="2">
+            技术栈:
+            <span class="markdown-link-color"
+              >Vue生态、Echarts、UniApp、Tauri</span
+            >
+          </td>
+        </tr> -->
+      </tbody>
+    </table>
+
+    <h3 id="📌-自我评价"><strong>📌 自我评价</strong></h3>
+    <ul>
+      <li>对工作认真负责，做事不妥协。</li>
+      <li>为人随和，积极主动，适应能力强，精力充沛。</li>
+      <li>兴趣爱好广泛，跑步足球羽毛球各类运动，书法篆刻等艺术。</li>
+    </ul>
+
+    <h3 id="📌-工作经历"><strong>📌 工作经历</strong></h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th align="left">公司名称</th>
+          <th align="left">公司规模</th>
+          <th align="left">岗位</th>
+          <th align="left">时间</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="left">🚩中职物联(湖北)信息科技有限公司</td>
+          <td align="left">50 人左右</td>
+          <td align="left">前端</td>
+          <td align="left">2021.11--2025.01</td>
+        </tr>
+        <tr>
+          <td align="left">🚩赞同科技股份有限公司</td>
+          <td align="left">3000 人+</td>
+          <td align="left">前端</td>
+          <td align="left">2018.09--2021.06</td>
+        </tr>
+        <tr>
+          <td align="left">🚩东莞市惬意购网络科技有限公司</td>
+          <td align="left">10 人左右</td>
+          <td align="left">前端</td>
+          <td align="left">2017.02--2018.09</td>
+        </tr>
+        <tr>
+          <td align="left">🚩兴国实验学校</td>
+          <td align="left">50 人左右</td>
+          <td align="left">物理</td>
+          <td align="left">2014.09--2016.06</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- <h3 id="📌-项目经历"><strong>📌 项目经历</strong></h3> -->
+
+    <h4 id="🚩-兴国实验学校">
+      <strong>🚩 兴国实验学校</strong>
+    </h4>
+
+    <blockquote>
+      <p>教授初二初三的物理课程，并担任班主任。</p>
+      <p>
+        学生多为留守儿童，除了教学，还参与到学生的日常生活，疏导学生的心理问题。
+      </p>
+      <p>和学生建立了亦师亦友的关系。</p>
+      <p>中考取得了超出学校预期的成绩。</p>
+    </blockquote>
+
+    <h4 id="🚩-中职物联(湖北)信息科技有限公司">
+      <strong>🚩 中职物联(湖北)信息科技有限公司</strong>
+    </h4>
+
+    <blockquote>
+      <p>
+        参与了公司小程序、App、管理端、可视化大屏、H5等多种类型十多个项目的开发
+      </p>
+      <p>
+        ⚔️ 管理端: 彩富哆数字化运营工具、彩富哆商户管理平台、绿科物业、居家养老
+      </p>
+      <p>
+        ⚔️ 小程序 & App: 钛可星球、彩富哆商户助手、彩富哆出入库工具、绿科物业App
+      </p>
+      <p>⚔️ H5: 财富帝、彩富哆相关活动</p>
+      <p>⚔️ 可视化大屏: 居家养老大屏、湖北中烟物流可视化</p>
+    </blockquote>
+
+    <!-- <h5 id="⚔️-彩富哆数字化运营管理软件(管理端)">
+      ⚔️ 彩富哆数字化运营管理软件(管理端)
+    </h5>
+    <blockquote>
+      <p>
+        通过创建丰富的活动类型、玩法规则、奖励机制、灵活的投放计划为财富帝客户端提供支持。通过多维度的信息查询和统计，满足企业快速精准获取效果反馈，优化提高投入产出比。
+      </p>
+    </blockquote>
+    <ul>
+      <li>
+        <strong>权限管理系统开发：</strong>基于后端返回的权限列表实现动态路由加载，生成路由菜单。通过路由元信息存储权限标识，实现按钮级权限映射方案，支持管理员灵活配置操作权限。
+      </li>
+      <li>
+        <strong>多维度信息统计：</strong>在财富帝客户端建立完善的埋点信息收集机制，集成ECharts绘制多维度数据看板，通过WebSocket实现实时数据更新。
+      </li>
+      <li>为活动计划设计<strong>高效的投放模型</strong></li>
+      <ul>
+        <li>
+          <strong>生成表格：</strong>借助<code>a-table</code>绑定响应式表头和表格体数据，同时使用表头和单元格插槽绑定对应的属性和状态字段，实现活动投放表格的动态渲染和单元格内容状态的精细化控制。
+        </li>
+        <li>
+          <strong>视觉上：</strong>对不同状态单元格使用合适的色彩进行区分，并提供指示Tag。功能按钮通过动态开关模式只激活当前可执行的动作，使用动态按钮充分利用空间。操作帮助侧边栏占用菜单栏高效协助操作。
+        </li>
+        <li>
+          <strong>交互上：</strong>支持多种鼠标键盘操作，点选、框选、选行、选列、全选，并计算交集并集过滤不可操作项等，支持复制粘贴快捷键，并提供物料暂存区提高操作效率。
+        </li>
+      </ul>
+      <li>
+        <strong>数据联表合并：</strong>业务大量数据需要联表查询后在前端组装。封装<code>mergeRequest</code>方法封装请求队列，并对查询结果使用关键字索引构建Map，实现O(1)复杂度检索，极大减少计算量。对高频查询结果进行本地化存储，减少数据请求。
+      </li>
+      <li>
+        <strong>可配置表单组件:</strong>
+        通过JSON数据描述表单的各个部分，如字段键值、表单类型、验证规则等。对于特殊的表单，如日期选择器、下拉框、上传组件等通过分支语句进行匹配。
+      </li>
+    </ul>
+
+    <h5 id="⚔️-财富帝(H5)">⚔️ 财富帝(H5)</h5>
+    <blockquote>
+      <p>
+        商家通过手机、彩票自助机、户外广告牌等媒介快速便捷地发布推广活动。平台集丰富的信息展示与互动、奖励领取、集积分管理、用户权益兑换等多功能于一体，促进用户参与积极性，增加用户粘性，满足企业在营销和用户运营方面的需求。
+      </p>
+    </blockquote>
+    <ul>
+      <li><strong>活动防薅机制</strong></li>
+      <ul>
+        <li>账号多重验证：有效手机号 + openId + 时间戳比对 + 数据加密</li>
+        <li>
+          异常监控：记录用户在活动中的各种行为数据，如点击时间、页面停留时间、操作顺序等。通过分析这些行为数据，判断用户是否存在异常行为。
+        </li>
+        <li>
+          黑名单：建立黑名单数据库，将被发现的恶意用户、IP 地址等加入黑名单。
+        </li>
+      </ul>
+      <li>
+        <strong>媒体自适应展示：</strong>
+        获取媒体素材和设备视窗尺寸进行计算，通过js控制页面全屏、屏幕横竖屏、屏幕锁定等操作，让活动以最佳的视觉效果呈现。
+      </li>
+      <li>
+        <strong>第三方活动对接：</strong>
+        针对不同活动约定通信规则，通过iframe的<code>postMessage</code>广播信息，在<code>message</code>事件监听回调中对消息源拦截，避免来自非法域名的xss攻击，然后在回调函数中分析规则处理不同活动的逻辑。
+      </li>
+      <li>
+        <strong>自动启停控制：</strong>
+        浏览器前后台切换时通过浏览器<code>visibilitychange</code>事件，对活动当前状态进行记录和恢复。优化用户体验的同时保障活动的正常开展。
+      </li>
+    </ul>
+
+    <h5 id="⚔️-钛可星球(App)">⚔️ 钛可星球(App)</h5>
+    <blockquote>
+      <p>
+        定位于为年轻用户构建一个集虚拟物品收藏展示、社交互动、娱乐休闲等多功能于一体的综合移动应用平台。
+      </p>
+    </blockquote>
+      <li>
+        <strong>3D模型交互：</strong>使用nvue页面，采用预加载和渐进式加载技术，CDN加速，加载动画过渡优化模型加载。通过调整模型的材质、光照和渲染参数，使模型更加逼真。通过动画脚本使模型根据用户操作进行相应的动画展示。
+      </li>
+      <li>
+        <strong>自适应工具：</strong>
+        借助Sass创建<code>px2rpx</code>单位转换方法解决玩具柜和海报等非流式布局场景的尺寸适配问题。
+      </li>
+      <li>
+        <strong>优化启动速度：</strong>拆包、预加载机制，CDN托管，资源压缩，懒加载等技术，减少初始加载包的大小。
+      </li>
+      <li><strong>NFC 识别：</strong>封装 NFC 识别解析及平台兼容问题。</li>
+    </ul>
+
+    <h5 id="⚔️-湖北中烟物流可视化(大屏)">⚔️ 湖北中烟物流可视化(大屏)</h5>
+    <blockquote>
+      <p>
+        实现中烟对仓储可视化、车辆轨迹展示、位置搜索等业务场景需求。用户能直观地查看仓储布局、物资分布、实时配送等信息，提升仓储管理的可视化程度与操作便捷性。
+      </p>
+    </blockquote>
+    <ul>
+      <li>
+        <strong>天地图替换高德地图：</strong>几乎完整的还原了项目地图的展示和交互需求，为客户省去了付费地图的开销。
+      </li>
+      <li>
+        实现定制主题、海量点、地图标注、信息轮播、地图下探、车辆轨迹、边界线绘制等效果。
+      </li>
+      <li>
+        性能：对天地图海量点方案、标记点集合方案进行测试调研，完成多标记点性能可行性测试与配置，确保在大量数据下地图仍能高效运行。
+      </li>
+      <li>
+        问题修复：修复天地图边界线绘制后消失、车辆轨迹重复绘制、地图交互后消失等问题。
+      </li>
+    </ul> -->
+
+    <h4 id="🚩-赞同科技股份有限公司">
+      <strong>🚩 赞同科技股份有限公司</strong>
+    </h4>
+
+    <blockquote>
+      <p>🥇 荣获公司2020 "年度优秀员工"</p>
+      <p>
+        ⚔️
+        赞同可视化开发工具Webide生态(参与了上海银行/金融展/九江银行/阜新银行/海峡/创兴/江南/广发/陕西信合/东莞农商等银行的十多个项目的开发或支持。)
+      </p>
+      <!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;</p> -->
+      <p>⚔️ 东莞农商银行综合大屏系统项目</p>
+      <p>⚔️ 赞同网银(参加深圳金融展)</p>
+    </blockquote>
+
+    <!-- <h5 id="⚔️-东莞农商银行综合大屏系统项目202011-20213">
+      ⚔️ 东莞农商银行综合大屏系统项目(2020.11-2021.3)
+    </h5>
+    <blockquote>
+      <p>
+        作为公司代表同行方及行方驻场团队对接，推进项目的实施，参与了从开发环境搭建，项目开发，到产品部署上线等整个产品开发周期。
+      </p>
+    </blockquote>
+    <blockquote>
+      <p>🥇 凭此项目加成荣获公司 "年度优秀员工"</p>
+    </blockquote>
+    <p style="margin-left: 15px">
+      <strong>项目第一期从立项到紧急上线花了不到两个月的时间</strong>
+    </p>
+
+    <blockquote>
+      <p>
+        在行方需求不完善，UI设计未落实，后端数据和接口未定的状况下，我们作为项目的后置环节十分被动。需合理的规划安排，才能在资源到位时快速准确的完成工作。
+      </p>
+    </blockquote>
+
+    <ul>
+      <li>
+        <strong>前期</strong>:
+        详细整理了开发环境相关安装文件和配置文件，详细记录操作步骤和命令，为后续自动化部署提供了充足资源。
+      </li>
+      <li>
+        <strong>中期</strong>:
+        不断和UI及甲方沟通需求，同时和后端沟通指标数据模型，根据即时信息进行组件和页面模板的开发。
+      </li>
+      <li><strong>后期</strong>: 快速顺利地完成页面组装和数据对接工作。</li>
+    </ul>
+
+    <p style="margin-left: 15px">
+      <strong
+        >项目第二期完成新的开发任务的同时优化了产品部署上线的流程。</strong
+      >
+    </p>
+
+    <ul>
+      <li>
+        自动化部署:
+        通过shell脚本部署项目和依赖环境，解决大屏项目依赖环境和复杂配置。通过shell脚本结合pm2处理服务的启停和进程守护，极大提高部署效率。
+      </li>
+    </ul>
+
+    <h5 id="⚔️-赞同可视化开发工具webide生态20197-20215">
+      ⚔️ 赞同可视化开发工具Webide生态(2019.7-2021.5)
+    </h5>
+    <blockquote>
+      <p>
+        基于Vue开发的一套web版可视化开发工具，通过插件机制定制用于开发管理端/数据可视化展示大屏/移动端等多种应用场景。
+      </p>
+    </blockquote>
+    <ul>
+      <li>产品的方向和细节提出建设性意见，推动产品快速落地。</li>
+      <li>市场技术支持和培训，组件开发，资源库开发维护。</li>
+      <li>
+        参与了上海银行/金融展/九江银行/阜新银行/海峡/创兴/江南/广发/陕西信合/东莞农商等银行的十多个项目的开发或支持。
+      </li>
+    </ul>
+
+    <h5 id="⚔️-赞同网银金融展云柜员部分201910-201912">
+      ⚔️ 赞同网银(金融展云柜员部分)(2019.10-2019.12)
+    </h5>
+    <blockquote>
+      <p>通过在线即时通讯展现在线办理银行常见业务的能力。</p>
+    </blockquote>
+    <ul>
+      <li>
+        出差苏州和当地团队合作，自行完成了<strong>云柜员业务交互模型的设计</strong>，大大减少了开发周期，让Webide产品得以及时亮相深圳展会，为后续落地提供了良好契机。
+      </li>
+    </ul> -->
+
+    <h4 id="🚩-东莞市惬意购网络科技有限公司">
+      <strong>🚩 东莞市惬意购网络科技有限公司</strong>
+    </h4>
+
+    <blockquote>
+      <p>
+        ⚔️ 惬意购收银管理系统(PC端收银机/PC端商家后台/微信小程序客户端/数据统计)
+      </p>
+    </blockquote>
+    <!-- 以店铺收银系统为核心的线上线下交易平台，借鉴并优化了传统收银系统的操作模式。 -->
+
+    <!-- <h5
+      id="⚔️-惬意购收银管理系统pc端收银机pc端商家后台微信小程序客户端数据统计"
+    >
+      ⚔️ 惬意购收银管理系统(PC端收银机/PC端商家后台/微信小程序客户端/数据统计)
+    </h5>
+
+    <blockquote>
+      <p>
+        以店铺收银系统为核心的线上线下交易平台，借鉴并优化了传统收银系统的操作模式。
+      </p>
+    </blockquote>
+    <ul>
+      <li>
+        依托web端优势的同时，参考吸收传统收银机的优点，例如:
+        <ul>
+          <li>
+            快捷键操作，加入了帮助面板按需显示隐藏(根据当前所处的状态，只显示有效的快捷键提示)，提高操作效率，降低上手门槛
+          </li>
+          <li>
+            根据业务实际情况，使用本地存储 +
+            主动同步的方式处理上架商品信息，有效缓解服务器的压力
+          </li>
+          <li>收银成功后的动画和声音效果，提高商户的安全感</li>
+          <li>数据统计展示的接入</li>
+        </ul>
+      </li>
+    </ul> -->
+  </body>
+</html>

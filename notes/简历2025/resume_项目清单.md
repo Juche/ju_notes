@@ -1,0 +1,200 @@
+# 项目清单
+
+<!-- 积分广告管理平台 (jfadmanage)
+积分广告奖励平台 (jfreward)
+商城广告管理平台 (shopmanage)
+养老大屏 (zzwl_saas2/datav)
+养老管理端 (zzwl_saas2/web2021) -->
+
+养老大屏: [zzwl_saas2_datav](svn://code.int.yingjyun.com/zzwl_saas2/datav)
+养老管理端: [zzwl_saas2_web2021](svn://code.int.yingjyun.com/zzwl_saas2/web2021)
+
+钛可星球: [tkplant](svn://code.int.yingjyun.com/waibao/tkplant)
+
+彩票广告管理端: [lottery_ad_admin](svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc/lottery_ad_admin)
+彩票广告客户端: [lottery_ad_client](svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc/lottery_ad_client)
+电商广告管理端: [mall_ad_admin](svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc/mall_ad_admin)
+
+其他:
+[zzwl_saas1_datav](svn://code.int.yingjyun.com/zzwl_saas1/datav)
+[zzwl_saas2_datav2021](svn://code.int.yingjyun.com/zzwl_saas2/datav2021)
+
+---
+
+## 当前维护项目清单
+
+积分广告管理平台 (jfadmanage)
+积分广告奖励平台 (jfreward)
+商城广告管理平台 (shopmanage)
+养老大屏 (zzwl_saas2/datav)
+养老管理端 (zzwl_saas2/web2021)
+
+---
+
+## 彩票相关项目[朱程]
+
+### 彩富哆广告管理端(lottery_ad_admin)
+
+- 应用名称: 彩富哆数字化运营管理软件
+- [正式服访问地址](https://jfmanager.cwlcn.cn)
+- 正式服 API 地址:
+  - [\_baseApi](https://api11150.cwlcn.cn)
+  - [\_jkpApi](https://api11120.cwlcn.cn)
+- [测试服访问地址](https://timp.hubcf.com/lottery/point/web)
+- 测试服 API 地址:
+  - [\_baseApi](https://timp.hubcf.com/lottery/jifen/api)
+  - [\_jkpApi](https://timp.hubcf.com/lottery/ticket/api)
+
+### 彩富哆广告客户端(lottery_ad_client)
+
+- 应用名称: 财富帝
+- [正式服访问地址](https://wxpay.cwlcn.cn/reward)
+- 正式服 API 地址:
+  - [\_baseApi](https://api11135.cwlcn.cn)
+  - [\_wxApi](https://api11180.cwlcn.cn/jf_use)
+- [测试服访问地址](https://wxpay.cwlcn.cn/reward_test)
+- 测试服 API 地址:
+  - [\_baseApi](https://timp.hubcf.com/lottery/jifen)
+  - [\_wxApi](https://timp.hubcf.com/lottery/award/api/jf_use)
+
+### 彩富哆商户管理端(lottery_merchant_admin)
+
+- 应用名称: 彩富哆商户管理平台
+- [正式服访问地址](https://merchant.cwlcn.cn)
+- 正式服 API 地址:
+  - [\_baseApi](https://api13350.cwlcn.cn)
+- [测试服访问地址](https://timp.hubcf.com/lottery/merchant/manager)
+- 测试服 API 地址:
+  - [\_baseApi](https://timp.hubcf.com/lottery/merchant/api)
+
+### 彩富哆商户小程序(lottery_merchant_assistant)
+
+- 应用名称: 彩富哆商户助手
+- 正式服 API 地址:
+  - [\_baseApi](https://api13335.cwlcn.cn)
+  - [\_mpApi](https://api11150.cwlcn.cn)
+  - [\_jkpApi](https://api11120.cwlcn.cn)
+  - [\_cpApi](https://api11180.cwlcn.cn)
+- 测试服 API 地址:
+  - [\_baseApi](https://timp.hubcf.com/lottery/merchant/miniapp)
+  - [\_mpApi](https://timp.hubcf.com/lottery/jifen/api)
+  - [\_jkpApi](https://timp.hubcf.com/lottery/ticket/api)
+  - [\_cpApi](https://timp.hubcf.com/lottery/award/api)
+
+## 彩富哆广告端相关活动页面 D:\ZZ\Projects\zhuc_mono\lottery_link_web
+
+### 彩富哆出入库管理工具 D:\ZZ\Projects\zhuc_mono\lottery_inventory_manage
+
+## 项目交接清单
+
+1. 彩富哆数字化运营管理软件(彩富哆广告管理端)
+
+文件位置: D:\ZZ\Projects\zhuc_mono\lottery_ad_admin
+
+仓库地址: svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc/lottery_ad_admin
+
+测试服: https://timp.hubcf.com/lottery/point/web/
+
+正式服: https://jfmanager.cwlcn.cn/
+
+
+2. 财富帝(彩富哆广告客户端)
+
+文件位置: D:\ZZ\Projects\zhuc_mono\lottery_ad_client
+
+仓库地址: svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc/lottery_ad_client
+
+测试服: https://wxpay.cwlcn.cn/reward_test/
+
+正式服: https://wxpay.cwlcn.cn/reward/
+
+
+3. 彩富哆商户管理平台(管理端)
+
+文件位置: D:\ZZ\Projects\zhuc_mono\lottery_merchant_admin
+
+仓库地址: svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc/lottery_merchant_admin
+
+测试服: https://timp.hubcf.com/lottery/merchant/manager/
+
+正式服: https://merchant.cwlcn.cn/
+
+
+4. 彩富哆商户助手(小程序)
+
+文件位置: D:\ZZ\Projects\zhuc_mono\lottery_merchant_assistant
+
+仓库地址: svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc/lottery_merchant_assistant
+
+5. 彩富哆广告端相关活动页面
+
+文件位置: D:\ZZ\Projects\zhuc_mono\lottery_link_web
+
+仓库地址: svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc/lottery_link_web
+
+6. 彩富哆出入库管理工具(小程序)
+
+文件位置: D:\ZZ\Projects\zhuc_mono\lottery_inventory_manage
+
+仓库地址: svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc/lottery_inventory_manage
+
+7. 乡村振兴电商广告平台(管理端)
+
+文件位置: D:\ZZ\Projects\zhuc_mono\mall_ad_admin
+
+仓库地址: svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc/mall_ad_admin
+
+测试服: https://timp.hubcf.com/lottery/shop/manager/
+
+正式服: https://shopadmanager.cwlcn.cn/
+
+
+8. 南通商会论团(小程序)
+
+文件位置: D:\ZZ\Projects\zhuc_mono\nt_coc_forum
+
+仓库地址: svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc/nt_coc_forum
+
+
+9. 绿科物业管理端
+
+文件位置: D:\ZZ\Projects\saasmanager
+
+仓库地址: http://192.168.2.10:5001/ecowiseproperty/frontend/saasmanager.git
+
+10. 绿科物业App
+
+文件位置: D:\ZZ\Projects\ecopropertyapp
+
+仓库地址: http://192.168.2.10:5001/ecowiseproperty/appclient/ecopropertyapp.git
+
+11. 养老大屏: [zzwl_saas2_datav]
+
+文件位置: D:\ZZ\Projects\zzwl_saas2_datav
+
+仓库地址: (svn://code.int.yingjyun.com/zzwl_saas2/datav)
+
+12. 养老管理端: [zzwl_saas2_web2021]
+
+文件位置: D:\ZZ\Projects\zzwl_saas2_web2021
+
+仓库地址: (svn://code.int.yingjyun.com/zzwl_saas2/web2021)
+
+13. 钛可星球
+
+文件位置: D:\ZZ\Projects\tkplant
+
+仓库地址: svn://code.int.yingjyun.com/waibao/tkplant
+
+14. 中烟物流可视化
+
+文件位置: D:\ZZ\Projects\zhongyan
+
+---
+
+svn账号密码:
+zhucheng = 4MFvUnqM0cFat0mT
+
+svn个人仓库/账号密码
+svn://120.55.240.113:3691/985_pro/cwl_2022/develop/zhuc
+zhuc = asdias1e2adkjHAKSHSXwdqhjq
